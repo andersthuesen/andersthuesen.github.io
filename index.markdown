@@ -5,4 +5,6 @@
 layout: home
 ---
 
-# Hello world!
+# Hey there! 👋
+
+This is my jekyll site on github pages, please take a look below for my posts.
