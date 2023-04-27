@@ -1,0 +1,225 @@
+pickup_at,weather,season,time,pickup_area,tip_amount
+Monday,rainy,fall,day,manhattan,2.3295687097568245
+Monday,rainy,fall,day,not manhattan,5.83191299953351
+Monday,rainy,fall,night,manhattan,2.3681804545802403
+Monday,rainy,fall,night,not manhattan,5.854162692847125
+Monday,rainy,spring,day,manhattan,2.2380468865431022
+Monday,rainy,spring,day,not manhattan,5.619327771282814
+Monday,rainy,spring,night,manhattan,2.2513908765652952
+Monday,rainy,spring,night,not manhattan,5.765068884408603
+Monday,rainy,summer,day,manhattan,2.1874902841938764
+Monday,rainy,summer,day,not manhattan,5.362225391849529
+Monday,rainy,summer,night,manhattan,2.3134442465265406
+Monday,rainy,summer,night,not manhattan,5.753121114683816
+Monday,rainy,winter,day,manhattan,2.022215389359005
+Monday,rainy,winter,day,not manhattan,4.999807008944982
+Monday,rainy,winter,night,manhattan,2.1930932386806337
+Monday,rainy,winter,night,not manhattan,5.70391974317817
+Monday,sunny,fall,day,manhattan,2.323441278322915
+Monday,sunny,fall,day,not manhattan,5.806177014637285
+Monday,sunny,fall,night,manhattan,2.3792886601072074
+Monday,sunny,fall,night,not manhattan,5.962946364475439
+Monday,sunny,spring,day,manhattan,2.21412715594282
+Monday,sunny,spring,day,not manhattan,5.606617718883863
+Monday,sunny,spring,night,manhattan,2.307638258862373
+Monday,sunny,spring,night,not manhattan,5.91237890204521
+Monday,sunny,summer,day,manhattan,2.199330130717223
+Monday,sunny,summer,day,not manhattan,5.463499665973872
+Monday,sunny,summer,night,manhattan,2.27625891225017
+Monday,sunny,summer,night,not manhattan,5.7117339049222995
+Monday,sunny,winter,day,manhattan,2.2790357085469184
+Monday,sunny,winter,day,not manhattan,5.574486730627878
+Monday,sunny,winter,night,manhattan,2.35376085712362
+Monday,sunny,winter,night,not manhattan,5.786910795590702
+Tuesday,rainy,fall,day,manhattan,2.374483299068266
+Tuesday,rainy,fall,day,not manhattan,5.426271747056985
+Tuesday,rainy,fall,night,manhattan,2.4600599710484596
+Tuesday,rainy,fall,night,not manhattan,5.6513603380178195
+Tuesday,rainy,spring,day,manhattan,2.291934333188977
+Tuesday,rainy,spring,day,not manhattan,5.031175850036517
+Tuesday,rainy,spring,night,manhattan,2.350476434952254
+Tuesday,rainy,spring,night,not manhattan,5.405140834231183
+Tuesday,rainy,summer,day,manhattan,2.2455102743449427
+Tuesday,rainy,summer,day,not manhattan,5.102127041320393
+Tuesday,rainy,summer,night,manhattan,2.3179571378174977
+Tuesday,rainy,summer,night,not manhattan,5.289605372637585
+Tuesday,rainy,winter,day,manhattan,2.446854226276273
+Tuesday,rainy,winter,day,not manhattan,5.637760793378569
+Tuesday,rainy,winter,night,manhattan,2.423656168305739
+Tuesday,rainy,winter,night,not manhattan,5.557060065246594
+Tuesday,sunny,fall,day,manhattan,2.4213158464728517
+Tuesday,sunny,fall,day,not manhattan,5.57150217351929
+Tuesday,sunny,fall,night,manhattan,2.4742292535123065
+Tuesday,sunny,fall,night,not manhattan,5.426041561375866
+Tuesday,sunny,spring,day,manhattan,2.32378240273385
+Tuesday,sunny,spring,day,not manhattan,5.228046838699835
+Tuesday,sunny,spring,night,manhattan,2.394977536274265
+Tuesday,sunny,spring,night,not manhattan,5.36835265043865
+Tuesday,sunny,summer,day,manhattan,2.270857223091702
+Tuesday,sunny,summer,day,not manhattan,5.109014921072012
+Tuesday,sunny,summer,night,manhattan,2.3939444100691656
+Tuesday,sunny,summer,night,not manhattan,5.2705155108191875
+Tuesday,sunny,winter,day,manhattan,2.3084416077847174
+Tuesday,sunny,winter,day,not manhattan,5.19375580259649
+Tuesday,sunny,winter,night,manhattan,2.4542149969750975
+Tuesday,sunny,winter,night,not manhattan,5.455791174593042
+Wednesday,rainy,fall,day,manhattan,2.408200529450695
+Wednesday,rainy,fall,day,not manhattan,5.332037927930724
+Wednesday,rainy,fall,night,manhattan,2.473960589997695
+Wednesday,rainy,fall,night,not manhattan,5.2024561403508764
+Wednesday,rainy,spring,day,manhattan,2.3066631369286235
+Wednesday,rainy,spring,day,not manhattan,5.156295667387053
+Wednesday,rainy,spring,night,manhattan,2.395168645705945
+Wednesday,rainy,spring,night,not manhattan,5.163771663778163
+Wednesday,rainy,summer,day,manhattan,2.4745812850218294
+Wednesday,rainy,summer,day,not manhattan,5.343786872176454
+Wednesday,rainy,summer,night,manhattan,2.3028781981420936
+Wednesday,rainy,summer,night,not manhattan,4.96604403580934
+Wednesday,rainy,winter,day,manhattan,2.1775850070203284
+Wednesday,rainy,winter,day,not manhattan,4.9049083605322625
+Wednesday,rainy,winter,night,manhattan,2.601456576728499
+Wednesday,rainy,winter,night,not manhattan,5.50640866873065
+Wednesday,sunny,fall,day,manhattan,2.501941034286565
+Wednesday,sunny,fall,day,not manhattan,5.651929765886288
+Wednesday,sunny,fall,night,manhattan,2.5262221449275364
+Wednesday,sunny,fall,night,not manhattan,5.428011731391586
+Wednesday,sunny,spring,day,manhattan,2.3725000240442413
+Wednesday,sunny,spring,day,not manhattan,5.195502982975214
+Wednesday,sunny,spring,night,manhattan,2.434657755033718
+Wednesday,sunny,spring,night,not manhattan,5.1378628515316
+Wednesday,sunny,summer,day,manhattan,2.32794446224967
+Wednesday,sunny,summer,day,not manhattan,5.072973636241125
+Wednesday,sunny,summer,night,manhattan,2.43822421367229
+Wednesday,sunny,summer,night,not manhattan,5.202176531619303
+Wednesday,sunny,winter,day,manhattan,2.3722636211952737
+Wednesday,sunny,winter,day,not manhattan,5.261655775651924
+Wednesday,sunny,winter,night,manhattan,2.4946607611430895
+Wednesday,sunny,winter,night,not manhattan,5.224881915354615
+Thursday,rainy,fall,day,manhattan,2.6232858235781134
+Thursday,rainy,fall,day,not manhattan,5.803877979856532
+Thursday,rainy,fall,night,manhattan,2.5014314720812183
+Thursday,rainy,fall,night,not manhattan,5.726942010846892
+Thursday,rainy,spring,day,manhattan,2.3884342771423213
+Thursday,rainy,spring,day,not manhattan,5.171692453425955
+Thursday,rainy,spring,night,manhattan,2.443204221129632
+Thursday,rainy,spring,night,not manhattan,5.271239040529363
+Thursday,rainy,summer,day,manhattan,2.3846819811930526
+Thursday,rainy,summer,day,not manhattan,5.118715094784866
+Thursday,rainy,summer,night,manhattan,2.4808500194779897
+Thursday,rainy,summer,night,not manhattan,5.108411592076303
+Thursday,rainy,winter,day,manhattan,2.4918109207544794
+Thursday,rainy,winter,day,not manhattan,5.401708219279426
+Thursday,rainy,winter,night,manhattan,2.5317861830742663
+Thursday,rainy,winter,night,not manhattan,5.369665895953757
+Thursday,sunny,fall,day,manhattan,2.513640292852386
+Thursday,sunny,fall,day,not manhattan,5.504088885518183
+Thursday,sunny,fall,night,manhattan,2.551662680445861
+Thursday,sunny,fall,night,not manhattan,5.248345597252881
+Thursday,sunny,spring,day,manhattan,2.40878516228039
+Thursday,sunny,spring,day,not manhattan,5.266941837998943
+Thursday,sunny,spring,night,manhattan,2.435160947503868
+Thursday,sunny,spring,night,not manhattan,5.168175489338804
+Thursday,sunny,summer,day,manhattan,2.363529076060943
+Thursday,sunny,summer,day,not manhattan,5.10829807047929
+Thursday,sunny,summer,night,manhattan,2.456988677356799
+Thursday,sunny,summer,night,not manhattan,5.248634904169137
+Thursday,sunny,winter,day,manhattan,2.364672931384372
+Thursday,sunny,winter,day,not manhattan,5.37374343824815
+Thursday,sunny,winter,night,manhattan,2.4943682679845964
+Thursday,sunny,winter,night,not manhattan,5.269075235109718
+Friday,rainy,fall,day,manhattan,2.3818830777002846
+Friday,rainy,fall,day,not manhattan,5.613528028592927
+Friday,rainy,fall,night,manhattan,2.461546183738541
+Friday,rainy,fall,night,not manhattan,5.676048323001112
+Friday,rainy,spring,day,manhattan,2.4049388284832576
+Friday,rainy,spring,day,not manhattan,5.542543532841986
+Friday,rainy,spring,night,manhattan,2.345771130050144
+Friday,rainy,spring,night,not manhattan,5.4490811039441684
+Friday,rainy,summer,day,manhattan,2.2766712823338358
+Friday,rainy,summer,day,not manhattan,5.155221273672849
+Friday,rainy,summer,night,manhattan,2.463449698040949
+Friday,rainy,summer,night,not manhattan,5.392686567164179
+Friday,rainy,winter,day,manhattan,2.307122390274288
+Friday,rainy,winter,day,not manhattan,5.216329571632695
+Friday,rainy,winter,night,manhattan,2.48318698432685
+Friday,rainy,winter,night,not manhattan,5.231482963345379
+Friday,sunny,fall,day,manhattan,2.443599953879857
+Friday,sunny,fall,day,not manhattan,5.715082894904722
+Friday,sunny,fall,night,manhattan,2.468794139316558
+Friday,sunny,fall,night,not manhattan,5.153386009821336
+Friday,sunny,spring,day,manhattan,2.3376691313955464
+Friday,sunny,spring,day,not manhattan,5.39584947673124
+Friday,sunny,spring,night,manhattan,2.3962682879176196
+Friday,sunny,spring,night,not manhattan,5.171947768364049
+Friday,sunny,summer,day,manhattan,2.292273101086283
+Friday,sunny,summer,day,not manhattan,5.245348974523731
+Friday,sunny,summer,night,manhattan,2.386385261611765
+Friday,sunny,summer,night,not manhattan,5.22766985287227
+Friday,sunny,winter,day,manhattan,2.3335792367358
+Friday,sunny,winter,day,not manhattan,5.554657790519692
+Friday,sunny,winter,night,manhattan,2.4409336065657548
+Friday,sunny,winter,night,not manhattan,5.255000601612321
+Saturday,rainy,fall,day,manhattan,2.2394019567803682
+Saturday,rainy,fall,day,not manhattan,5.208395977974623
+Saturday,rainy,fall,night,manhattan,2.4213991730203874
+Saturday,rainy,fall,night,not manhattan,4.760779859484777
+Saturday,rainy,spring,day,manhattan,2.176381488622751
+Saturday,rainy,spring,day,not manhattan,4.934891259244795
+Saturday,rainy,spring,night,manhattan,2.29329144225015
+Saturday,rainy,spring,night,not manhattan,4.877465718638903
+Saturday,rainy,summer,day,manhattan,2.1437807880202553
+Saturday,rainy,summer,day,not manhattan,4.999253785474657
+Saturday,rainy,summer,night,manhattan,2.360832230748875
+Saturday,rainy,summer,night,not manhattan,5.073361976369496
+Saturday,rainy,winter,day,manhattan,2.2448319071348664
+Saturday,rainy,winter,day,not manhattan,5.660965876530347
+Saturday,rainy,winter,night,manhattan,2.4456217869460533
+Saturday,rainy,winter,night,not manhattan,6.108630024610337
+Saturday,sunny,fall,day,manhattan,2.3113823204264907
+Saturday,sunny,fall,day,not manhattan,5.306741398545227
+Saturday,sunny,fall,night,manhattan,2.4500614538364265
+Saturday,sunny,fall,night,not manhattan,4.856451612903226
+Saturday,sunny,spring,day,manhattan,2.2402256071131426
+Saturday,sunny,spring,day,not manhattan,5.123300768964145
+Saturday,sunny,spring,night,manhattan,2.3674392063676697
+Saturday,sunny,spring,night,not manhattan,4.749792360312367
+Saturday,sunny,summer,day,manhattan,2.1853777975478885
+Saturday,sunny,summer,day,not manhattan,5.028238870366739
+Saturday,sunny,summer,night,manhattan,2.3400260793540437
+Saturday,sunny,summer,night,not manhattan,4.815487224627683
+Saturday,sunny,winter,day,manhattan,2.2107343507321637
+Saturday,sunny,winter,day,not manhattan,5.00888610842945
+Saturday,sunny,winter,night,manhattan,2.406679338449257
+Saturday,sunny,winter,night,not manhattan,4.754527436472597
+Sunday,rainy,fall,day,manhattan,2.344351880406659
+Sunday,rainy,fall,day,not manhattan,6.022521620271798
+Sunday,rainy,fall,night,manhattan,2.2245019808902353
+Sunday,rainy,fall,night,not manhattan,5.733295150820924
+Sunday,rainy,spring,day,manhattan,2.2215570133247273
+Sunday,rainy,spring,day,not manhattan,5.766535138921317
+Sunday,rainy,spring,night,manhattan,2.311820567141552
+Sunday,rainy,spring,night,not manhattan,5.081573657365736
+Sunday,rainy,summer,day,manhattan,2.3196660319577407
+Sunday,rainy,summer,day,not manhattan,5.765331394047886
+Sunday,rainy,summer,night,manhattan,2.3144387480878157
+Sunday,rainy,summer,night,not manhattan,5.985933492718974
+Sunday,rainy,winter,day,manhattan,2.2055724356207738
+Sunday,rainy,winter,day,not manhattan,5.629737613212573
+Sunday,rainy,winter,night,manhattan,2.1442737300704486
+Sunday,rainy,winter,night,not manhattan,6.060939310765477
+Sunday,sunny,fall,day,manhattan,2.3708257836005795
+Sunday,sunny,fall,day,not manhattan,5.798995902337143
+Sunday,sunny,fall,night,manhattan,2.4122906659388645
+Sunday,sunny,fall,night,not manhattan,5.346088760806916
+Sunday,sunny,spring,day,manhattan,2.29164842649975
+Sunday,sunny,spring,day,not manhattan,5.798063183037448
+Sunday,sunny,spring,night,manhattan,2.3103201487727123
+Sunday,sunny,spring,night,not manhattan,5.722588468019635
+Sunday,sunny,summer,day,manhattan,2.2511319545781143
+Sunday,sunny,summer,day,not manhattan,5.615540208747028
+Sunday,sunny,summer,night,manhattan,2.3007196458859056
+Sunday,sunny,summer,night,not manhattan,5.391930855833416
+Sunday,sunny,winter,day,manhattan,2.22455063736981
+Sunday,sunny,winter,day,not manhattan,5.548873951833073
+Sunday,sunny,winter,night,manhattan,2.3451405572990245
+Sunday,sunny,winter,night,not manhattan,5.333101280108342
