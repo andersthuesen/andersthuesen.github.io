@@ -7,6 +7,8 @@ import type {
 import { Content } from "~/components/content";
 import { Navigation } from "~/components/navigation";
 import globalStyles from "~/styles/global.css";
+
+import mapboxLibreStyles from "maplibre-gl/dist/maplibre-gl.css";
 import normalizeStyles from "~/styles/normalize.css";
 import {
   Area,
@@ -19,6 +21,8 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
+import Map, { Marker } from "react-map-gl";
+import maplibregl from "maplibre-gl";
 import { Toggle } from "~/components/toggle";
 import { Form, Params, useLoaderData, useSearchParams } from "@remix-run/react";
 import Lottie from "lottie-react";
@@ -43,84 +47,21 @@ export const links: LinksFunction = () => {
       rel: "stylesheet",
       href: globalStyles,
     },
+    {
+      rel: "stylesheet",
+      href: mapboxLibreStyles,
+    },
   ];
 };
 
-const data = [
-  {
-    name: "Monday",
-    pickups: 12338,
-  },
-  {
-    name: "Tuesday",
-    pickups: 53901,
-  },
-  {
-    name: "Wednesday",
-    pickups: 42941,
-  },
-  {
-    name: "Thursday",
-    pickups: 23141,
-  },
-  {
-    name: "Friday",
-    pickups: 91283,
-  },
-  {
-    name: "Saturday",
-    pickups: 9043,
-  },
-  {
-    name: "Sunday",
-    pickups: 3051,
-  },
-];
-
-const data2 = [
-  {
-    name: "Page A",
-    uv: 4000,
-    pv: 2400,
-    amt: 2400,
-  },
-  {
-    name: "Page B",
-    uv: 3000,
-    pv: 1398,
-    amt: 2210,
-  },
-  {
-    name: "Page C",
-    uv: 2000,
-    pv: 9800,
-    amt: 2290,
-  },
-  {
-    name: "Page D",
-    uv: 2780,
-    pv: 3908,
-    amt: 2000,
-  },
-  {
-    name: "Page E",
-    uv: 1890,
-    pv: 4800,
-    amt: 2181,
-  },
-  {
-    name: "Page F",
-    uv: 2390,
-    pv: 3800,
-    amt: 2500,
-  },
-  {
-    name: "Page G",
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
-  },
-];
+type WeekData = {
+  avgDuration: number;
+  avgDistance: number;
+  avgFareAmount: number;
+  avgTipAmount: number;
+  avgTotalAmount: number;
+  numberOfTrips: number;
+};
 
 type LoaderData = {
   week: {
@@ -138,7 +79,7 @@ export const loader: LoaderFunction = ({
   request,
 }: LoaderArgs): LoaderData => {
   const rawData = fs.readFileSync(
-    path.join(__dirname, "..", "..", "social-data-analysis-final-project", "output", "avg-duration_by-day.csv"),
+    path.join(__dirname, "..", "data", "by-day.csv"),
     "utf-8"
   );
 
@@ -146,10 +87,34 @@ export const loader: LoaderFunction = ({
 
   const weekData = rawData
     .split("\n")
-    .slice(1)
+    .slice(1) // Don't include the header
     .map((row) => {
-      const [day, weather, season, time, area, avgDuration] = row.split(",");
-      return { day, weather, season, time, area, avgDuration };
+      const [
+        day,
+        weather,
+        season,
+        time,
+        area,
+        avgDistance,
+        avgFareAmount,
+        avgTipAmount,
+        avgTotalAmount,
+        avgDuration,
+        numberOfTrips,
+      ] = row.split(",");
+      return {
+        day,
+        weather,
+        season,
+        time,
+        area,
+        avgDuration: parseFloat(avgDuration),
+        avgDistance: parseFloat(avgDistance),
+        avgFareAmount: parseFloat(avgFareAmount),
+        avgTipAmount: parseFloat(avgTipAmount),
+        avgTotalAmount: parseFloat(avgTotalAmount),
+        numberOfTrips: parseInt(numberOfTrips),
+      };
     })
     .filter((row) => {
       const weatherFilter = searchParams.get("weather") ?? "any";
@@ -167,28 +132,78 @@ export const loader: LoaderFunction = ({
 
       return true;
     })
-    .map((row) => {
-      return {
-        day: row.day,
-        value: parseFloat(row.avgDuration),
-      };
-    })
-    .reduce((acc, row) => {
-      const day = row.day;
-      const value = row.value;
-      if (acc[day]) {
-        acc[day] = (acc[day] + value) / 2;
-      } else {
-        acc[day] = value;
+    .reduce(
+      (acc, { day, numberOfTrips, ...data }) => {
+        if (acc[day]) {
+          for (const key in acc[day]) {
+            if (key == "numberOfTrips") continue;
+            // @ts-ignore
+            const currentValue = acc[day][key];
+
+            // @ts-ignore
+            const newValue = data[key];
+
+            // @ts-ignore
+            acc[day][key] =
+              (currentValue * acc[day].numberOfTrips +
+                newValue * numberOfTrips) /
+              (acc[day].numberOfTrips + numberOfTrips);
+          }
+          acc[day].numberOfTrips += numberOfTrips;
+        } else {
+          acc[day] = { numberOfTrips, ...data };
+        }
+        return acc;
+      },
+      {} as {
+        [day: string]: {
+          numberOfTrips: number;
+          avgDistance: number;
+          avgFareAmount: number;
+          avgDuration: number;
+          avgTipAmount: number;
+          avgTotalAmount: number;
+        };
       }
-      return acc;
-    }, {} as { [key: string]: number });
+    );
+
+  const weekMetric = searchParams.get("week-metric") ?? "avgDistance";
+
+  const weekLabels: {
+    // @ts-ignore
+    [name: keyof WeekData]: string;
+  } = {
+    avgDistance: "Average Distance",
+    avgDuration: "Average Duration",
+    avgFareAmount: "Average Fare Amount",
+    avgTipAmount: "Average Tip Amount",
+    avgTotalAmount: "Average Total Amount",
+    numberOfTrips: "Number of Trips",
+  };
+
+  const weekUnits: {
+    // @ts-ignore
+    [name: keyof WeekData]: string;
+  } = {
+    avgDistance: "mi",
+    avgDuration: "min",
+    avgFareAmount: "$",
+    avgTipAmount: "$",
+    avgTotalAmount: "$",
+    numberOfTrips: "",
+  };
 
   return {
     week: {
-      data: Object.entries(weekData).map(([day, value]) => ({ day, value })),
-      label: "Average Duration",
-      unit: " minutes",
+      data: Object.entries(weekData).map(([day, data]) => ({
+        day,
+        // @ts-ignore
+        value: data[weekMetric],
+      })),
+      // @ts-ignore
+      label: weekLabels[weekMetric],
+      // @ts-ignore
+      unit: weekUnits[weekMetric],
     },
   };
 };
@@ -213,6 +228,11 @@ export default function Index() {
             }
           }}
         >
+          <input
+            type="hidden"
+            name="week-metric"
+            value={searchParams.get("week-metric") ?? "avgDistance"}
+          />
           <Content>
             <Toggle
               name="weather"
@@ -240,15 +260,15 @@ export default function Index() {
               options={[
                 {
                   key: "any",
-                  label: "Any 🌙/☀️",
+                  label: "Any ☀️/🌙",
                 },
                 {
                   key: "day",
-                  label: "Day 🌙",
+                  label: "Day ☀️",
                 },
                 {
                   key: "night",
-                  label: "Night ☀️",
+                  label: "Night 🌙",
                 },
               ]}
             />
@@ -270,8 +290,8 @@ export default function Index() {
                   label: "Summer 😎",
                 },
                 {
-                  key: "autumn",
-                  label: "Autumn 🍂",
+                  key: "fall",
+                  label: "Fall 🍂",
                 },
                 {
                   key: "winter",
@@ -308,6 +328,18 @@ export default function Index() {
           </p>
           <h2>Explore the patterns</h2>
           <p>Hej med dig! Det virker!</p>
+          <Map
+            mapLib={maplibregl}
+            initialViewState={{
+              longitude: -122.4,
+              latitude: 37.8,
+              zoom: 14,
+            }}
+            style={{ width: 960, height: 400 }}
+            mapStyle="https://basemaps.cartocdn.com/gl/positron-gl-style/style.json"
+          >
+            <Marker longitude={-122.4} latitude={37.8} color="red" />
+          </Map>
 
           <BarChart width={730} height={250} data={week.data}>
             <CartesianGrid strokeDasharray="3 3" />
@@ -323,7 +355,7 @@ export default function Index() {
             />
           </BarChart>
 
-          <AreaChart
+          {/* <AreaChart
             width={720}
             height={250}
             data={data2}
@@ -357,7 +389,7 @@ export default function Index() {
               fillOpacity={1}
               fill="url(#colorPv)"
             />
-          </AreaChart>
+          </AreaChart> */}
         </Content>
       </main>
       {isRainy && (
