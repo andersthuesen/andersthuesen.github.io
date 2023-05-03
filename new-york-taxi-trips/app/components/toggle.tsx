@@ -18,13 +18,9 @@ export const Toggle: React.FC<ToggleProps> = ({
   return (
     <div className="toggle">
       {label && <label>{label}:</label>}
-      <select name={name}>
+      <select name={name} defaultValue={selected ?? undefined}>
         {options.map((option) => (
-          <option
-            key={option.key}
-            value={option.key}
-            selected={selected == option.key}
-          >
+          <option key={option.key} value={option.key}>
             {option.label}
           </option>
         ))}
