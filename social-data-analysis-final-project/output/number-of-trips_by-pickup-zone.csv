@@ -1,0 +1,3739 @@
+PULocationID,weather,season,time,pickup_area,duration
+1,rainy,fall,day,not manhattan,24
+1,rainy,fall,night,not manhattan,2
+1,rainy,spring,day,not manhattan,22
+1,rainy,spring,night,not manhattan,2
+1,rainy,summer,day,not manhattan,22
+1,rainy,summer,night,not manhattan,2
+1,rainy,winter,day,not manhattan,23
+1,rainy,winter,night,not manhattan,2
+1,sunny,fall,day,not manhattan,83
+1,sunny,fall,night,not manhattan,8
+1,sunny,spring,day,not manhattan,112
+1,sunny,spring,night,not manhattan,12
+1,sunny,summer,day,not manhattan,115
+1,sunny,summer,night,not manhattan,15
+1,sunny,winter,day,not manhattan,44
+1,sunny,winter,night,not manhattan,8
+2,rainy,summer,day,not manhattan,1
+2,rainy,winter,day,not manhattan,1
+2,sunny,fall,day,not manhattan,4
+2,sunny,spring,day,not manhattan,7
+2,sunny,spring,night,not manhattan,2
+2,sunny,summer,day,not manhattan,5
+2,sunny,summer,night,not manhattan,2
+2,sunny,winter,day,not manhattan,5
+2,sunny,winter,night,not manhattan,1
+3,rainy,fall,day,not manhattan,4
+3,rainy,fall,night,not manhattan,1
+3,rainy,spring,day,not manhattan,3
+3,rainy,spring,night,not manhattan,2
+3,rainy,summer,day,not manhattan,1
+3,rainy,winter,day,not manhattan,4
+3,sunny,fall,day,not manhattan,17
+3,sunny,spring,day,not manhattan,12
+3,sunny,spring,night,not manhattan,3
+3,sunny,summer,day,not manhattan,16
+3,sunny,summer,night,not manhattan,3
+3,sunny,winter,day,not manhattan,10
+4,rainy,fall,day,manhattan,611
+4,rainy,fall,night,manhattan,674
+4,rainy,spring,day,manhattan,969
+4,rainy,spring,night,manhattan,947
+4,rainy,summer,day,manhattan,497
+4,rainy,summer,night,manhattan,233
+4,rainy,winter,day,manhattan,694
+4,rainy,winter,night,manhattan,428
+4,sunny,fall,day,manhattan,3049
+4,sunny,fall,night,manhattan,4704
+4,sunny,spring,day,manhattan,3740
+4,sunny,spring,night,manhattan,4190
+4,sunny,summer,day,manhattan,3233
+4,sunny,summer,night,manhattan,4318
+4,sunny,winter,day,manhattan,2904
+4,sunny,winter,night,manhattan,3748
+5,rainy,winter,day,not manhattan,1
+5,sunny,fall,night,not manhattan,1
+5,sunny,summer,day,not manhattan,2
+5,sunny,summer,night,not manhattan,1
+6,rainy,fall,day,not manhattan,4
+6,rainy,fall,night,not manhattan,2
+6,rainy,summer,day,not manhattan,1
+6,rainy,winter,day,not manhattan,3
+6,rainy,winter,night,not manhattan,1
+6,sunny,fall,day,not manhattan,11
+6,sunny,fall,night,not manhattan,6
+6,sunny,spring,day,not manhattan,2
+6,sunny,summer,day,not manhattan,3
+6,sunny,summer,night,not manhattan,2
+6,sunny,winter,day,not manhattan,2
+7,rainy,fall,day,not manhattan,420
+7,rainy,fall,night,not manhattan,196
+7,rainy,spring,day,not manhattan,672
+7,rainy,spring,night,not manhattan,249
+7,rainy,summer,day,not manhattan,386
+7,rainy,summer,night,not manhattan,92
+7,rainy,winter,day,not manhattan,501
+7,rainy,winter,night,not manhattan,164
+7,sunny,fall,day,not manhattan,2320
+7,sunny,fall,night,not manhattan,972
+7,sunny,spring,day,not manhattan,2825
+7,sunny,spring,night,not manhattan,1156
+7,sunny,summer,day,not manhattan,2568
+7,sunny,summer,night,not manhattan,1235
+7,sunny,winter,day,not manhattan,2422
+7,sunny,winter,night,not manhattan,884
+8,rainy,fall,day,not manhattan,6
+8,rainy,fall,night,not manhattan,4
+8,rainy,spring,day,not manhattan,8
+8,rainy,spring,night,not manhattan,3
+8,rainy,summer,day,not manhattan,6
+8,rainy,summer,night,not manhattan,2
+8,rainy,winter,day,not manhattan,9
+8,rainy,winter,night,not manhattan,2
+8,sunny,fall,day,not manhattan,39
+8,sunny,fall,night,not manhattan,12
+8,sunny,spring,day,not manhattan,39
+8,sunny,spring,night,not manhattan,17
+8,sunny,summer,day,not manhattan,36
+8,sunny,summer,night,not manhattan,13
+8,sunny,winter,day,not manhattan,27
+8,sunny,winter,night,not manhattan,6
+9,rainy,spring,day,not manhattan,2
+9,rainy,summer,day,not manhattan,3
+9,rainy,winter,day,not manhattan,2
+9,sunny,fall,day,not manhattan,10
+9,sunny,fall,night,not manhattan,2
+9,sunny,spring,day,not manhattan,5
+9,sunny,spring,night,not manhattan,2
+9,sunny,summer,day,not manhattan,10
+9,sunny,summer,night,not manhattan,5
+9,sunny,winter,day,not manhattan,10
+9,sunny,winter,night,not manhattan,4
+10,rainy,fall,day,not manhattan,443
+10,rainy,fall,night,not manhattan,83
+10,rainy,spring,day,not manhattan,331
+10,rainy,spring,night,not manhattan,62
+10,rainy,summer,day,not manhattan,406
+10,rainy,summer,night,not manhattan,47
+10,rainy,winter,day,not manhattan,314
+10,rainy,winter,night,not manhattan,48
+10,sunny,fall,day,not manhattan,2166
+10,sunny,fall,night,not manhattan,378
+10,sunny,spring,day,not manhattan,1880
+10,sunny,spring,night,not manhattan,314
+10,sunny,summer,day,not manhattan,2221
+10,sunny,summer,night,not manhattan,540
+10,sunny,winter,day,not manhattan,1197
+10,sunny,winter,night,not manhattan,245
+11,rainy,fall,day,not manhattan,1
+11,rainy,fall,night,not manhattan,1
+11,rainy,spring,day,not manhattan,4
+11,rainy,spring,night,not manhattan,2
+11,rainy,summer,day,not manhattan,1
+11,rainy,summer,night,not manhattan,1
+11,rainy,winter,day,not manhattan,3
+11,rainy,winter,night,not manhattan,4
+11,sunny,fall,day,not manhattan,11
+11,sunny,fall,night,not manhattan,6
+11,sunny,spring,day,not manhattan,5
+11,sunny,spring,night,not manhattan,1
+11,sunny,summer,day,not manhattan,18
+11,sunny,summer,night,not manhattan,5
+11,sunny,winter,day,not manhattan,11
+11,sunny,winter,night,not manhattan,9
+12,rainy,fall,day,manhattan,436
+12,rainy,fall,night,manhattan,18
+12,rainy,spring,day,manhattan,571
+12,rainy,spring,night,manhattan,44
+12,rainy,summer,day,manhattan,765
+12,rainy,summer,night,manhattan,11
+12,rainy,winter,day,manhattan,366
+12,rainy,winter,night,manhattan,17
+12,sunny,fall,day,manhattan,3059
+12,sunny,fall,night,manhattan,144
+12,sunny,spring,day,manhattan,3159
+12,sunny,spring,night,manhattan,136
+12,sunny,summer,day,manhattan,4648
+12,sunny,summer,night,manhattan,261
+12,sunny,winter,day,manhattan,2084
+12,sunny,winter,night,manhattan,73
+13,rainy,fall,day,manhattan,7773
+13,rainy,fall,night,manhattan,698
+13,rainy,spring,day,manhattan,8961
+13,rainy,spring,night,manhattan,948
+13,rainy,summer,day,manhattan,7331
+13,rainy,summer,night,manhattan,322
+13,rainy,winter,day,manhattan,6012
+13,rainy,winter,night,manhattan,426
+13,sunny,fall,day,manhattan,42609
+13,sunny,fall,night,manhattan,4054
+13,sunny,spring,day,manhattan,43643
+13,sunny,spring,night,manhattan,4452
+13,sunny,summer,day,manhattan,46921
+13,sunny,summer,night,manhattan,5776
+13,sunny,winter,day,manhattan,30614
+13,sunny,winter,night,manhattan,2352
+14,rainy,fall,day,not manhattan,28
+14,rainy,fall,night,not manhattan,8
+14,rainy,spring,day,not manhattan,16
+14,rainy,spring,night,not manhattan,2
+14,rainy,summer,day,not manhattan,15
+14,rainy,summer,night,not manhattan,7
+14,rainy,winter,day,not manhattan,12
+14,rainy,winter,night,not manhattan,5
+14,sunny,fall,day,not manhattan,80
+14,sunny,fall,night,not manhattan,34
+14,sunny,spring,day,not manhattan,60
+14,sunny,spring,night,not manhattan,26
+14,sunny,summer,day,not manhattan,67
+14,sunny,summer,night,not manhattan,42
+14,sunny,winter,day,not manhattan,47
+14,sunny,winter,night,not manhattan,21
+15,rainy,fall,day,not manhattan,1
+15,rainy,fall,night,not manhattan,1
+15,rainy,spring,day,not manhattan,2
+15,rainy,summer,day,not manhattan,2
+15,rainy,winter,day,not manhattan,1
+15,rainy,winter,night,not manhattan,1
+15,sunny,fall,day,not manhattan,6
+15,sunny,fall,night,not manhattan,5
+15,sunny,spring,day,not manhattan,5
+15,sunny,spring,night,not manhattan,2
+15,sunny,summer,day,not manhattan,8
+15,sunny,summer,night,not manhattan,6
+15,sunny,winter,day,not manhattan,6
+16,rainy,fall,night,not manhattan,2
+16,rainy,spring,day,not manhattan,3
+16,rainy,spring,night,not manhattan,2
+16,rainy,summer,day,not manhattan,1
+16,rainy,winter,night,not manhattan,1
+16,sunny,fall,day,not manhattan,9
+16,sunny,fall,night,not manhattan,10
+16,sunny,spring,day,not manhattan,8
+16,sunny,spring,night,not manhattan,4
+16,sunny,summer,day,not manhattan,8
+16,sunny,summer,night,not manhattan,7
+16,sunny,winter,day,not manhattan,7
+16,sunny,winter,night,not manhattan,2
+17,rainy,fall,day,not manhattan,36
+17,rainy,fall,night,not manhattan,26
+17,rainy,spring,day,not manhattan,34
+17,rainy,spring,night,not manhattan,37
+17,rainy,summer,day,not manhattan,30
+17,rainy,summer,night,not manhattan,8
+17,rainy,winter,day,not manhattan,35
+17,rainy,winter,night,not manhattan,23
+17,sunny,fall,day,not manhattan,167
+17,sunny,fall,night,not manhattan,152
+17,sunny,spring,day,not manhattan,176
+17,sunny,spring,night,not manhattan,177
+17,sunny,summer,day,not manhattan,140
+17,sunny,summer,night,not manhattan,161
+17,sunny,winter,day,not manhattan,125
+17,sunny,winter,night,not manhattan,130
+18,rainy,fall,day,not manhattan,5
+18,rainy,fall,night,not manhattan,2
+18,rainy,spring,day,not manhattan,9
+18,rainy,spring,night,not manhattan,3
+18,rainy,summer,day,not manhattan,2
+18,rainy,summer,night,not manhattan,2
+18,rainy,winter,day,not manhattan,11
+18,rainy,winter,night,not manhattan,2
+18,sunny,fall,day,not manhattan,26
+18,sunny,fall,night,not manhattan,10
+18,sunny,spring,day,not manhattan,34
+18,sunny,spring,night,not manhattan,16
+18,sunny,summer,day,not manhattan,19
+18,sunny,summer,night,not manhattan,13
+18,sunny,winter,day,not manhattan,38
+18,sunny,winter,night,not manhattan,15
+19,rainy,fall,day,not manhattan,1
+19,rainy,spring,day,not manhattan,2
+19,rainy,summer,day,not manhattan,1
+19,rainy,summer,night,not manhattan,1
+19,rainy,winter,day,not manhattan,2
+19,sunny,fall,day,not manhattan,24
+19,sunny,fall,night,not manhattan,7
+19,sunny,spring,day,not manhattan,15
+19,sunny,spring,night,not manhattan,3
+19,sunny,summer,day,not manhattan,12
+19,sunny,summer,night,not manhattan,3
+19,sunny,winter,day,not manhattan,25
+19,sunny,winter,night,not manhattan,5
+20,rainy,fall,day,not manhattan,4
+20,rainy,fall,night,not manhattan,1
+20,rainy,spring,day,not manhattan,11
+20,rainy,summer,day,not manhattan,6
+20,rainy,winter,day,not manhattan,4
+20,rainy,winter,night,not manhattan,1
+20,sunny,fall,day,not manhattan,15
+20,sunny,fall,night,not manhattan,4
+20,sunny,spring,day,not manhattan,33
+20,sunny,spring,night,not manhattan,7
+20,sunny,summer,day,not manhattan,23
+20,sunny,summer,night,not manhattan,8
+20,sunny,winter,day,not manhattan,21
+20,sunny,winter,night,not manhattan,7
+21,rainy,spring,day,not manhattan,2
+21,rainy,summer,day,not manhattan,3
+21,rainy,summer,night,not manhattan,3
+21,rainy,winter,day,not manhattan,1
+21,sunny,fall,day,not manhattan,13
+21,sunny,fall,night,not manhattan,2
+21,sunny,spring,day,not manhattan,11
+21,sunny,spring,night,not manhattan,10
+21,sunny,summer,day,not manhattan,11
+21,sunny,summer,night,not manhattan,8
+21,sunny,winter,day,not manhattan,5
+21,sunny,winter,night,not manhattan,4
+22,rainy,fall,day,not manhattan,5
+22,rainy,spring,day,not manhattan,2
+22,rainy,spring,night,not manhattan,3
+22,rainy,summer,day,not manhattan,2
+22,rainy,winter,day,not manhattan,3
+22,rainy,winter,night,not manhattan,2
+22,sunny,fall,day,not manhattan,13
+22,sunny,fall,night,not manhattan,6
+22,sunny,spring,day,not manhattan,12
+22,sunny,spring,night,not manhattan,4
+22,sunny,summer,day,not manhattan,8
+22,sunny,summer,night,not manhattan,7
+22,sunny,winter,day,not manhattan,9
+22,sunny,winter,night,not manhattan,6
+23,rainy,fall,day,not manhattan,1
+23,rainy,spring,day,not manhattan,1
+23,rainy,winter,day,not manhattan,1
+23,sunny,fall,day,not manhattan,1
+23,sunny,fall,night,not manhattan,1
+23,sunny,spring,day,not manhattan,4
+23,sunny,spring,night,not manhattan,1
+23,sunny,summer,day,not manhattan,4
+23,sunny,summer,night,not manhattan,2
+23,sunny,winter,day,not manhattan,4
+23,sunny,winter,night,not manhattan,1
+24,rainy,fall,day,manhattan,4118
+24,rainy,fall,night,manhattan,485
+24,rainy,spring,day,manhattan,5320
+24,rainy,spring,night,manhattan,762
+24,rainy,summer,day,manhattan,3286
+24,rainy,summer,night,manhattan,255
+24,rainy,winter,day,manhattan,4305
+24,rainy,winter,night,manhattan,442
+24,sunny,fall,day,manhattan,20584
+24,sunny,fall,night,manhattan,2704
+24,sunny,spring,day,manhattan,24216
+24,sunny,spring,night,manhattan,3248
+24,sunny,summer,day,manhattan,20360
+24,sunny,summer,night,manhattan,3119
+24,sunny,winter,day,manhattan,19682
+24,sunny,winter,night,manhattan,2618
+25,rainy,fall,day,not manhattan,334
+25,rainy,fall,night,not manhattan,157
+25,rainy,spring,day,not manhattan,428
+25,rainy,spring,night,not manhattan,206
+25,rainy,summer,day,not manhattan,279
+25,rainy,summer,night,not manhattan,51
+25,rainy,winter,day,not manhattan,278
+25,rainy,winter,night,not manhattan,106
+25,sunny,fall,day,not manhattan,1601
+25,sunny,fall,night,not manhattan,887
+25,sunny,spring,day,not manhattan,1939
+25,sunny,spring,night,not manhattan,1068
+25,sunny,summer,day,not manhattan,1750
+25,sunny,summer,night,not manhattan,958
+25,sunny,winter,day,not manhattan,1183
+25,sunny,winter,night,not manhattan,580
+26,rainy,fall,day,not manhattan,11
+26,rainy,fall,night,not manhattan,1
+26,rainy,spring,day,not manhattan,6
+26,rainy,spring,night,not manhattan,1
+26,rainy,summer,day,not manhattan,5
+26,rainy,winter,day,not manhattan,9
+26,rainy,winter,night,not manhattan,6
+26,sunny,fall,day,not manhattan,43
+26,sunny,fall,night,not manhattan,13
+26,sunny,spring,day,not manhattan,44
+26,sunny,spring,night,not manhattan,11
+26,sunny,summer,day,not manhattan,26
+26,sunny,summer,night,not manhattan,17
+26,sunny,winter,day,not manhattan,44
+26,sunny,winter,night,not manhattan,7
+27,rainy,winter,day,not manhattan,1
+27,sunny,spring,day,not manhattan,2
+27,sunny,summer,day,not manhattan,3
+28,rainy,fall,day,not manhattan,46
+28,rainy,fall,night,not manhattan,26
+28,rainy,spring,day,not manhattan,50
+28,rainy,spring,night,not manhattan,15
+28,rainy,summer,day,not manhattan,51
+28,rainy,summer,night,not manhattan,8
+28,rainy,winter,day,not manhattan,57
+28,rainy,winter,night,not manhattan,17
+28,sunny,fall,day,not manhattan,271
+28,sunny,fall,night,not manhattan,100
+28,sunny,spring,day,not manhattan,292
+28,sunny,spring,night,not manhattan,72
+28,sunny,summer,day,not manhattan,295
+28,sunny,summer,night,not manhattan,86
+28,sunny,winter,day,not manhattan,214
+28,sunny,winter,night,not manhattan,72
+29,rainy,fall,day,not manhattan,4
+29,rainy,spring,day,not manhattan,2
+29,rainy,summer,day,not manhattan,3
+29,rainy,summer,night,not manhattan,2
+29,rainy,winter,day,not manhattan,6
+29,sunny,fall,day,not manhattan,21
+29,sunny,fall,night,not manhattan,3
+29,sunny,spring,day,not manhattan,23
+29,sunny,spring,night,not manhattan,7
+29,sunny,summer,day,not manhattan,28
+29,sunny,summer,night,not manhattan,6
+29,sunny,winter,day,not manhattan,11
+29,sunny,winter,night,not manhattan,5
+30,rainy,fall,day,not manhattan,1
+30,rainy,spring,day,not manhattan,1
+30,sunny,fall,day,not manhattan,2
+30,sunny,fall,night,not manhattan,1
+30,sunny,summer,day,not manhattan,2
+30,sunny,summer,night,not manhattan,2
+30,sunny,winter,day,not manhattan,1
+31,rainy,fall,day,not manhattan,1
+31,rainy,spring,day,not manhattan,8
+31,rainy,spring,night,not manhattan,3
+31,rainy,summer,day,not manhattan,2
+31,rainy,summer,night,not manhattan,1
+31,rainy,winter,day,not manhattan,3
+31,sunny,fall,day,not manhattan,13
+31,sunny,spring,day,not manhattan,29
+31,sunny,spring,night,not manhattan,4
+31,sunny,summer,day,not manhattan,23
+31,sunny,summer,night,not manhattan,1
+31,sunny,winter,day,not manhattan,17
+32,rainy,fall,day,not manhattan,1
+32,rainy,fall,night,not manhattan,1
+32,rainy,spring,day,not manhattan,2
+32,rainy,spring,night,not manhattan,1
+32,rainy,summer,day,not manhattan,6
+32,rainy,winter,day,not manhattan,1
+32,rainy,winter,night,not manhattan,2
+32,sunny,fall,day,not manhattan,9
+32,sunny,fall,night,not manhattan,4
+32,sunny,spring,day,not manhattan,10
+32,sunny,spring,night,not manhattan,8
+32,sunny,summer,day,not manhattan,12
+32,sunny,summer,night,not manhattan,6
+32,sunny,winter,day,not manhattan,14
+32,sunny,winter,night,not manhattan,1
+33,rainy,fall,day,not manhattan,568
+33,rainy,fall,night,not manhattan,90
+33,rainy,spring,day,not manhattan,663
+33,rainy,spring,night,not manhattan,120
+33,rainy,summer,day,not manhattan,416
+33,rainy,summer,night,not manhattan,56
+33,rainy,winter,day,not manhattan,432
+33,rainy,winter,night,not manhattan,49
+33,sunny,fall,day,not manhattan,2964
+33,sunny,fall,night,not manhattan,652
+33,sunny,spring,day,not manhattan,3505
+33,sunny,spring,night,not manhattan,725
+33,sunny,summer,day,not manhattan,2938
+33,sunny,summer,night,not manhattan,876
+33,sunny,winter,day,not manhattan,2070
+33,sunny,winter,night,not manhattan,379
+34,rainy,fall,day,not manhattan,21
+34,rainy,spring,day,not manhattan,15
+34,rainy,spring,night,not manhattan,2
+34,rainy,summer,day,not manhattan,28
+34,rainy,summer,night,not manhattan,2
+34,rainy,winter,day,not manhattan,15
+34,rainy,winter,night,not manhattan,5
+34,sunny,fall,day,not manhattan,110
+34,sunny,fall,night,not manhattan,25
+34,sunny,spring,day,not manhattan,90
+34,sunny,spring,night,not manhattan,25
+34,sunny,summer,day,not manhattan,162
+34,sunny,summer,night,not manhattan,31
+34,sunny,winter,day,not manhattan,62
+34,sunny,winter,night,not manhattan,2
+35,rainy,fall,day,not manhattan,3
+35,rainy,fall,night,not manhattan,2
+35,rainy,spring,day,not manhattan,6
+35,rainy,spring,night,not manhattan,3
+35,rainy,summer,day,not manhattan,7
+35,rainy,summer,night,not manhattan,1
+35,rainy,winter,day,not manhattan,2
+35,rainy,winter,night,not manhattan,5
+35,sunny,fall,day,not manhattan,30
+35,sunny,fall,night,not manhattan,5
+35,sunny,spring,day,not manhattan,17
+35,sunny,spring,night,not manhattan,9
+35,sunny,summer,day,not manhattan,25
+35,sunny,summer,night,not manhattan,9
+35,sunny,winter,day,not manhattan,22
+35,sunny,winter,night,not manhattan,10
+36,rainy,fall,day,not manhattan,5
+36,rainy,fall,night,not manhattan,37
+36,rainy,spring,day,not manhattan,12
+36,rainy,spring,night,not manhattan,39
+36,rainy,summer,day,not manhattan,6
+36,rainy,summer,night,not manhattan,13
+36,rainy,winter,day,not manhattan,7
+36,rainy,winter,night,not manhattan,9
+36,sunny,fall,day,not manhattan,36
+36,sunny,fall,night,not manhattan,195
+36,sunny,spring,day,not manhattan,35
+36,sunny,spring,night,not manhattan,186
+36,sunny,summer,day,not manhattan,49
+36,sunny,summer,night,not manhattan,254
+36,sunny,winter,day,not manhattan,29
+36,sunny,winter,night,not manhattan,102
+37,rainy,fall,day,not manhattan,21
+37,rainy,fall,night,not manhattan,41
+37,rainy,spring,day,not manhattan,26
+37,rainy,spring,night,not manhattan,47
+37,rainy,summer,day,not manhattan,14
+37,rainy,summer,night,not manhattan,20
+37,rainy,winter,day,not manhattan,19
+37,rainy,winter,night,not manhattan,20
+37,sunny,fall,day,not manhattan,92
+37,sunny,fall,night,not manhattan,240
+37,sunny,spring,day,not manhattan,93
+37,sunny,spring,night,not manhattan,212
+37,sunny,summer,day,not manhattan,112
+37,sunny,summer,night,not manhattan,264
+37,sunny,winter,day,not manhattan,86
+37,sunny,winter,night,not manhattan,182
+38,rainy,fall,day,not manhattan,6
+38,rainy,spring,day,not manhattan,7
+38,rainy,summer,day,not manhattan,7
+38,rainy,winter,day,not manhattan,7
+38,rainy,winter,night,not manhattan,2
+38,sunny,fall,day,not manhattan,34
+38,sunny,fall,night,not manhattan,4
+38,sunny,spring,day,not manhattan,26
+38,sunny,spring,night,not manhattan,4
+38,sunny,summer,day,not manhattan,37
+38,sunny,summer,night,not manhattan,2
+38,sunny,winter,day,not manhattan,41
+38,sunny,winter,night,not manhattan,3
+39,rainy,fall,day,not manhattan,10
+39,rainy,fall,night,not manhattan,4
+39,rainy,spring,day,not manhattan,3
+39,rainy,spring,night,not manhattan,4
+39,rainy,summer,day,not manhattan,10
+39,rainy,summer,night,not manhattan,1
+39,rainy,winter,day,not manhattan,6
+39,rainy,winter,night,not manhattan,4
+39,sunny,fall,day,not manhattan,60
+39,sunny,fall,night,not manhattan,18
+39,sunny,spring,day,not manhattan,41
+39,sunny,spring,night,not manhattan,13
+39,sunny,summer,day,not manhattan,61
+39,sunny,summer,night,not manhattan,21
+39,sunny,winter,day,not manhattan,65
+39,sunny,winter,night,not manhattan,17
+40,rainy,fall,day,not manhattan,170
+40,rainy,fall,night,not manhattan,25
+40,rainy,spring,day,not manhattan,185
+40,rainy,spring,night,not manhattan,37
+40,rainy,summer,day,not manhattan,110
+40,rainy,summer,night,not manhattan,12
+40,rainy,winter,day,not manhattan,138
+40,rainy,winter,night,not manhattan,28
+40,sunny,fall,day,not manhattan,788
+40,sunny,fall,night,not manhattan,164
+40,sunny,spring,day,not manhattan,938
+40,sunny,spring,night,not manhattan,203
+40,sunny,summer,day,not manhattan,785
+40,sunny,summer,night,not manhattan,218
+40,sunny,winter,day,not manhattan,647
+40,sunny,winter,night,not manhattan,122
+41,rainy,fall,day,manhattan,3148
+41,rainy,fall,night,manhattan,523
+41,rainy,spring,day,manhattan,4641
+41,rainy,spring,night,manhattan,828
+41,rainy,summer,day,manhattan,2893
+41,rainy,summer,night,manhattan,280
+41,rainy,winter,day,manhattan,3886
+41,rainy,winter,night,manhattan,477
+41,sunny,fall,day,manhattan,16441
+41,sunny,fall,night,manhattan,3066
+41,sunny,spring,day,manhattan,20744
+41,sunny,spring,night,manhattan,3629
+41,sunny,summer,day,manhattan,17340
+41,sunny,summer,night,manhattan,4213
+41,sunny,winter,day,manhattan,17130
+41,sunny,winter,night,manhattan,2735
+42,rainy,fall,day,manhattan,851
+42,rainy,fall,night,manhattan,169
+42,rainy,spring,day,manhattan,1364
+42,rainy,spring,night,manhattan,264
+42,rainy,summer,day,manhattan,875
+42,rainy,summer,night,manhattan,99
+42,rainy,winter,day,manhattan,1165
+42,rainy,winter,night,manhattan,157
+42,sunny,fall,day,manhattan,4502
+42,sunny,fall,night,manhattan,989
+42,sunny,spring,day,manhattan,6227
+42,sunny,spring,night,manhattan,1369
+42,sunny,summer,day,manhattan,5341
+42,sunny,summer,night,manhattan,1420
+42,sunny,winter,day,manhattan,4849
+42,sunny,winter,night,manhattan,1026
+43,rainy,fall,day,manhattan,22564
+43,rainy,fall,night,manhattan,2634
+43,rainy,spring,day,manhattan,28490
+43,rainy,spring,night,manhattan,2959
+43,rainy,summer,day,manhattan,20219
+43,rainy,summer,night,manhattan,1127
+43,rainy,winter,day,manhattan,23340
+43,rainy,winter,night,manhattan,1825
+43,sunny,fall,day,manhattan,120870
+43,sunny,fall,night,manhattan,15955
+43,sunny,spring,day,manhattan,133932
+43,sunny,spring,night,manhattan,14259
+43,sunny,summer,day,manhattan,119412
+43,sunny,summer,night,manhattan,18015
+43,sunny,winter,day,manhattan,107860
+43,sunny,winter,night,manhattan,10502
+44,rainy,fall,day,not manhattan,1
+44,rainy,winter,night,not manhattan,1
+44,sunny,fall,day,not manhattan,1
+44,sunny,spring,day,not manhattan,1
+44,sunny,summer,day,not manhattan,3
+44,sunny,winter,day,not manhattan,1
+45,rainy,fall,day,manhattan,1361
+45,rainy,fall,night,manhattan,450
+45,rainy,spring,day,manhattan,1551
+45,rainy,spring,night,manhattan,632
+45,rainy,summer,day,manhattan,1245
+45,rainy,summer,night,manhattan,185
+45,rainy,winter,day,manhattan,1230
+45,rainy,winter,night,manhattan,300
+45,sunny,fall,day,manhattan,6764
+45,sunny,fall,night,manhattan,2853
+45,sunny,spring,day,manhattan,7100
+45,sunny,spring,night,manhattan,2808
+45,sunny,summer,day,manhattan,7268
+45,sunny,summer,night,manhattan,3006
+45,sunny,winter,day,manhattan,5699
+45,sunny,winter,night,manhattan,2140
+46,rainy,fall,day,not manhattan,1
+46,sunny,fall,day,not manhattan,1
+46,sunny,fall,night,not manhattan,1
+46,sunny,spring,day,not manhattan,4
+46,sunny,spring,night,not manhattan,1
+46,sunny,summer,day,not manhattan,3
+46,sunny,winter,day,not manhattan,1
+47,rainy,fall,day,not manhattan,7
+47,rainy,spring,day,not manhattan,4
+47,rainy,spring,night,not manhattan,4
+47,rainy,summer,day,not manhattan,4
+47,rainy,summer,night,not manhattan,1
+47,rainy,winter,day,not manhattan,12
+47,sunny,fall,day,not manhattan,33
+47,sunny,fall,night,not manhattan,8
+47,sunny,spring,day,not manhattan,41
+47,sunny,spring,night,not manhattan,12
+47,sunny,summer,day,not manhattan,46
+47,sunny,summer,night,not manhattan,19
+47,sunny,winter,day,not manhattan,82
+47,sunny,winter,night,not manhattan,6
+48,rainy,fall,day,manhattan,30742
+48,rainy,fall,night,manhattan,14080
+48,rainy,spring,day,manhattan,39129
+48,rainy,spring,night,manhattan,19830
+48,rainy,summer,day,manhattan,26254
+48,rainy,summer,night,manhattan,6922
+48,rainy,winter,day,manhattan,30710
+48,rainy,winter,night,manhattan,11995
+48,sunny,fall,day,manhattan,148020
+48,sunny,fall,night,manhattan,79662
+48,sunny,spring,day,manhattan,173508
+48,sunny,spring,night,manhattan,87850
+48,sunny,summer,day,manhattan,165302
+48,sunny,summer,night,manhattan,91055
+48,sunny,winter,day,manhattan,139140
+48,sunny,winter,night,manhattan,71741
+49,rainy,fall,day,not manhattan,57
+49,rainy,fall,night,not manhattan,31
+49,rainy,spring,day,not manhattan,76
+49,rainy,spring,night,not manhattan,44
+49,rainy,summer,day,not manhattan,34
+49,rainy,summer,night,not manhattan,20
+49,rainy,winter,day,not manhattan,32
+49,rainy,winter,night,not manhattan,34
+49,sunny,fall,day,not manhattan,243
+49,sunny,fall,night,not manhattan,193
+49,sunny,spring,day,not manhattan,275
+49,sunny,spring,night,not manhattan,233
+49,sunny,summer,day,not manhattan,258
+49,sunny,summer,night,not manhattan,215
+49,sunny,winter,day,not manhattan,197
+49,sunny,winter,night,not manhattan,173
+50,rainy,fall,day,manhattan,8719
+50,rainy,fall,night,manhattan,2252
+50,rainy,spring,day,manhattan,10913
+50,rainy,spring,night,manhattan,2958
+50,rainy,summer,day,manhattan,7522
+50,rainy,summer,night,manhattan,976
+50,rainy,winter,day,manhattan,8332
+50,rainy,winter,night,manhattan,1883
+50,sunny,fall,day,manhattan,42975
+50,sunny,fall,night,manhattan,13351
+50,sunny,spring,day,manhattan,47269
+50,sunny,spring,night,manhattan,13693
+50,sunny,summer,day,manhattan,46573
+50,sunny,summer,night,manhattan,15356
+50,sunny,winter,day,manhattan,36189
+50,sunny,winter,night,manhattan,10659
+51,rainy,fall,night,not manhattan,1
+51,rainy,spring,day,not manhattan,9
+51,rainy,summer,day,not manhattan,2
+51,rainy,summer,night,not manhattan,2
+51,rainy,winter,day,not manhattan,6
+51,rainy,winter,night,not manhattan,1
+51,sunny,fall,day,not manhattan,20
+51,sunny,fall,night,not manhattan,8
+51,sunny,spring,day,not manhattan,34
+51,sunny,spring,night,not manhattan,5
+51,sunny,summer,day,not manhattan,25
+51,sunny,summer,night,not manhattan,15
+51,sunny,winter,day,not manhattan,28
+51,sunny,winter,night,not manhattan,7
+52,rainy,fall,day,not manhattan,326
+52,rainy,fall,night,not manhattan,22
+52,rainy,spring,day,not manhattan,385
+52,rainy,spring,night,not manhattan,33
+52,rainy,summer,day,not manhattan,181
+52,rainy,summer,night,not manhattan,16
+52,rainy,winter,day,not manhattan,250
+52,rainy,winter,night,not manhattan,22
+52,sunny,fall,day,not manhattan,1471
+52,sunny,fall,night,not manhattan,198
+52,sunny,spring,day,not manhattan,1658
+52,sunny,spring,night,not manhattan,179
+52,sunny,summer,day,not manhattan,1371
+52,sunny,summer,night,not manhattan,222
+52,sunny,winter,day,not manhattan,1166
+52,sunny,winter,night,not manhattan,119
+53,rainy,fall,day,not manhattan,4
+53,rainy,fall,night,not manhattan,1
+53,rainy,spring,day,not manhattan,1
+53,rainy,spring,night,not manhattan,2
+53,rainy,summer,day,not manhattan,8
+53,rainy,winter,day,not manhattan,3
+53,rainy,winter,night,not manhattan,3
+53,sunny,fall,day,not manhattan,28
+53,sunny,fall,night,not manhattan,6
+53,sunny,spring,day,not manhattan,26
+53,sunny,spring,night,not manhattan,3
+53,sunny,summer,day,not manhattan,37
+53,sunny,summer,night,not manhattan,7
+53,sunny,winter,day,not manhattan,24
+53,sunny,winter,night,not manhattan,8
+54,rainy,fall,day,not manhattan,18
+54,rainy,fall,night,not manhattan,3
+54,rainy,spring,day,not manhattan,9
+54,rainy,spring,night,not manhattan,2
+54,rainy,summer,day,not manhattan,10
+54,rainy,summer,night,not manhattan,1
+54,rainy,winter,day,not manhattan,8
+54,rainy,winter,night,not manhattan,1
+54,sunny,fall,day,not manhattan,74
+54,sunny,fall,night,not manhattan,29
+54,sunny,spring,day,not manhattan,49
+54,sunny,spring,night,not manhattan,19
+54,sunny,summer,day,not manhattan,58
+54,sunny,summer,night,not manhattan,25
+54,sunny,winter,day,not manhattan,38
+54,sunny,winter,night,not manhattan,20
+55,rainy,fall,day,not manhattan,2
+55,rainy,fall,night,not manhattan,1
+55,rainy,spring,day,not manhattan,5
+55,rainy,spring,night,not manhattan,1
+55,rainy,summer,day,not manhattan,4
+55,rainy,summer,night,not manhattan,2
+55,rainy,winter,day,not manhattan,2
+55,sunny,fall,day,not manhattan,27
+55,sunny,fall,night,not manhattan,12
+55,sunny,spring,day,not manhattan,22
+55,sunny,spring,night,not manhattan,3
+55,sunny,summer,day,not manhattan,31
+55,sunny,summer,night,not manhattan,19
+55,sunny,winter,day,not manhattan,17
+55,sunny,winter,night,not manhattan,3
+56,rainy,fall,day,not manhattan,31
+56,rainy,fall,night,not manhattan,14
+56,rainy,spring,day,not manhattan,17
+56,rainy,spring,night,not manhattan,10
+56,rainy,summer,day,not manhattan,23
+56,rainy,summer,night,not manhattan,7
+56,rainy,winter,day,not manhattan,21
+56,rainy,winter,night,not manhattan,9
+56,sunny,fall,day,not manhattan,196
+56,sunny,fall,night,not manhattan,74
+56,sunny,spring,day,not manhattan,135
+56,sunny,spring,night,not manhattan,44
+56,sunny,summer,day,not manhattan,147
+56,sunny,summer,night,not manhattan,54
+56,sunny,winter,day,not manhattan,131
+56,sunny,winter,night,not manhattan,44
+57,rainy,summer,day,not manhattan,1
+57,rainy,summer,night,not manhattan,1
+57,rainy,winter,day,not manhattan,3
+57,sunny,fall,day,not manhattan,11
+57,sunny,fall,night,not manhattan,6
+57,sunny,spring,day,not manhattan,9
+57,sunny,spring,night,not manhattan,3
+57,sunny,summer,day,not manhattan,13
+57,sunny,summer,night,not manhattan,6
+57,sunny,winter,day,not manhattan,7
+58,rainy,fall,day,not manhattan,1
+58,sunny,fall,night,not manhattan,1
+58,sunny,spring,day,not manhattan,2
+58,sunny,spring,night,not manhattan,1
+58,sunny,summer,day,not manhattan,2
+58,sunny,winter,day,not manhattan,1
+59,rainy,winter,night,not manhattan,1
+59,sunny,summer,day,not manhattan,3
+59,sunny,summer,night,not manhattan,1
+60,rainy,fall,day,not manhattan,2
+60,rainy,spring,day,not manhattan,3
+60,rainy,summer,day,not manhattan,5
+60,rainy,summer,night,not manhattan,1
+60,rainy,winter,day,not manhattan,2
+60,sunny,fall,day,not manhattan,10
+60,sunny,fall,night,not manhattan,6
+60,sunny,spring,day,not manhattan,28
+60,sunny,spring,night,not manhattan,7
+60,sunny,summer,day,not manhattan,29
+60,sunny,summer,night,not manhattan,13
+60,sunny,winter,day,not manhattan,14
+60,sunny,winter,night,not manhattan,9
+61,rainy,fall,day,not manhattan,43
+61,rainy,fall,night,not manhattan,25
+61,rainy,spring,day,not manhattan,41
+61,rainy,spring,night,not manhattan,32
+61,rainy,summer,day,not manhattan,57
+61,rainy,summer,night,not manhattan,8
+61,rainy,winter,day,not manhattan,39
+61,rainy,winter,night,not manhattan,13
+61,sunny,fall,day,not manhattan,230
+61,sunny,fall,night,not manhattan,141
+61,sunny,spring,day,not manhattan,214
+61,sunny,spring,night,not manhattan,125
+61,sunny,summer,day,not manhattan,283
+61,sunny,summer,night,not manhattan,163
+61,sunny,winter,day,not manhattan,173
+61,sunny,winter,night,not manhattan,113
+62,rainy,fall,day,not manhattan,11
+62,rainy,fall,night,not manhattan,4
+62,rainy,spring,day,not manhattan,10
+62,rainy,spring,night,not manhattan,4
+62,rainy,summer,day,not manhattan,7
+62,rainy,summer,night,not manhattan,3
+62,rainy,winter,day,not manhattan,6
+62,rainy,winter,night,not manhattan,2
+62,sunny,fall,day,not manhattan,55
+62,sunny,fall,night,not manhattan,43
+62,sunny,spring,day,not manhattan,48
+62,sunny,spring,night,not manhattan,31
+62,sunny,summer,day,not manhattan,48
+62,sunny,summer,night,not manhattan,23
+62,sunny,winter,day,not manhattan,43
+62,sunny,winter,night,not manhattan,25
+63,rainy,fall,day,not manhattan,9
+63,rainy,fall,night,not manhattan,3
+63,rainy,spring,day,not manhattan,8
+63,rainy,spring,night,not manhattan,1
+63,rainy,summer,day,not manhattan,2
+63,rainy,summer,night,not manhattan,1
+63,rainy,winter,day,not manhattan,14
+63,rainy,winter,night,not manhattan,3
+63,sunny,fall,day,not manhattan,48
+63,sunny,fall,night,not manhattan,14
+63,sunny,spring,day,not manhattan,29
+63,sunny,spring,night,not manhattan,8
+63,sunny,summer,day,not manhattan,41
+63,sunny,summer,night,not manhattan,15
+63,sunny,winter,day,not manhattan,34
+63,sunny,winter,night,not manhattan,9
+64,rainy,fall,day,not manhattan,5
+64,rainy,fall,night,not manhattan,2
+64,rainy,spring,day,not manhattan,3
+64,rainy,spring,night,not manhattan,5
+64,rainy,summer,day,not manhattan,2
+64,rainy,summer,night,not manhattan,1
+64,rainy,winter,day,not manhattan,3
+64,rainy,winter,night,not manhattan,1
+64,sunny,fall,day,not manhattan,15
+64,sunny,fall,night,not manhattan,7
+64,sunny,spring,day,not manhattan,15
+64,sunny,spring,night,not manhattan,11
+64,sunny,summer,day,not manhattan,12
+64,sunny,summer,night,not manhattan,6
+64,sunny,winter,day,not manhattan,10
+64,sunny,winter,night,not manhattan,3
+65,rainy,fall,day,not manhattan,822
+65,rainy,fall,night,not manhattan,149
+65,rainy,spring,day,not manhattan,1042
+65,rainy,spring,night,not manhattan,229
+65,rainy,summer,day,not manhattan,704
+65,rainy,summer,night,not manhattan,82
+65,rainy,winter,day,not manhattan,569
+65,rainy,winter,night,not manhattan,94
+65,sunny,fall,day,not manhattan,4589
+65,sunny,fall,night,not manhattan,940
+65,sunny,spring,day,not manhattan,5085
+65,sunny,spring,night,not manhattan,1107
+65,sunny,summer,day,not manhattan,4535
+65,sunny,summer,night,not manhattan,1270
+65,sunny,winter,day,not manhattan,2934
+65,sunny,winter,night,not manhattan,618
+66,rainy,fall,day,not manhattan,253
+66,rainy,fall,night,not manhattan,70
+66,rainy,spring,day,not manhattan,353
+66,rainy,spring,night,not manhattan,72
+66,rainy,summer,day,not manhattan,253
+66,rainy,summer,night,not manhattan,32
+66,rainy,winter,day,not manhattan,193
+66,rainy,winter,night,not manhattan,33
+66,sunny,fall,day,not manhattan,1717
+66,sunny,fall,night,not manhattan,456
+66,sunny,spring,day,not manhattan,1949
+66,sunny,spring,night,not manhattan,420
+66,sunny,summer,day,not manhattan,1826
+66,sunny,summer,night,not manhattan,687
+66,sunny,winter,day,not manhattan,985
+66,sunny,winter,night,not manhattan,191
+67,rainy,fall,day,not manhattan,2
+67,rainy,fall,night,not manhattan,3
+67,rainy,spring,day,not manhattan,2
+67,rainy,spring,night,not manhattan,1
+67,rainy,summer,day,not manhattan,2
+67,rainy,winter,day,not manhattan,14
+67,rainy,winter,night,not manhattan,1
+67,sunny,fall,day,not manhattan,16
+67,sunny,fall,night,not manhattan,5
+67,sunny,spring,day,not manhattan,12
+67,sunny,spring,night,not manhattan,5
+67,sunny,summer,day,not manhattan,7
+67,sunny,summer,night,not manhattan,6
+67,sunny,winter,day,not manhattan,48
+67,sunny,winter,night,not manhattan,5
+68,rainy,fall,day,manhattan,30083
+68,rainy,fall,night,manhattan,8921
+68,rainy,spring,day,manhattan,35831
+68,rainy,spring,night,manhattan,11273
+68,rainy,summer,day,manhattan,25354
+68,rainy,summer,night,manhattan,4329
+68,rainy,winter,day,manhattan,28741
+68,rainy,winter,night,manhattan,6854
+68,sunny,fall,day,manhattan,146698
+68,sunny,fall,night,manhattan,48254
+68,sunny,spring,day,manhattan,157314
+68,sunny,spring,night,manhattan,49896
+68,sunny,summer,day,manhattan,155577
+68,sunny,summer,night,manhattan,54505
+68,sunny,winter,day,manhattan,130176
+68,sunny,winter,night,manhattan,42429
+69,rainy,fall,day,not manhattan,13
+69,rainy,fall,night,not manhattan,9
+69,rainy,spring,day,not manhattan,18
+69,rainy,spring,night,not manhattan,11
+69,rainy,summer,day,not manhattan,17
+69,rainy,summer,night,not manhattan,7
+69,rainy,winter,day,not manhattan,20
+69,rainy,winter,night,not manhattan,11
+69,sunny,fall,day,not manhattan,106
+69,sunny,fall,night,not manhattan,39
+69,sunny,spring,day,not manhattan,111
+69,sunny,spring,night,not manhattan,35
+69,sunny,summer,day,not manhattan,142
+69,sunny,summer,night,not manhattan,70
+69,sunny,winter,day,not manhattan,97
+69,sunny,winter,night,not manhattan,34
+70,rainy,fall,day,not manhattan,4500
+70,rainy,fall,night,not manhattan,1376
+70,rainy,spring,day,not manhattan,4786
+70,rainy,spring,night,not manhattan,1481
+70,rainy,summer,day,not manhattan,4381
+70,rainy,summer,night,not manhattan,737
+70,rainy,winter,day,not manhattan,4356
+70,rainy,winter,night,not manhattan,1265
+70,sunny,fall,day,not manhattan,25084
+70,sunny,fall,night,not manhattan,5869
+70,sunny,spring,day,not manhattan,26087
+70,sunny,spring,night,not manhattan,6741
+70,sunny,summer,day,not manhattan,27915
+70,sunny,summer,night,not manhattan,6576
+70,sunny,winter,day,not manhattan,20560
+70,sunny,winter,night,not manhattan,5920
+71,rainy,fall,day,not manhattan,4
+71,rainy,spring,day,not manhattan,1
+71,rainy,spring,night,not manhattan,3
+71,rainy,summer,day,not manhattan,7
+71,rainy,summer,night,not manhattan,1
+71,rainy,winter,day,not manhattan,3
+71,rainy,winter,night,not manhattan,3
+71,sunny,fall,day,not manhattan,22
+71,sunny,fall,night,not manhattan,13
+71,sunny,spring,day,not manhattan,20
+71,sunny,spring,night,not manhattan,5
+71,sunny,summer,day,not manhattan,14
+71,sunny,summer,night,not manhattan,10
+71,sunny,winter,day,not manhattan,11
+71,sunny,winter,night,not manhattan,8
+72,rainy,fall,day,not manhattan,6
+72,rainy,fall,night,not manhattan,2
+72,rainy,spring,day,not manhattan,3
+72,rainy,summer,day,not manhattan,5
+72,rainy,summer,night,not manhattan,3
+72,rainy,winter,day,not manhattan,5
+72,rainy,winter,night,not manhattan,1
+72,sunny,fall,day,not manhattan,40
+72,sunny,fall,night,not manhattan,11
+72,sunny,spring,day,not manhattan,28
+72,sunny,spring,night,not manhattan,7
+72,sunny,summer,day,not manhattan,21
+72,sunny,summer,night,not manhattan,10
+72,sunny,winter,day,not manhattan,21
+72,sunny,winter,night,not manhattan,4
+73,rainy,fall,day,not manhattan,1
+73,rainy,fall,night,not manhattan,1
+73,rainy,spring,day,not manhattan,2
+73,rainy,spring,night,not manhattan,1
+73,rainy,summer,day,not manhattan,1
+73,rainy,winter,day,not manhattan,1
+73,sunny,fall,day,not manhattan,7
+73,sunny,fall,night,not manhattan,3
+73,sunny,spring,day,not manhattan,6
+73,sunny,spring,night,not manhattan,2
+73,sunny,summer,day,not manhattan,9
+73,sunny,summer,night,not manhattan,1
+73,sunny,winter,day,not manhattan,14
+73,sunny,winter,night,not manhattan,1
+74,rainy,fall,day,manhattan,3127
+74,rainy,fall,night,manhattan,436
+74,rainy,spring,day,manhattan,4263
+74,rainy,spring,night,manhattan,648
+74,rainy,summer,day,manhattan,2773
+74,rainy,summer,night,manhattan,237
+74,rainy,winter,day,manhattan,3481
+74,rainy,winter,night,manhattan,441
+74,sunny,fall,day,manhattan,15401
+74,sunny,fall,night,manhattan,2923
+74,sunny,spring,day,manhattan,18560
+74,sunny,spring,night,manhattan,3294
+74,sunny,summer,day,manhattan,16643
+74,sunny,summer,night,manhattan,3556
+74,sunny,winter,day,manhattan,15258
+74,sunny,winter,night,manhattan,2578
+75,rainy,fall,day,manhattan,8606
+75,rainy,fall,night,manhattan,1016
+75,rainy,spring,day,manhattan,10700
+75,rainy,spring,night,manhattan,1325
+75,rainy,summer,day,manhattan,7405
+75,rainy,summer,night,manhattan,519
+75,rainy,winter,day,manhattan,10163
+75,rainy,winter,night,manhattan,969
+75,sunny,fall,day,manhattan,42488
+75,sunny,fall,night,manhattan,5677
+75,sunny,spring,day,manhattan,48544
+75,sunny,spring,night,manhattan,6322
+75,sunny,summer,day,manhattan,42873
+75,sunny,summer,night,manhattan,6824
+75,sunny,winter,day,manhattan,44213
+75,sunny,winter,night,manhattan,5350
+76,rainy,fall,day,not manhattan,16
+76,rainy,fall,night,not manhattan,9
+76,rainy,spring,day,not manhattan,23
+76,rainy,spring,night,not manhattan,2
+76,rainy,summer,day,not manhattan,15
+76,rainy,summer,night,not manhattan,2
+76,rainy,winter,day,not manhattan,23
+76,rainy,winter,night,not manhattan,7
+76,sunny,fall,day,not manhattan,129
+76,sunny,fall,night,not manhattan,38
+76,sunny,spring,day,not manhattan,87
+76,sunny,spring,night,not manhattan,20
+76,sunny,summer,day,not manhattan,96
+76,sunny,summer,night,not manhattan,39
+76,sunny,winter,day,not manhattan,141
+76,sunny,winter,night,not manhattan,32
+77,rainy,fall,night,not manhattan,1
+77,rainy,spring,night,not manhattan,1
+77,rainy,summer,day,not manhattan,1
+77,sunny,fall,day,not manhattan,7
+77,sunny,fall,night,not manhattan,10
+77,sunny,spring,day,not manhattan,13
+77,sunny,spring,night,not manhattan,7
+77,sunny,summer,day,not manhattan,14
+77,sunny,summer,night,not manhattan,7
+77,sunny,winter,day,not manhattan,11
+77,sunny,winter,night,not manhattan,10
+78,rainy,fall,day,not manhattan,4
+78,rainy,fall,night,not manhattan,2
+78,rainy,spring,day,not manhattan,9
+78,rainy,spring,night,not manhattan,3
+78,rainy,summer,day,not manhattan,6
+78,rainy,winter,day,not manhattan,12
+78,rainy,winter,night,not manhattan,1
+78,sunny,fall,day,not manhattan,27
+78,sunny,fall,night,not manhattan,8
+78,sunny,spring,day,not manhattan,45
+78,sunny,spring,night,not manhattan,9
+78,sunny,summer,day,not manhattan,44
+78,sunny,summer,night,not manhattan,11
+78,sunny,winter,day,not manhattan,50
+78,sunny,winter,night,not manhattan,13
+79,rainy,fall,day,manhattan,20314
+79,rainy,fall,night,manhattan,16110
+79,rainy,spring,day,manhattan,27967
+79,rainy,spring,night,manhattan,22563
+79,rainy,summer,day,manhattan,15955
+79,rainy,summer,night,manhattan,7312
+79,rainy,winter,day,manhattan,21773
+79,rainy,winter,night,manhattan,12617
+79,sunny,fall,day,manhattan,101679
+79,sunny,fall,night,manhattan,99044
+79,sunny,spring,day,manhattan,113209
+79,sunny,spring,night,manhattan,98401
+79,sunny,summer,day,manhattan,104328
+79,sunny,summer,night,manhattan,108240
+79,sunny,winter,day,manhattan,95160
+79,sunny,winter,night,manhattan,88588
+80,rainy,fall,day,not manhattan,72
+80,rainy,fall,night,not manhattan,139
+80,rainy,spring,day,not manhattan,56
+80,rainy,spring,night,not manhattan,164
+80,rainy,summer,day,not manhattan,50
+80,rainy,summer,night,not manhattan,63
+80,rainy,winter,day,not manhattan,43
+80,rainy,winter,night,not manhattan,55
+80,sunny,fall,day,not manhattan,283
+80,sunny,fall,night,not manhattan,750
+80,sunny,spring,day,not manhattan,292
+80,sunny,spring,night,not manhattan,722
+80,sunny,summer,day,not manhattan,252
+80,sunny,summer,night,not manhattan,925
+80,sunny,winter,day,not manhattan,181
+80,sunny,winter,night,not manhattan,443
+81,rainy,fall,day,not manhattan,1
+81,rainy,spring,day,not manhattan,3
+81,rainy,spring,night,not manhattan,1
+81,rainy,winter,night,not manhattan,1
+81,sunny,fall,day,not manhattan,7
+81,sunny,spring,day,not manhattan,7
+81,sunny,spring,night,not manhattan,2
+81,sunny,summer,day,not manhattan,10
+81,sunny,summer,night,not manhattan,2
+81,sunny,winter,day,not manhattan,5
+81,sunny,winter,night,not manhattan,3
+82,rainy,fall,day,not manhattan,110
+82,rainy,fall,night,not manhattan,51
+82,rainy,spring,day,not manhattan,109
+82,rainy,spring,night,not manhattan,37
+82,rainy,summer,day,not manhattan,81
+82,rainy,summer,night,not manhattan,28
+82,rainy,winter,day,not manhattan,88
+82,rainy,winter,night,not manhattan,37
+82,sunny,fall,day,not manhattan,519
+82,sunny,fall,night,not manhattan,209
+82,sunny,spring,day,not manhattan,441
+82,sunny,spring,night,not manhattan,227
+82,sunny,summer,day,not manhattan,472
+82,sunny,summer,night,not manhattan,256
+82,sunny,winter,day,not manhattan,388
+82,sunny,winter,night,not manhattan,202
+83,rainy,fall,day,not manhattan,29
+83,rainy,fall,night,not manhattan,8
+83,rainy,spring,day,not manhattan,37
+83,rainy,spring,night,not manhattan,15
+83,rainy,summer,day,not manhattan,39
+83,rainy,summer,night,not manhattan,5
+83,rainy,winter,day,not manhattan,40
+83,rainy,winter,night,not manhattan,11
+83,sunny,fall,day,not manhattan,176
+83,sunny,fall,night,not manhattan,70
+83,sunny,spring,day,not manhattan,198
+83,sunny,spring,night,not manhattan,70
+83,sunny,summer,day,not manhattan,187
+83,sunny,summer,night,not manhattan,82
+83,sunny,winter,day,not manhattan,138
+83,sunny,winter,night,not manhattan,64
+84,sunny,summer,day,not manhattan,1
+84,sunny,winter,day,not manhattan,1
+85,rainy,fall,day,not manhattan,2
+85,rainy,fall,night,not manhattan,5
+85,rainy,spring,day,not manhattan,2
+85,rainy,spring,night,not manhattan,3
+85,rainy,summer,day,not manhattan,7
+85,rainy,summer,night,not manhattan,1
+85,rainy,winter,day,not manhattan,7
+85,rainy,winter,night,not manhattan,1
+85,sunny,fall,day,not manhattan,19
+85,sunny,fall,night,not manhattan,21
+85,sunny,spring,day,not manhattan,23
+85,sunny,spring,night,not manhattan,21
+85,sunny,summer,day,not manhattan,31
+85,sunny,summer,night,not manhattan,17
+85,sunny,winter,day,not manhattan,19
+85,sunny,winter,night,not manhattan,9
+86,rainy,fall,day,not manhattan,3
+86,rainy,fall,night,not manhattan,1
+86,rainy,spring,day,not manhattan,1
+86,rainy,spring,night,not manhattan,1
+86,rainy,summer,day,not manhattan,3
+86,rainy,winter,day,not manhattan,1
+86,sunny,fall,day,not manhattan,12
+86,sunny,fall,night,not manhattan,5
+86,sunny,spring,day,not manhattan,11
+86,sunny,spring,night,not manhattan,6
+86,sunny,summer,day,not manhattan,20
+86,sunny,summer,night,not manhattan,8
+86,sunny,winter,day,not manhattan,6
+87,rainy,fall,day,manhattan,6559
+87,rainy,fall,night,manhattan,1745
+87,rainy,spring,day,manhattan,7532
+87,rainy,spring,night,manhattan,2056
+87,rainy,summer,day,manhattan,5855
+87,rainy,summer,night,manhattan,865
+87,rainy,winter,day,manhattan,4990
+87,rainy,winter,night,manhattan,1260
+87,sunny,fall,day,manhattan,36572
+87,sunny,fall,night,manhattan,11565
+87,sunny,spring,day,manhattan,35281
+87,sunny,spring,night,manhattan,10098
+87,sunny,summer,day,manhattan,38758
+87,sunny,summer,night,manhattan,13630
+87,sunny,winter,day,manhattan,24524
+87,sunny,winter,night,manhattan,7046
+88,rainy,fall,day,manhattan,3060
+88,rainy,fall,night,manhattan,573
+88,rainy,spring,day,manhattan,3817
+88,rainy,spring,night,manhattan,846
+88,rainy,summer,day,manhattan,3257
+88,rainy,summer,night,manhattan,299
+88,rainy,winter,day,manhattan,2418
+88,rainy,winter,night,manhattan,477
+88,sunny,fall,day,manhattan,17352
+88,sunny,fall,night,manhattan,4440
+88,sunny,spring,day,manhattan,19202
+88,sunny,spring,night,manhattan,4156
+88,sunny,summer,day,manhattan,20130
+88,sunny,summer,night,manhattan,4610
+88,sunny,winter,day,manhattan,12852
+88,sunny,winter,night,manhattan,2774
+89,rainy,fall,day,not manhattan,29
+89,rainy,fall,night,not manhattan,9
+89,rainy,spring,day,not manhattan,16
+89,rainy,spring,night,not manhattan,15
+89,rainy,summer,day,not manhattan,9
+89,rainy,summer,night,not manhattan,4
+89,rainy,winter,day,not manhattan,24
+89,rainy,winter,night,not manhattan,7
+89,sunny,fall,day,not manhattan,103
+89,sunny,fall,night,not manhattan,70
+89,sunny,spring,day,not manhattan,97
+89,sunny,spring,night,not manhattan,54
+89,sunny,summer,day,not manhattan,102
+89,sunny,summer,night,not manhattan,54
+89,sunny,winter,day,not manhattan,89
+89,sunny,winter,night,not manhattan,35
+90,rainy,fall,day,manhattan,18864
+90,rainy,fall,night,manhattan,6004
+90,rainy,spring,day,manhattan,24332
+90,rainy,spring,night,manhattan,8394
+90,rainy,summer,day,manhattan,16298
+90,rainy,summer,night,manhattan,2809
+90,rainy,winter,day,manhattan,18941
+90,rainy,winter,night,manhattan,4996
+90,sunny,fall,day,manhattan,96199
+90,sunny,fall,night,manhattan,35066
+90,sunny,spring,day,manhattan,106554
+90,sunny,spring,night,manhattan,37049
+90,sunny,summer,day,manhattan,100352
+90,sunny,summer,night,manhattan,37923
+90,sunny,winter,day,manhattan,88387
+90,sunny,winter,night,manhattan,31917
+91,rainy,fall,day,not manhattan,6
+91,rainy,fall,night,not manhattan,2
+91,rainy,spring,day,not manhattan,8
+91,rainy,spring,night,not manhattan,1
+91,rainy,summer,day,not manhattan,2
+91,rainy,summer,night,not manhattan,3
+91,rainy,winter,day,not manhattan,2
+91,rainy,winter,night,not manhattan,2
+91,sunny,fall,day,not manhattan,28
+91,sunny,fall,night,not manhattan,10
+91,sunny,spring,day,not manhattan,24
+91,sunny,spring,night,not manhattan,5
+91,sunny,summer,day,not manhattan,26
+91,sunny,summer,night,not manhattan,16
+91,sunny,winter,day,not manhattan,20
+91,sunny,winter,night,not manhattan,5
+92,rainy,fall,day,not manhattan,9
+92,rainy,fall,night,not manhattan,5
+92,rainy,spring,day,not manhattan,22
+92,rainy,spring,night,not manhattan,3
+92,rainy,summer,day,not manhattan,18
+92,rainy,summer,night,not manhattan,4
+92,rainy,winter,day,not manhattan,13
+92,rainy,winter,night,not manhattan,3
+92,sunny,fall,day,not manhattan,82
+92,sunny,fall,night,not manhattan,28
+92,sunny,spring,day,not manhattan,55
+92,sunny,spring,night,not manhattan,19
+92,sunny,summer,day,not manhattan,90
+92,sunny,summer,night,not manhattan,27
+92,sunny,winter,day,not manhattan,68
+92,sunny,winter,night,not manhattan,16
+93,rainy,fall,day,not manhattan,232
+93,rainy,fall,night,not manhattan,83
+93,rainy,spring,day,not manhattan,161
+93,rainy,spring,night,not manhattan,30
+93,rainy,summer,day,not manhattan,150
+93,rainy,summer,night,not manhattan,50
+93,rainy,winter,day,not manhattan,137
+93,rainy,winter,night,not manhattan,41
+93,sunny,fall,day,not manhattan,1218
+93,sunny,fall,night,not manhattan,389
+93,sunny,spring,day,not manhattan,691
+93,sunny,spring,night,not manhattan,177
+93,sunny,summer,day,not manhattan,843
+93,sunny,summer,night,not manhattan,285
+93,sunny,winter,day,not manhattan,745
+93,sunny,winter,night,not manhattan,230
+94,rainy,fall,day,not manhattan,6
+94,rainy,fall,night,not manhattan,2
+94,rainy,spring,day,not manhattan,7
+94,rainy,spring,night,not manhattan,1
+94,rainy,summer,day,not manhattan,6
+94,rainy,winter,day,not manhattan,4
+94,rainy,winter,night,not manhattan,1
+94,sunny,fall,day,not manhattan,16
+94,sunny,fall,night,not manhattan,10
+94,sunny,spring,day,not manhattan,24
+94,sunny,spring,night,not manhattan,5
+94,sunny,summer,day,not manhattan,25
+94,sunny,summer,night,not manhattan,10
+94,sunny,winter,day,not manhattan,24
+94,sunny,winter,night,not manhattan,4
+95,rainy,fall,day,not manhattan,50
+95,rainy,fall,night,not manhattan,17
+95,rainy,spring,day,not manhattan,48
+95,rainy,spring,night,not manhattan,18
+95,rainy,summer,day,not manhattan,70
+95,rainy,summer,night,not manhattan,9
+95,rainy,winter,day,not manhattan,75
+95,rainy,winter,night,not manhattan,17
+95,sunny,fall,day,not manhattan,309
+95,sunny,fall,night,not manhattan,71
+95,sunny,spring,day,not manhattan,305
+95,sunny,spring,night,not manhattan,67
+95,sunny,summer,day,not manhattan,287
+95,sunny,summer,night,not manhattan,128
+95,sunny,winter,day,not manhattan,306
+95,sunny,winter,night,not manhattan,69
+96,rainy,fall,day,not manhattan,1
+96,rainy,fall,night,not manhattan,2
+96,rainy,spring,day,not manhattan,1
+96,rainy,spring,night,not manhattan,2
+96,rainy,summer,day,not manhattan,1
+96,rainy,summer,night,not manhattan,1
+96,rainy,winter,day,not manhattan,4
+96,rainy,winter,night,not manhattan,1
+96,sunny,fall,day,not manhattan,12
+96,sunny,fall,night,not manhattan,5
+96,sunny,spring,day,not manhattan,10
+96,sunny,spring,night,not manhattan,2
+96,sunny,summer,day,not manhattan,15
+96,sunny,summer,night,not manhattan,3
+96,sunny,winter,day,not manhattan,5
+96,sunny,winter,night,not manhattan,3
+97,rainy,fall,day,not manhattan,283
+97,rainy,fall,night,not manhattan,181
+97,rainy,spring,day,not manhattan,387
+97,rainy,spring,night,not manhattan,292
+97,rainy,summer,day,not manhattan,219
+97,rainy,summer,night,not manhattan,65
+97,rainy,winter,day,not manhattan,261
+97,rainy,winter,night,not manhattan,99
+97,sunny,fall,day,not manhattan,1394
+97,sunny,fall,night,not manhattan,1239
+97,sunny,spring,day,not manhattan,1667
+97,sunny,spring,night,not manhattan,1410
+97,sunny,summer,day,not manhattan,1509
+97,sunny,summer,night,not manhattan,1172
+97,sunny,winter,day,not manhattan,1102
+97,sunny,winter,night,not manhattan,724
+98,rainy,fall,day,not manhattan,1
+98,rainy,spring,day,not manhattan,2
+98,rainy,summer,day,not manhattan,1
+98,rainy,winter,day,not manhattan,2
+98,rainy,winter,night,not manhattan,1
+98,sunny,fall,day,not manhattan,8
+98,sunny,fall,night,not manhattan,3
+98,sunny,spring,day,not manhattan,9
+98,sunny,spring,night,not manhattan,6
+98,sunny,summer,day,not manhattan,15
+98,sunny,summer,night,not manhattan,3
+98,sunny,winter,day,not manhattan,14
+98,sunny,winter,night,not manhattan,3
+99,rainy,winter,night,not manhattan,1
+99,sunny,summer,day,not manhattan,2
+100,rainy,fall,day,manhattan,19711
+100,rainy,fall,night,manhattan,5557
+100,rainy,spring,day,manhattan,23758
+100,rainy,spring,night,manhattan,6191
+100,rainy,summer,day,manhattan,17457
+100,rainy,summer,night,manhattan,2910
+100,rainy,winter,day,manhattan,18367
+100,rainy,winter,night,manhattan,4114
+100,sunny,fall,day,manhattan,95348
+100,sunny,fall,night,manhattan,28447
+100,sunny,spring,day,manhattan,109765
+100,sunny,spring,night,manhattan,29033
+100,sunny,summer,day,manhattan,110048
+100,sunny,summer,night,manhattan,32408
+100,sunny,winter,day,manhattan,88176
+100,sunny,winter,night,manhattan,24619
+101,rainy,fall,day,not manhattan,4
+101,rainy,spring,day,not manhattan,1
+101,rainy,summer,day,not manhattan,3
+101,rainy,winter,day,not manhattan,2
+101,rainy,winter,night,not manhattan,1
+101,sunny,fall,day,not manhattan,19
+101,sunny,fall,night,not manhattan,2
+101,sunny,spring,day,not manhattan,33
+101,sunny,summer,day,not manhattan,8
+101,sunny,summer,night,not manhattan,9
+101,sunny,winter,day,not manhattan,7
+102,rainy,fall,day,not manhattan,2
+102,rainy,fall,night,not manhattan,1
+102,rainy,spring,day,not manhattan,4
+102,rainy,spring,night,not manhattan,1
+102,rainy,summer,day,not manhattan,3
+102,rainy,summer,night,not manhattan,1
+102,rainy,winter,day,not manhattan,5
+102,rainy,winter,night,not manhattan,1
+102,sunny,fall,day,not manhattan,21
+102,sunny,fall,night,not manhattan,5
+102,sunny,spring,day,not manhattan,17
+102,sunny,spring,night,not manhattan,6
+102,sunny,summer,day,not manhattan,22
+102,sunny,summer,night,not manhattan,4
+102,sunny,winter,day,not manhattan,9
+102,sunny,winter,night,not manhattan,9
+105,rainy,fall,day,manhattan,1
+105,rainy,winter,day,manhattan,1
+105,sunny,fall,day,manhattan,1
+105,sunny,fall,night,manhattan,1
+105,sunny,spring,day,manhattan,4
+105,sunny,summer,day,manhattan,1
+105,sunny,summer,night,manhattan,2
+105,sunny,winter,day,manhattan,2
+106,rainy,fall,day,not manhattan,25
+106,rainy,fall,night,not manhattan,11
+106,rainy,spring,day,not manhattan,29
+106,rainy,spring,night,not manhattan,19
+106,rainy,summer,day,not manhattan,21
+106,rainy,summer,night,not manhattan,8
+106,rainy,winter,day,not manhattan,12
+106,rainy,winter,night,not manhattan,4
+106,sunny,fall,day,not manhattan,85
+106,sunny,fall,night,not manhattan,77
+106,sunny,spring,day,not manhattan,111
+106,sunny,spring,night,not manhattan,78
+106,sunny,summer,day,not manhattan,103
+106,sunny,summer,night,not manhattan,96
+106,sunny,winter,day,not manhattan,76
+106,sunny,winter,night,not manhattan,61
+107,rainy,fall,day,manhattan,26453
+107,rainy,fall,night,manhattan,8130
+107,rainy,spring,day,manhattan,33835
+107,rainy,spring,night,manhattan,11022
+107,rainy,summer,day,manhattan,21591
+107,rainy,summer,night,manhattan,3520
+107,rainy,winter,day,manhattan,27839
+107,rainy,winter,night,manhattan,7187
+107,sunny,fall,day,manhattan,134699
+107,sunny,fall,night,manhattan,50026
+107,sunny,spring,day,manhattan,148444
+107,sunny,spring,night,manhattan,50724
+107,sunny,summer,day,manhattan,138445
+107,sunny,summer,night,manhattan,52050
+107,sunny,winter,day,manhattan,124755
+107,sunny,winter,night,manhattan,43796
+108,rainy,fall,day,not manhattan,2
+108,rainy,summer,day,not manhattan,2
+108,rainy,winter,day,not manhattan,1
+108,sunny,fall,day,not manhattan,19
+108,sunny,fall,night,not manhattan,4
+108,sunny,spring,day,not manhattan,10
+108,sunny,spring,night,not manhattan,4
+108,sunny,summer,day,not manhattan,10
+108,sunny,summer,night,not manhattan,7
+108,sunny,winter,day,not manhattan,3
+108,sunny,winter,night,not manhattan,2
+109,rainy,winter,day,not manhattan,1
+109,sunny,fall,night,not manhattan,2
+109,sunny,summer,day,not manhattan,1
+109,sunny,winter,day,not manhattan,1
+111,rainy,spring,day,not manhattan,1
+111,rainy,winter,day,not manhattan,3
+111,sunny,fall,day,not manhattan,3
+111,sunny,spring,day,not manhattan,6
+111,sunny,spring,night,not manhattan,1
+111,sunny,summer,day,not manhattan,3
+111,sunny,summer,night,not manhattan,3
+111,sunny,winter,day,not manhattan,3
+112,rainy,fall,day,not manhattan,67
+112,rainy,fall,night,not manhattan,104
+112,rainy,spring,day,not manhattan,110
+112,rainy,spring,night,not manhattan,122
+112,rainy,summer,day,not manhattan,61
+112,rainy,summer,night,not manhattan,58
+112,rainy,winter,day,not manhattan,69
+112,rainy,winter,night,not manhattan,61
+112,sunny,fall,day,not manhattan,344
+112,sunny,fall,night,not manhattan,672
+112,sunny,spring,day,not manhattan,383
+112,sunny,spring,night,not manhattan,691
+112,sunny,summer,day,not manhattan,351
+112,sunny,summer,night,not manhattan,701
+112,sunny,winter,day,not manhattan,238
+112,sunny,winter,night,not manhattan,413
+113,rainy,fall,day,manhattan,15628
+113,rainy,fall,night,manhattan,4550
+113,rainy,spring,day,manhattan,18894
+113,rainy,spring,night,manhattan,5874
+113,rainy,summer,day,manhattan,12628
+113,rainy,summer,night,manhattan,1890
+113,rainy,winter,day,manhattan,15311
+113,rainy,winter,night,manhattan,3374
+113,sunny,fall,day,manhattan,78879
+113,sunny,fall,night,manhattan,25837
+113,sunny,spring,day,manhattan,85474
+113,sunny,spring,night,manhattan,25188
+113,sunny,summer,day,manhattan,78448
+113,sunny,summer,night,manhattan,27123
+113,sunny,winter,day,manhattan,71287
+113,sunny,winter,night,manhattan,21127
+114,rainy,fall,day,manhattan,9974
+114,rainy,fall,night,manhattan,7396
+114,rainy,spring,day,manhattan,13020
+114,rainy,spring,night,manhattan,9902
+114,rainy,summer,day,manhattan,8438
+114,rainy,summer,night,manhattan,3487
+114,rainy,winter,day,manhattan,9490
+114,rainy,winter,night,manhattan,5938
+114,sunny,fall,day,manhattan,51858
+114,sunny,fall,night,manhattan,43958
+114,sunny,spring,day,manhattan,55969
+114,sunny,spring,night,manhattan,41973
+114,sunny,summer,day,manhattan,52304
+114,sunny,summer,night,manhattan,47385
+114,sunny,winter,day,manhattan,45578
+114,sunny,winter,night,manhattan,41585
+115,rainy,spring,night,not manhattan,1
+115,rainy,summer,night,not manhattan,1
+115,rainy,winter,day,not manhattan,1
+115,sunny,fall,day,not manhattan,2
+115,sunny,fall,night,not manhattan,1
+115,sunny,spring,day,not manhattan,1
+115,sunny,spring,night,not manhattan,2
+115,sunny,summer,day,not manhattan,4
+115,sunny,summer,night,not manhattan,1
+115,sunny,winter,day,not manhattan,2
+116,rainy,fall,day,manhattan,961
+116,rainy,fall,night,manhattan,181
+116,rainy,spring,day,manhattan,1256
+116,rainy,spring,night,manhattan,274
+116,rainy,summer,day,manhattan,851
+116,rainy,summer,night,manhattan,102
+116,rainy,winter,day,manhattan,1088
+116,rainy,winter,night,manhattan,175
+116,sunny,fall,day,manhattan,4952
+116,sunny,fall,night,manhattan,964
+116,sunny,spring,day,manhattan,6140
+116,sunny,spring,night,manhattan,1361
+116,sunny,summer,day,manhattan,5233
+116,sunny,summer,night,manhattan,1357
+116,sunny,winter,day,manhattan,4863
+116,sunny,winter,night,manhattan,966
+117,rainy,fall,night,not manhattan,1
+117,rainy,spring,day,not manhattan,4
+117,rainy,summer,day,not manhattan,1
+117,rainy,winter,day,not manhattan,1
+117,rainy,winter,night,not manhattan,1
+117,sunny,fall,day,not manhattan,4
+117,sunny,fall,night,not manhattan,1
+117,sunny,spring,day,not manhattan,6
+117,sunny,spring,night,not manhattan,1
+117,sunny,summer,day,not manhattan,8
+117,sunny,winter,day,not manhattan,8
+117,sunny,winter,night,not manhattan,1
+118,rainy,fall,day,not manhattan,1
+118,rainy,spring,day,not manhattan,2
+118,rainy,summer,day,not manhattan,1
+118,rainy,winter,day,not manhattan,2
+118,sunny,fall,day,not manhattan,5
+118,sunny,fall,night,not manhattan,1
+118,sunny,spring,day,not manhattan,4
+118,sunny,spring,night,not manhattan,3
+118,sunny,summer,day,not manhattan,3
+118,sunny,summer,night,not manhattan,9
+118,sunny,winter,day,not manhattan,5
+118,sunny,winter,night,not manhattan,1
+119,rainy,fall,day,not manhattan,16
+119,rainy,fall,night,not manhattan,7
+119,rainy,spring,day,not manhattan,8
+119,rainy,spring,night,not manhattan,5
+119,rainy,summer,day,not manhattan,15
+119,rainy,winter,day,not manhattan,18
+119,rainy,winter,night,not manhattan,3
+119,sunny,fall,day,not manhattan,69
+119,sunny,fall,night,not manhattan,37
+119,sunny,spring,day,not manhattan,83
+119,sunny,spring,night,not manhattan,36
+119,sunny,summer,day,not manhattan,89
+119,sunny,summer,night,not manhattan,58
+119,sunny,winter,day,not manhattan,72
+119,sunny,winter,night,not manhattan,21
+120,rainy,fall,day,manhattan,2
+120,rainy,spring,day,manhattan,1
+120,rainy,spring,night,manhattan,3
+120,rainy,summer,day,manhattan,1
+120,rainy,winter,day,manhattan,8
+120,rainy,winter,night,manhattan,2
+120,sunny,fall,day,manhattan,18
+120,sunny,fall,night,manhattan,13
+120,sunny,spring,day,manhattan,22
+120,sunny,spring,night,manhattan,9
+120,sunny,summer,day,manhattan,20
+120,sunny,summer,night,manhattan,9
+120,sunny,winter,day,manhattan,14
+120,sunny,winter,night,manhattan,6
+121,rainy,fall,day,not manhattan,3
+121,rainy,spring,day,not manhattan,5
+121,rainy,spring,night,not manhattan,1
+121,rainy,summer,day,not manhattan,9
+121,rainy,summer,night,not manhattan,1
+121,rainy,winter,day,not manhattan,6
+121,sunny,fall,day,not manhattan,26
+121,sunny,fall,night,not manhattan,9
+121,sunny,spring,day,not manhattan,27
+121,sunny,spring,night,not manhattan,4
+121,sunny,summer,day,not manhattan,38
+121,sunny,summer,night,not manhattan,3
+121,sunny,winter,day,not manhattan,28
+121,sunny,winter,night,not manhattan,5
+122,rainy,fall,day,not manhattan,1
+122,rainy,winter,day,not manhattan,1
+122,sunny,fall,day,not manhattan,7
+122,sunny,fall,night,not manhattan,1
+122,sunny,spring,day,not manhattan,7
+122,sunny,summer,day,not manhattan,3
+122,sunny,summer,night,not manhattan,2
+122,sunny,winter,day,not manhattan,2
+123,rainy,fall,day,not manhattan,3
+123,rainy,fall,night,not manhattan,6
+123,rainy,spring,day,not manhattan,4
+123,rainy,summer,day,not manhattan,3
+123,rainy,winter,day,not manhattan,1
+123,sunny,fall,day,not manhattan,17
+123,sunny,fall,night,not manhattan,9
+123,sunny,spring,day,not manhattan,23
+123,sunny,spring,night,not manhattan,4
+123,sunny,summer,day,not manhattan,20
+123,sunny,summer,night,not manhattan,12
+123,sunny,winter,day,not manhattan,17
+123,sunny,winter,night,not manhattan,5
+124,rainy,fall,day,not manhattan,16
+124,rainy,fall,night,not manhattan,5
+124,rainy,spring,day,not manhattan,11
+124,rainy,spring,night,not manhattan,2
+124,rainy,summer,day,not manhattan,13
+124,rainy,summer,night,not manhattan,2
+124,rainy,winter,day,not manhattan,15
+124,rainy,winter,night,not manhattan,2
+124,sunny,fall,day,not manhattan,73
+124,sunny,fall,night,not manhattan,13
+124,sunny,spring,day,not manhattan,52
+124,sunny,spring,night,not manhattan,14
+124,sunny,summer,day,not manhattan,74
+124,sunny,summer,night,not manhattan,20
+124,sunny,winter,day,not manhattan,62
+124,sunny,winter,night,not manhattan,10
+125,rainy,fall,day,manhattan,5693
+125,rainy,fall,night,manhattan,1959
+125,rainy,spring,day,manhattan,6467
+125,rainy,spring,night,manhattan,2782
+125,rainy,summer,day,manhattan,4366
+125,rainy,summer,night,manhattan,973
+125,rainy,winter,day,manhattan,4693
+125,rainy,winter,night,manhattan,1504
+125,sunny,fall,day,manhattan,28479
+125,sunny,fall,night,manhattan,12667
+125,sunny,spring,day,manhattan,30053
+125,sunny,spring,night,manhattan,13161
+125,sunny,summer,day,manhattan,28309
+125,sunny,summer,night,manhattan,13666
+125,sunny,winter,day,manhattan,22581
+125,sunny,winter,night,manhattan,10092
+126,rainy,fall,day,not manhattan,4
+126,rainy,fall,night,not manhattan,1
+126,rainy,spring,day,not manhattan,1
+126,rainy,spring,night,not manhattan,2
+126,rainy,summer,day,not manhattan,5
+126,rainy,winter,day,not manhattan,4
+126,rainy,winter,night,not manhattan,1
+126,sunny,fall,day,not manhattan,20
+126,sunny,fall,night,not manhattan,11
+126,sunny,spring,day,not manhattan,16
+126,sunny,spring,night,not manhattan,21
+126,sunny,summer,day,not manhattan,20
+126,sunny,summer,night,not manhattan,16
+126,sunny,winter,day,not manhattan,14
+126,sunny,winter,night,not manhattan,5
+127,rainy,fall,day,manhattan,38
+127,rainy,fall,night,manhattan,7
+127,rainy,spring,day,manhattan,50
+127,rainy,spring,night,manhattan,13
+127,rainy,summer,day,manhattan,41
+127,rainy,summer,night,manhattan,9
+127,rainy,winter,day,manhattan,49
+127,rainy,winter,night,manhattan,13
+127,sunny,fall,day,manhattan,160
+127,sunny,fall,night,manhattan,73
+127,sunny,spring,day,manhattan,250
+127,sunny,spring,night,manhattan,86
+127,sunny,summer,day,manhattan,186
+127,sunny,summer,night,manhattan,82
+127,sunny,winter,day,manhattan,172
+127,sunny,winter,night,manhattan,51
+128,rainy,spring,day,manhattan,5
+128,rainy,spring,night,manhattan,2
+128,rainy,summer,day,manhattan,4
+128,rainy,winter,day,manhattan,2
+128,rainy,winter,night,manhattan,1
+128,sunny,fall,day,manhattan,28
+128,sunny,fall,night,manhattan,6
+128,sunny,spring,day,manhattan,27
+128,sunny,spring,night,manhattan,4
+128,sunny,summer,day,manhattan,27
+128,sunny,summer,night,manhattan,3
+128,sunny,winter,day,manhattan,11
+128,sunny,winter,night,manhattan,1
+129,rainy,fall,day,not manhattan,145
+129,rainy,fall,night,not manhattan,66
+129,rainy,spring,day,not manhattan,155
+129,rainy,spring,night,not manhattan,76
+129,rainy,summer,day,not manhattan,147
+129,rainy,summer,night,not manhattan,43
+129,rainy,winter,day,not manhattan,142
+129,rainy,winter,night,not manhattan,55
+129,sunny,fall,day,not manhattan,730
+129,sunny,fall,night,not manhattan,353
+129,sunny,spring,day,not manhattan,793
+129,sunny,spring,night,not manhattan,378
+129,sunny,summer,day,not manhattan,966
+129,sunny,summer,night,not manhattan,407
+129,sunny,winter,day,not manhattan,658
+129,sunny,winter,night,not manhattan,381
+130,rainy,fall,day,not manhattan,112
+130,rainy,fall,night,not manhattan,38
+130,rainy,spring,day,not manhattan,75
+130,rainy,spring,night,not manhattan,18
+130,rainy,summer,day,not manhattan,84
+130,rainy,summer,night,not manhattan,22
+130,rainy,winter,day,not manhattan,84
+130,rainy,winter,night,not manhattan,21
+130,sunny,fall,day,not manhattan,486
+130,sunny,fall,night,not manhattan,170
+130,sunny,spring,day,not manhattan,384
+130,sunny,spring,night,not manhattan,105
+130,sunny,summer,day,not manhattan,411
+130,sunny,summer,night,not manhattan,204
+130,sunny,winter,day,not manhattan,338
+130,sunny,winter,night,not manhattan,126
+131,rainy,fall,day,not manhattan,5
+131,rainy,spring,day,not manhattan,3
+131,rainy,spring,night,not manhattan,2
+131,rainy,summer,day,not manhattan,2
+131,rainy,winter,day,not manhattan,3
+131,rainy,winter,night,not manhattan,1
+131,sunny,fall,day,not manhattan,10
+131,sunny,fall,night,not manhattan,6
+131,sunny,spring,day,not manhattan,19
+131,sunny,spring,night,not manhattan,6
+131,sunny,summer,day,not manhattan,11
+131,sunny,summer,night,not manhattan,6
+131,sunny,winter,day,not manhattan,12
+131,sunny,winter,night,not manhattan,8
+132,rainy,fall,day,not manhattan,62547
+132,rainy,fall,night,not manhattan,26377
+132,rainy,spring,day,not manhattan,58153
+132,rainy,spring,night,not manhattan,22920
+132,rainy,summer,day,not manhattan,49501
+132,rainy,summer,night,not manhattan,12898
+132,rainy,winter,day,not manhattan,48385
+132,rainy,winter,night,not manhattan,16438
+132,sunny,fall,day,not manhattan,293321
+132,sunny,fall,night,not manhattan,108128
+132,sunny,spring,day,not manhattan,272101
+132,sunny,spring,night,not manhattan,108261
+132,sunny,summer,day,not manhattan,291175
+132,sunny,summer,night,not manhattan,130432
+132,sunny,winter,day,not manhattan,210893
+132,sunny,winter,night,not manhattan,82980
+133,rainy,fall,day,not manhattan,17
+133,rainy,fall,night,not manhattan,5
+133,rainy,spring,day,not manhattan,12
+133,rainy,spring,night,not manhattan,2
+133,rainy,summer,day,not manhattan,9
+133,rainy,summer,night,not manhattan,3
+133,rainy,winter,day,not manhattan,8
+133,rainy,winter,night,not manhattan,5
+133,sunny,fall,day,not manhattan,54
+133,sunny,fall,night,not manhattan,17
+133,sunny,spring,day,not manhattan,90
+133,sunny,spring,night,not manhattan,32
+133,sunny,summer,day,not manhattan,89
+133,sunny,summer,night,not manhattan,35
+133,sunny,winter,day,not manhattan,56
+133,sunny,winter,night,not manhattan,27
+134,rainy,fall,day,not manhattan,79
+134,rainy,fall,night,not manhattan,11
+134,rainy,spring,day,not manhattan,69
+134,rainy,spring,night,not manhattan,14
+134,rainy,summer,day,not manhattan,81
+134,rainy,summer,night,not manhattan,7
+134,rainy,winter,day,not manhattan,61
+134,rainy,winter,night,not manhattan,4
+134,sunny,fall,day,not manhattan,390
+134,sunny,fall,night,not manhattan,53
+134,sunny,spring,day,not manhattan,384
+134,sunny,spring,night,not manhattan,40
+134,sunny,summer,day,not manhattan,390
+134,sunny,summer,night,not manhattan,66
+134,sunny,winter,day,not manhattan,257
+134,sunny,winter,night,not manhattan,39
+135,rainy,fall,day,not manhattan,5
+135,rainy,fall,night,not manhattan,1
+135,rainy,spring,day,not manhattan,6
+135,rainy,spring,night,not manhattan,5
+135,rainy,summer,day,not manhattan,9
+135,rainy,summer,night,not manhattan,1
+135,rainy,winter,day,not manhattan,8
+135,sunny,fall,day,not manhattan,40
+135,sunny,fall,night,not manhattan,17
+135,sunny,spring,day,not manhattan,39
+135,sunny,spring,night,not manhattan,9
+135,sunny,summer,day,not manhattan,47
+135,sunny,summer,night,not manhattan,13
+135,sunny,winter,day,not manhattan,26
+135,sunny,winter,night,not manhattan,7
+136,rainy,fall,day,not manhattan,10
+136,rainy,fall,night,not manhattan,1
+136,rainy,spring,day,not manhattan,7
+136,rainy,spring,night,not manhattan,6
+136,rainy,summer,day,not manhattan,5
+136,rainy,summer,night,not manhattan,3
+136,rainy,winter,day,not manhattan,17
+136,rainy,winter,night,not manhattan,3
+136,sunny,fall,day,not manhattan,29
+136,sunny,fall,night,not manhattan,8
+136,sunny,spring,day,not manhattan,31
+136,sunny,spring,night,not manhattan,17
+136,sunny,summer,day,not manhattan,25
+136,sunny,summer,night,not manhattan,26
+136,sunny,winter,day,not manhattan,52
+136,sunny,winter,night,not manhattan,9
+137,rainy,fall,day,manhattan,14542
+137,rainy,fall,night,manhattan,3782
+137,rainy,spring,day,manhattan,17628
+137,rainy,spring,night,manhattan,4952
+137,rainy,summer,day,manhattan,12032
+137,rainy,summer,night,manhattan,1642
+137,rainy,winter,day,manhattan,16295
+137,rainy,winter,night,manhattan,3512
+137,sunny,fall,day,manhattan,68604
+137,sunny,fall,night,manhattan,21573
+137,sunny,spring,day,manhattan,78009
+137,sunny,spring,night,manhattan,22793
+137,sunny,summer,day,manhattan,74462
+137,sunny,summer,night,manhattan,24180
+137,sunny,winter,day,manhattan,70491
+137,sunny,winter,night,manhattan,20040
+138,rainy,fall,day,not manhattan,37647
+138,rainy,fall,night,not manhattan,11275
+138,rainy,spring,day,not manhattan,38080
+138,rainy,spring,night,not manhattan,10873
+138,rainy,summer,day,not manhattan,29818
+138,rainy,summer,night,not manhattan,5472
+138,rainy,winter,day,not manhattan,30805
+138,rainy,winter,night,not manhattan,7638
+138,sunny,fall,day,not manhattan,187706
+138,sunny,fall,night,not manhattan,44509
+138,sunny,spring,day,not manhattan,192290
+138,sunny,spring,night,not manhattan,50578
+138,sunny,summer,day,not manhattan,175578
+138,sunny,summer,night,not manhattan,49331
+138,sunny,winter,day,not manhattan,145217
+138,sunny,winter,night,not manhattan,37590
+139,rainy,fall,day,not manhattan,4
+139,rainy,spring,day,not manhattan,3
+139,rainy,spring,night,not manhattan,1
+139,rainy,summer,day,not manhattan,4
+139,rainy,winter,day,not manhattan,3
+139,rainy,winter,night,not manhattan,1
+139,sunny,fall,day,not manhattan,14
+139,sunny,fall,night,not manhattan,4
+139,sunny,spring,day,not manhattan,25
+139,sunny,spring,night,not manhattan,7
+139,sunny,summer,day,not manhattan,20
+139,sunny,summer,night,not manhattan,4
+139,sunny,winter,day,not manhattan,10
+140,rainy,fall,day,manhattan,29041
+140,rainy,fall,night,manhattan,2933
+140,rainy,spring,day,manhattan,32011
+140,rainy,spring,night,manhattan,3496
+140,rainy,summer,day,manhattan,23756
+140,rainy,summer,night,manhattan,1244
+140,rainy,winter,day,manhattan,30025
+140,rainy,winter,night,manhattan,2624
+140,sunny,fall,day,manhattan,138749
+140,sunny,fall,night,manhattan,15483
+140,sunny,spring,day,manhattan,153811
+140,sunny,spring,night,manhattan,15256
+140,sunny,summer,day,manhattan,140864
+140,sunny,summer,night,manhattan,15773
+140,sunny,winter,day,manhattan,137633
+140,sunny,winter,night,manhattan,13994
+141,rainy,fall,day,manhattan,33140
+141,rainy,fall,night,manhattan,6904
+141,rainy,spring,day,manhattan,40640
+141,rainy,spring,night,manhattan,9106
+141,rainy,summer,day,manhattan,26672
+141,rainy,summer,night,manhattan,3057
+141,rainy,winter,day,manhattan,35687
+141,rainy,winter,night,manhattan,6109
+141,sunny,fall,day,manhattan,162197
+141,sunny,fall,night,manhattan,38352
+141,sunny,spring,day,manhattan,176789
+141,sunny,spring,night,manhattan,41220
+141,sunny,summer,day,manhattan,163288
+141,sunny,summer,night,manhattan,42328
+141,sunny,winter,day,manhattan,162316
+141,sunny,winter,night,manhattan,34662
+142,rainy,fall,day,manhattan,42496
+142,rainy,fall,night,manhattan,11268
+142,rainy,spring,day,manhattan,50439
+142,rainy,spring,night,manhattan,14036
+142,rainy,summer,day,manhattan,33047
+142,rainy,summer,night,manhattan,3457
+142,rainy,winter,day,manhattan,42137
+142,rainy,winter,night,manhattan,9314
+142,sunny,fall,day,manhattan,204518
+142,sunny,fall,night,manhattan,61086
+142,sunny,spring,day,manhattan,217544
+142,sunny,spring,night,manhattan,60074
+142,sunny,summer,day,manhattan,198356
+142,sunny,summer,night,manhattan,56404
+142,sunny,winter,day,manhattan,185452
+142,sunny,winter,night,manhattan,50609
+143,rainy,fall,day,manhattan,16523
+143,rainy,fall,night,manhattan,1803
+143,rainy,spring,day,manhattan,19909
+143,rainy,spring,night,manhattan,2482
+143,rainy,summer,day,manhattan,13092
+143,rainy,summer,night,manhattan,773
+143,rainy,winter,day,manhattan,17326
+143,rainy,winter,night,manhattan,1607
+143,sunny,fall,day,manhattan,80149
+143,sunny,fall,night,manhattan,10100
+143,sunny,spring,day,manhattan,92130
+143,sunny,spring,night,manhattan,10938
+143,sunny,summer,day,manhattan,76723
+143,sunny,summer,night,manhattan,11734
+143,sunny,winter,day,manhattan,77147
+143,sunny,winter,night,manhattan,8528
+144,rainy,fall,day,manhattan,7679
+144,rainy,fall,night,manhattan,3678
+144,rainy,spring,day,manhattan,10687
+144,rainy,spring,night,manhattan,5166
+144,rainy,summer,day,manhattan,7359
+144,rainy,summer,night,manhattan,1670
+144,rainy,winter,day,manhattan,7592
+144,rainy,winter,night,manhattan,2869
+144,sunny,fall,day,manhattan,39948
+144,sunny,fall,night,manhattan,23552
+144,sunny,spring,day,manhattan,45364
+144,sunny,spring,night,manhattan,23086
+144,sunny,summer,day,manhattan,44760
+144,sunny,summer,night,manhattan,23904
+144,sunny,winter,day,manhattan,36451
+144,sunny,winter,night,manhattan,18880
+145,rainy,fall,day,not manhattan,523
+145,rainy,fall,night,not manhattan,169
+145,rainy,spring,day,not manhattan,549
+145,rainy,spring,night,not manhattan,218
+145,rainy,summer,day,not manhattan,403
+145,rainy,summer,night,not manhattan,80
+145,rainy,winter,day,not manhattan,346
+145,rainy,winter,night,not manhattan,95
+145,sunny,fall,day,not manhattan,2357
+145,sunny,fall,night,not manhattan,909
+145,sunny,spring,day,not manhattan,2285
+145,sunny,spring,night,not manhattan,1070
+145,sunny,summer,day,not manhattan,2351
+145,sunny,summer,night,not manhattan,1132
+145,sunny,winter,day,not manhattan,1446
+145,sunny,winter,night,not manhattan,604
+146,rainy,fall,day,not manhattan,557
+146,rainy,fall,night,not manhattan,173
+146,rainy,spring,day,not manhattan,764
+146,rainy,spring,night,not manhattan,184
+146,rainy,summer,day,not manhattan,485
+146,rainy,summer,night,not manhattan,106
+146,rainy,winter,day,not manhattan,543
+146,rainy,winter,night,not manhattan,124
+146,sunny,fall,day,not manhattan,2955
+146,sunny,fall,night,not manhattan,936
+146,sunny,spring,day,not manhattan,3335
+146,sunny,spring,night,not manhattan,967
+146,sunny,summer,day,not manhattan,3351
+146,sunny,summer,night,not manhattan,1053
+146,sunny,winter,day,not manhattan,2608
+146,sunny,winter,night,not manhattan,685
+147,rainy,fall,day,not manhattan,5
+147,rainy,fall,night,not manhattan,1
+147,rainy,spring,day,not manhattan,9
+147,rainy,summer,day,not manhattan,3
+147,rainy,summer,night,not manhattan,3
+147,rainy,winter,day,not manhattan,7
+147,rainy,winter,night,not manhattan,2
+147,sunny,fall,day,not manhattan,20
+147,sunny,fall,night,not manhattan,9
+147,sunny,spring,day,not manhattan,20
+147,sunny,spring,night,not manhattan,7
+147,sunny,summer,day,not manhattan,15
+147,sunny,summer,night,not manhattan,10
+147,sunny,winter,day,not manhattan,17
+147,sunny,winter,night,not manhattan,4
+148,rainy,fall,day,manhattan,6066
+148,rainy,fall,night,manhattan,7427
+148,rainy,spring,day,manhattan,8469
+148,rainy,spring,night,manhattan,10420
+148,rainy,summer,day,manhattan,4730
+148,rainy,summer,night,manhattan,3501
+148,rainy,winter,day,manhattan,5736
+148,rainy,winter,night,manhattan,5377
+148,sunny,fall,day,manhattan,30864
+148,sunny,fall,night,manhattan,48490
+148,sunny,spring,day,manhattan,32448
+148,sunny,spring,night,manhattan,45929
+148,sunny,summer,day,manhattan,30895
+148,sunny,summer,night,manhattan,52618
+148,sunny,winter,day,manhattan,25307
+148,sunny,winter,night,manhattan,41404
+149,rainy,fall,day,not manhattan,3
+149,rainy,fall,night,not manhattan,1
+149,rainy,spring,day,not manhattan,3
+149,rainy,summer,day,not manhattan,2
+149,rainy,winter,day,not manhattan,4
+149,sunny,fall,day,not manhattan,13
+149,sunny,fall,night,not manhattan,4
+149,sunny,spring,day,not manhattan,9
+149,sunny,spring,night,not manhattan,4
+149,sunny,summer,day,not manhattan,5
+149,sunny,summer,night,not manhattan,2
+149,sunny,winter,day,not manhattan,11
+150,rainy,fall,day,not manhattan,1
+150,rainy,fall,night,not manhattan,1
+150,rainy,spring,day,not manhattan,3
+150,rainy,spring,night,not manhattan,1
+150,rainy,summer,day,not manhattan,2
+150,rainy,winter,day,not manhattan,4
+150,rainy,winter,night,not manhattan,1
+150,sunny,fall,day,not manhattan,20
+150,sunny,fall,night,not manhattan,11
+150,sunny,spring,day,not manhattan,14
+150,sunny,spring,night,not manhattan,3
+150,sunny,summer,day,not manhattan,14
+150,sunny,summer,night,not manhattan,5
+150,sunny,winter,day,not manhattan,15
+150,sunny,winter,night,not manhattan,6
+151,rainy,fall,day,manhattan,12254
+151,rainy,fall,night,manhattan,1260
+151,rainy,spring,day,manhattan,15572
+151,rainy,spring,night,manhattan,1719
+151,rainy,summer,day,manhattan,10304
+151,rainy,summer,night,manhattan,589
+151,rainy,winter,day,manhattan,13280
+151,rainy,winter,night,manhattan,1107
+151,sunny,fall,day,manhattan,62419
+151,sunny,fall,night,manhattan,7053
+151,sunny,spring,day,manhattan,70432
+151,sunny,spring,night,manhattan,7642
+151,sunny,summer,day,manhattan,61286
+151,sunny,summer,night,manhattan,8309
+151,sunny,winter,day,manhattan,60364
+151,sunny,winter,night,manhattan,6332
+152,rainy,fall,day,manhattan,980
+152,rainy,fall,night,manhattan,170
+152,rainy,spring,day,manhattan,1227
+152,rainy,spring,night,manhattan,263
+152,rainy,summer,day,manhattan,759
+152,rainy,summer,night,manhattan,101
+152,rainy,winter,day,manhattan,995
+152,rainy,winter,night,manhattan,151
+152,sunny,fall,day,manhattan,4804
+152,sunny,fall,night,manhattan,937
+152,sunny,spring,day,manhattan,5863
+152,sunny,spring,night,manhattan,1199
+152,sunny,summer,day,manhattan,4624
+152,sunny,summer,night,manhattan,1287
+152,sunny,winter,day,manhattan,4597
+152,sunny,winter,night,manhattan,903
+153,rainy,fall,day,manhattan,1
+153,rainy,fall,night,manhattan,1
+153,rainy,spring,day,manhattan,6
+153,rainy,spring,night,manhattan,3
+153,rainy,summer,day,manhattan,6
+153,rainy,winter,day,manhattan,3
+153,rainy,winter,night,manhattan,1
+153,sunny,fall,day,manhattan,24
+153,sunny,fall,night,manhattan,2
+153,sunny,spring,day,manhattan,14
+153,sunny,spring,night,manhattan,4
+153,sunny,summer,day,manhattan,27
+153,sunny,summer,night,manhattan,7
+153,sunny,winter,day,manhattan,23
+153,sunny,winter,night,manhattan,5
+154,rainy,fall,day,not manhattan,9
+154,rainy,fall,night,not manhattan,2
+154,rainy,spring,day,not manhattan,2
+154,rainy,summer,day,not manhattan,8
+154,rainy,summer,night,not manhattan,2
+154,rainy,winter,day,not manhattan,7
+154,rainy,winter,night,not manhattan,1
+154,sunny,fall,day,not manhattan,80
+154,sunny,fall,night,not manhattan,15
+154,sunny,spring,day,not manhattan,10
+154,sunny,spring,night,not manhattan,3
+154,sunny,summer,day,not manhattan,42
+154,sunny,summer,night,not manhattan,6
+154,sunny,winter,day,not manhattan,29
+154,sunny,winter,night,not manhattan,12
+155,rainy,fall,day,not manhattan,8
+155,rainy,fall,night,not manhattan,5
+155,rainy,spring,day,not manhattan,5
+155,rainy,summer,day,not manhattan,3
+155,rainy,summer,night,not manhattan,1
+155,rainy,winter,day,not manhattan,7
+155,rainy,winter,night,not manhattan,2
+155,sunny,fall,day,not manhattan,49
+155,sunny,fall,night,not manhattan,15
+155,sunny,spring,day,not manhattan,16
+155,sunny,spring,night,not manhattan,4
+155,sunny,summer,day,not manhattan,32
+155,sunny,summer,night,not manhattan,11
+155,sunny,winter,day,not manhattan,38
+155,sunny,winter,night,not manhattan,12
+156,rainy,fall,day,not manhattan,1
+156,rainy,fall,night,not manhattan,1
+156,rainy,spring,day,not manhattan,1
+156,sunny,fall,day,not manhattan,1
+156,sunny,summer,day,not manhattan,3
+156,sunny,summer,night,not manhattan,2
+157,rainy,fall,day,not manhattan,77
+157,rainy,fall,night,not manhattan,28
+157,rainy,spring,day,not manhattan,49
+157,rainy,spring,night,not manhattan,10
+157,rainy,summer,day,not manhattan,58
+157,rainy,summer,night,not manhattan,13
+157,rainy,winter,day,not manhattan,52
+157,rainy,winter,night,not manhattan,12
+157,sunny,fall,day,not manhattan,406
+157,sunny,fall,night,not manhattan,153
+157,sunny,spring,day,not manhattan,266
+157,sunny,spring,night,not manhattan,113
+157,sunny,summer,day,not manhattan,335
+157,sunny,summer,night,not manhattan,109
+157,sunny,winter,day,not manhattan,221
+157,sunny,winter,night,not manhattan,95
+158,rainy,fall,day,manhattan,7563
+158,rainy,fall,night,manhattan,3603
+158,rainy,spring,day,manhattan,9381
+158,rainy,spring,night,manhattan,4614
+158,rainy,summer,day,manhattan,5913
+158,rainy,summer,night,manhattan,1775
+158,rainy,winter,day,manhattan,6708
+158,rainy,winter,night,manhattan,2632
+158,sunny,fall,day,manhattan,39452
+158,sunny,fall,night,manhattan,22663
+158,sunny,spring,day,manhattan,40534
+158,sunny,spring,night,manhattan,19735
+158,sunny,summer,day,manhattan,38088
+158,sunny,summer,night,manhattan,25622
+158,sunny,winter,day,manhattan,30858
+158,sunny,winter,night,manhattan,18272
+159,rainy,fall,day,not manhattan,27
+159,rainy,fall,night,not manhattan,8
+159,rainy,spring,day,not manhattan,38
+159,rainy,spring,night,not manhattan,13
+159,rainy,summer,day,not manhattan,36
+159,rainy,summer,night,not manhattan,6
+159,rainy,winter,day,not manhattan,28
+159,rainy,winter,night,not manhattan,1
+159,sunny,fall,day,not manhattan,112
+159,sunny,fall,night,not manhattan,46
+159,sunny,spring,day,not manhattan,206
+159,sunny,spring,night,not manhattan,57
+159,sunny,summer,day,not manhattan,203
+159,sunny,summer,night,not manhattan,64
+159,sunny,winter,day,not manhattan,164
+159,sunny,winter,night,not manhattan,42
+160,rainy,fall,day,not manhattan,15
+160,rainy,fall,night,not manhattan,5
+160,rainy,spring,day,not manhattan,18
+160,rainy,spring,night,not manhattan,2
+160,rainy,summer,day,not manhattan,17
+160,rainy,summer,night,not manhattan,1
+160,rainy,winter,day,not manhattan,8
+160,rainy,winter,night,not manhattan,2
+160,sunny,fall,day,not manhattan,104
+160,sunny,fall,night,not manhattan,18
+160,sunny,spring,day,not manhattan,61
+160,sunny,spring,night,not manhattan,14
+160,sunny,summer,day,not manhattan,64
+160,sunny,summer,night,not manhattan,24
+160,sunny,winter,day,not manhattan,46
+160,sunny,winter,night,not manhattan,15
+161,rainy,fall,day,manhattan,53111
+161,rainy,fall,night,manhattan,10452
+161,rainy,spring,day,manhattan,60185
+161,rainy,spring,night,manhattan,12775
+161,rainy,summer,day,manhattan,48909
+161,rainy,summer,night,manhattan,4600
+161,rainy,winter,day,manhattan,44203
+161,rainy,winter,night,manhattan,7475
+161,sunny,fall,day,manhattan,264392
+161,sunny,fall,night,manhattan,59402
+161,sunny,spring,day,manhattan,290865
+161,sunny,spring,night,manhattan,53295
+161,sunny,summer,day,manhattan,283126
+161,sunny,summer,night,manhattan,57637
+161,sunny,winter,day,manhattan,217448
+161,sunny,winter,night,manhattan,44348
+162,rainy,fall,day,manhattan,44895
+162,rainy,fall,night,manhattan,9171
+162,rainy,spring,day,manhattan,48709
+162,rainy,spring,night,manhattan,10877
+162,rainy,summer,day,manhattan,37187
+162,rainy,summer,night,manhattan,4142
+162,rainy,winter,day,manhattan,38494
+162,rainy,winter,night,manhattan,6861
+162,sunny,fall,day,manhattan,209676
+162,sunny,fall,night,manhattan,49080
+162,sunny,spring,day,manhattan,230718
+162,sunny,spring,night,manhattan,47894
+162,sunny,summer,day,manhattan,227535
+162,sunny,summer,night,manhattan,52602
+162,sunny,winter,day,manhattan,189744
+162,sunny,winter,night,manhattan,37876
+163,rainy,fall,day,not manhattan,36551
+163,rainy,fall,night,not manhattan,8232
+163,rainy,spring,day,not manhattan,43982
+163,rainy,spring,night,not manhattan,11058
+163,rainy,summer,day,not manhattan,32057
+163,rainy,summer,night,not manhattan,3697
+163,rainy,winter,day,not manhattan,31799
+163,rainy,winter,night,not manhattan,6302
+163,sunny,fall,day,not manhattan,177495
+163,sunny,fall,night,not manhattan,47781
+163,sunny,spring,day,not manhattan,198566
+163,sunny,spring,night,not manhattan,47598
+163,sunny,summer,day,not manhattan,189686
+163,sunny,summer,night,not manhattan,46095
+163,sunny,winter,day,not manhattan,154156
+163,sunny,winter,night,not manhattan,37477
+164,rainy,fall,day,manhattan,25936
+164,rainy,fall,night,manhattan,8514
+164,rainy,spring,day,manhattan,30179
+164,rainy,spring,night,manhattan,10004
+164,rainy,summer,day,manhattan,22444
+164,rainy,summer,night,manhattan,3943
+164,rainy,winter,day,manhattan,23354
+164,rainy,winter,night,manhattan,6208
+164,sunny,fall,day,manhattan,132005
+164,sunny,fall,night,manhattan,48552
+164,sunny,spring,day,manhattan,138131
+164,sunny,spring,night,manhattan,45386
+164,sunny,summer,day,manhattan,138682
+164,sunny,summer,night,manhattan,51883
+164,sunny,winter,day,manhattan,111752
+164,sunny,winter,night,manhattan,38444
+165,rainy,fall,day,not manhattan,3
+165,rainy,spring,day,not manhattan,3
+165,rainy,spring,night,not manhattan,1
+165,rainy,summer,day,not manhattan,3
+165,rainy,summer,night,not manhattan,1
+165,rainy,winter,day,not manhattan,5
+165,rainy,winter,night,not manhattan,1
+165,sunny,fall,day,not manhattan,26
+165,sunny,fall,night,not manhattan,9
+165,sunny,spring,day,not manhattan,22
+165,sunny,spring,night,not manhattan,6
+165,sunny,summer,day,not manhattan,22
+165,sunny,summer,night,not manhattan,8
+165,sunny,winter,day,not manhattan,20
+165,sunny,winter,night,not manhattan,5
+166,rainy,fall,day,manhattan,7435
+166,rainy,fall,night,manhattan,1050
+166,rainy,spring,day,manhattan,9072
+166,rainy,spring,night,manhattan,1513
+166,rainy,summer,day,manhattan,5533
+166,rainy,summer,night,manhattan,408
+166,rainy,winter,day,manhattan,7368
+166,rainy,winter,night,manhattan,835
+166,sunny,fall,day,manhattan,36505
+166,sunny,fall,night,manhattan,5484
+166,sunny,spring,day,manhattan,41891
+166,sunny,spring,night,manhattan,6441
+166,sunny,summer,day,manhattan,32056
+166,sunny,summer,night,manhattan,5154
+166,sunny,winter,day,manhattan,31501
+166,sunny,winter,night,manhattan,4915
+167,rainy,fall,day,not manhattan,7
+167,rainy,fall,night,not manhattan,3
+167,rainy,spring,day,not manhattan,18
+167,rainy,spring,night,not manhattan,5
+167,rainy,summer,day,not manhattan,7
+167,rainy,summer,night,not manhattan,1
+167,rainy,winter,day,not manhattan,18
+167,rainy,winter,night,not manhattan,2
+167,sunny,fall,day,not manhattan,35
+167,sunny,fall,night,not manhattan,15
+167,sunny,spring,day,not manhattan,67
+167,sunny,spring,night,not manhattan,17
+167,sunny,summer,day,not manhattan,66
+167,sunny,summer,night,not manhattan,24
+167,sunny,winter,day,not manhattan,60
+167,sunny,winter,night,not manhattan,10
+168,rainy,fall,day,not manhattan,67
+168,rainy,fall,night,not manhattan,23
+168,rainy,spring,day,not manhattan,98
+168,rainy,spring,night,not manhattan,37
+168,rainy,summer,day,not manhattan,64
+168,rainy,summer,night,not manhattan,14
+168,rainy,winter,day,not manhattan,58
+168,rainy,winter,night,not manhattan,20
+168,sunny,fall,day,not manhattan,323
+168,sunny,fall,night,not manhattan,130
+168,sunny,spring,day,not manhattan,413
+168,sunny,spring,night,not manhattan,146
+168,sunny,summer,day,not manhattan,395
+168,sunny,summer,night,not manhattan,164
+168,sunny,winter,day,not manhattan,315
+168,sunny,winter,night,not manhattan,120
+169,rainy,fall,day,not manhattan,9
+169,rainy,fall,night,not manhattan,2
+169,rainy,spring,day,not manhattan,6
+169,rainy,spring,night,not manhattan,1
+169,rainy,summer,day,not manhattan,9
+169,rainy,summer,night,not manhattan,3
+169,rainy,winter,day,not manhattan,11
+169,rainy,winter,night,not manhattan,4
+169,sunny,fall,day,not manhattan,35
+169,sunny,fall,night,not manhattan,8
+169,sunny,spring,day,not manhattan,61
+169,sunny,spring,night,not manhattan,14
+169,sunny,summer,day,not manhattan,53
+169,sunny,summer,night,not manhattan,19
+169,sunny,winter,day,not manhattan,44
+169,sunny,winter,night,not manhattan,9
+170,rainy,fall,day,manhattan,38077
+170,rainy,fall,night,manhattan,8026
+170,rainy,spring,day,manhattan,46308
+170,rainy,spring,night,manhattan,10397
+170,rainy,summer,day,manhattan,34975
+170,rainy,summer,night,manhattan,3721
+170,rainy,winter,day,manhattan,36801
+170,rainy,winter,night,manhattan,6434
+170,sunny,fall,day,manhattan,188114
+170,sunny,fall,night,manhattan,45745
+170,sunny,spring,day,manhattan,214499
+170,sunny,spring,night,manhattan,47192
+170,sunny,summer,day,manhattan,215807
+170,sunny,summer,night,manhattan,52032
+170,sunny,winter,day,manhattan,172381
+170,sunny,winter,night,manhattan,36140
+171,rainy,fall,day,not manhattan,3
+171,rainy,spring,day,not manhattan,2
+171,rainy,summer,day,not manhattan,2
+171,rainy,winter,night,not manhattan,1
+171,sunny,fall,day,not manhattan,10
+171,sunny,fall,night,not manhattan,4
+171,sunny,spring,day,not manhattan,14
+171,sunny,spring,night,not manhattan,8
+171,sunny,summer,day,not manhattan,13
+171,sunny,summer,night,not manhattan,6
+171,sunny,winter,day,not manhattan,6
+171,sunny,winter,night,not manhattan,3
+172,rainy,spring,day,not manhattan,3
+172,rainy,spring,night,not manhattan,1
+172,rainy,summer,day,not manhattan,2
+172,rainy,summer,night,not manhattan,1
+172,sunny,fall,day,not manhattan,1
+172,sunny,spring,day,not manhattan,3
+172,sunny,summer,day,not manhattan,1
+172,sunny,summer,night,not manhattan,3
+172,sunny,winter,day,not manhattan,2
+172,sunny,winter,night,not manhattan,2
+173,rainy,fall,day,not manhattan,7
+173,rainy,fall,night,not manhattan,7
+173,rainy,spring,day,not manhattan,7
+173,rainy,spring,night,not manhattan,6
+173,rainy,summer,day,not manhattan,9
+173,rainy,summer,night,not manhattan,6
+173,rainy,winter,day,not manhattan,8
+173,rainy,winter,night,not manhattan,7
+173,sunny,fall,day,not manhattan,29
+173,sunny,fall,night,not manhattan,14
+173,sunny,spring,day,not manhattan,43
+173,sunny,spring,night,not manhattan,26
+173,sunny,summer,day,not manhattan,42
+173,sunny,summer,night,not manhattan,34
+173,sunny,winter,day,not manhattan,31
+173,sunny,winter,night,not manhattan,31
+174,rainy,fall,day,not manhattan,7
+174,rainy,fall,night,not manhattan,2
+174,rainy,spring,day,not manhattan,6
+174,rainy,spring,night,not manhattan,3
+174,rainy,summer,day,not manhattan,6
+174,rainy,winter,day,not manhattan,6
+174,rainy,winter,night,not manhattan,1
+174,sunny,fall,day,not manhattan,31
+174,sunny,fall,night,not manhattan,8
+174,sunny,spring,day,not manhattan,39
+174,sunny,spring,night,not manhattan,7
+174,sunny,summer,day,not manhattan,46
+174,sunny,summer,night,not manhattan,7
+174,sunny,winter,day,not manhattan,31
+174,sunny,winter,night,not manhattan,9
+175,rainy,fall,day,not manhattan,1
+175,rainy,summer,day,not manhattan,1
+175,rainy,winter,day,not manhattan,3
+175,rainy,winter,night,not manhattan,1
+175,sunny,fall,day,not manhattan,4
+175,sunny,fall,night,not manhattan,4
+175,sunny,spring,day,not manhattan,7
+175,sunny,summer,day,not manhattan,11
+175,sunny,summer,night,not manhattan,5
+175,sunny,winter,day,not manhattan,6
+175,sunny,winter,night,not manhattan,5
+176,rainy,summer,day,not manhattan,1
+176,sunny,fall,day,not manhattan,1
+176,sunny,fall,night,not manhattan,1
+176,sunny,summer,day,not manhattan,5
+177,rainy,fall,day,not manhattan,13
+177,rainy,fall,night,not manhattan,1
+177,rainy,spring,day,not manhattan,7
+177,rainy,spring,night,not manhattan,2
+177,rainy,summer,day,not manhattan,11
+177,rainy,summer,night,not manhattan,3
+177,rainy,winter,day,not manhattan,11
+177,rainy,winter,night,not manhattan,4
+177,sunny,fall,day,not manhattan,62
+177,sunny,fall,night,not manhattan,9
+177,sunny,spring,day,not manhattan,28
+177,sunny,spring,night,not manhattan,18
+177,sunny,summer,day,not manhattan,43
+177,sunny,summer,night,not manhattan,26
+177,sunny,winter,day,not manhattan,50
+177,sunny,winter,night,not manhattan,14
+178,rainy,fall,night,not manhattan,1
+178,rainy,spring,day,not manhattan,2
+178,rainy,summer,day,not manhattan,1
+178,rainy,summer,night,not manhattan,1
+178,rainy,winter,day,not manhattan,1
+178,rainy,winter,night,not manhattan,2
+178,sunny,fall,day,not manhattan,8
+178,sunny,fall,night,not manhattan,2
+178,sunny,spring,day,not manhattan,14
+178,sunny,spring,night,not manhattan,2
+178,sunny,summer,day,not manhattan,4
+178,sunny,summer,night,not manhattan,5
+178,sunny,winter,day,not manhattan,4
+178,sunny,winter,night,not manhattan,7
+179,rainy,fall,day,not manhattan,117
+179,rainy,fall,night,not manhattan,47
+179,rainy,spring,day,not manhattan,206
+179,rainy,spring,night,not manhattan,63
+179,rainy,summer,day,not manhattan,131
+179,rainy,summer,night,not manhattan,41
+179,rainy,winter,day,not manhattan,162
+179,rainy,winter,night,not manhattan,48
+179,sunny,fall,day,not manhattan,695
+179,sunny,fall,night,not manhattan,256
+179,sunny,spring,day,not manhattan,968
+179,sunny,spring,night,not manhattan,306
+179,sunny,summer,day,not manhattan,802
+179,sunny,summer,night,not manhattan,355
+179,sunny,winter,day,not manhattan,720
+179,sunny,winter,night,not manhattan,274
+180,rainy,fall,day,not manhattan,7
+180,rainy,fall,night,not manhattan,1
+180,rainy,spring,day,not manhattan,6
+180,rainy,spring,night,not manhattan,1
+180,rainy,summer,day,not manhattan,7
+180,rainy,summer,night,not manhattan,1
+180,rainy,winter,day,not manhattan,5
+180,rainy,winter,night,not manhattan,1
+180,sunny,fall,day,not manhattan,49
+180,sunny,fall,night,not manhattan,12
+180,sunny,spring,day,not manhattan,34
+180,sunny,spring,night,not manhattan,12
+180,sunny,summer,day,not manhattan,48
+180,sunny,summer,night,not manhattan,12
+180,sunny,winter,day,not manhattan,17
+180,sunny,winter,night,not manhattan,7
+181,rainy,fall,day,not manhattan,156
+181,rainy,fall,night,not manhattan,151
+181,rainy,spring,day,not manhattan,264
+181,rainy,spring,night,not manhattan,259
+181,rainy,summer,day,not manhattan,142
+181,rainy,summer,night,not manhattan,66
+181,rainy,winter,day,not manhattan,148
+181,rainy,winter,night,not manhattan,118
+181,sunny,fall,day,not manhattan,771
+181,sunny,fall,night,not manhattan,978
+181,sunny,spring,day,not manhattan,1028
+181,sunny,spring,night,not manhattan,1331
+181,sunny,summer,day,not manhattan,930
+181,sunny,summer,night,not manhattan,1006
+181,sunny,winter,day,not manhattan,651
+181,sunny,winter,night,not manhattan,734
+182,rainy,fall,day,not manhattan,4
+182,rainy,fall,night,not manhattan,2
+182,rainy,spring,day,not manhattan,4
+182,rainy,summer,day,not manhattan,5
+182,rainy,winter,day,not manhattan,3
+182,sunny,fall,day,not manhattan,18
+182,sunny,fall,night,not manhattan,7
+182,sunny,spring,day,not manhattan,21
+182,sunny,spring,night,not manhattan,5
+182,sunny,summer,day,not manhattan,16
+182,sunny,summer,night,not manhattan,7
+182,sunny,winter,day,not manhattan,20
+182,sunny,winter,night,not manhattan,8
+183,rainy,fall,day,not manhattan,4
+183,rainy,spring,day,not manhattan,3
+183,rainy,spring,night,not manhattan,2
+183,rainy,winter,day,not manhattan,1
+183,sunny,fall,day,not manhattan,7
+183,sunny,fall,night,not manhattan,2
+183,sunny,spring,day,not manhattan,14
+183,sunny,spring,night,not manhattan,5
+183,sunny,summer,day,not manhattan,5
+183,sunny,winter,day,not manhattan,8
+183,sunny,winter,night,not manhattan,4
+184,rainy,spring,day,not manhattan,1
+184,rainy,summer,day,not manhattan,1
+184,rainy,winter,day,not manhattan,1
+184,sunny,fall,day,not manhattan,3
+184,sunny,fall,night,not manhattan,1
+184,sunny,spring,day,not manhattan,1
+184,sunny,spring,night,not manhattan,1
+184,sunny,summer,day,not manhattan,5
+184,sunny,winter,day,not manhattan,4
+184,sunny,winter,night,not manhattan,1
+185,rainy,fall,day,not manhattan,3
+185,rainy,fall,night,not manhattan,1
+185,rainy,spring,day,not manhattan,3
+185,rainy,summer,day,not manhattan,6
+185,rainy,winter,day,not manhattan,2
+185,rainy,winter,night,not manhattan,3
+185,sunny,fall,day,not manhattan,17
+185,sunny,fall,night,not manhattan,3
+185,sunny,spring,day,not manhattan,13
+185,sunny,spring,night,not manhattan,2
+185,sunny,summer,day,not manhattan,31
+185,sunny,summer,night,not manhattan,4
+185,sunny,winter,day,not manhattan,18
+185,sunny,winter,night,not manhattan,3
+186,rainy,fall,day,manhattan,43911
+186,rainy,fall,night,manhattan,11011
+186,rainy,spring,day,manhattan,47996
+186,rainy,spring,night,manhattan,10074
+186,rainy,summer,day,manhattan,37692
+186,rainy,summer,night,manhattan,4813
+186,rainy,winter,day,manhattan,40364
+186,rainy,winter,night,manhattan,7763
+186,sunny,fall,day,manhattan,203974
+186,sunny,fall,night,manhattan,49768
+186,sunny,spring,day,manhattan,224301
+186,sunny,spring,night,manhattan,47877
+186,sunny,summer,day,manhattan,235681
+186,sunny,summer,night,manhattan,55380
+186,sunny,winter,day,manhattan,184138
+186,sunny,winter,night,manhattan,46073
+187,rainy,summer,day,not manhattan,1
+187,sunny,spring,day,not manhattan,2
+187,sunny,winter,day,not manhattan,2
+188,rainy,fall,day,not manhattan,32
+188,rainy,fall,night,not manhattan,21
+188,rainy,spring,day,not manhattan,26
+188,rainy,spring,night,not manhattan,8
+188,rainy,summer,day,not manhattan,30
+188,rainy,summer,night,not manhattan,11
+188,rainy,winter,day,not manhattan,21
+188,rainy,winter,night,not manhattan,12
+188,sunny,fall,day,not manhattan,125
+188,sunny,fall,night,not manhattan,92
+188,sunny,spring,day,not manhattan,139
+188,sunny,spring,night,not manhattan,88
+188,sunny,summer,day,not manhattan,132
+188,sunny,summer,night,not manhattan,115
+188,sunny,winter,day,not manhattan,102
+188,sunny,winter,night,not manhattan,62
+189,rainy,fall,day,not manhattan,49
+189,rainy,fall,night,not manhattan,47
+189,rainy,spring,day,not manhattan,55
+189,rainy,spring,night,not manhattan,54
+189,rainy,summer,day,not manhattan,35
+189,rainy,summer,night,not manhattan,23
+189,rainy,winter,day,not manhattan,41
+189,rainy,winter,night,not manhattan,35
+189,sunny,fall,day,not manhattan,200
+189,sunny,fall,night,not manhattan,246
+189,sunny,spring,day,not manhattan,306
+189,sunny,spring,night,not manhattan,268
+189,sunny,summer,day,not manhattan,269
+189,sunny,summer,night,not manhattan,264
+189,sunny,winter,day,not manhattan,202
+189,sunny,winter,night,not manhattan,165
+190,rainy,fall,day,not manhattan,19
+190,rainy,fall,night,not manhattan,6
+190,rainy,spring,day,not manhattan,34
+190,rainy,spring,night,not manhattan,4
+190,rainy,summer,day,not manhattan,12
+190,rainy,summer,night,not manhattan,2
+190,rainy,winter,day,not manhattan,23
+190,rainy,winter,night,not manhattan,5
+190,sunny,fall,day,not manhattan,81
+190,sunny,fall,night,not manhattan,27
+190,sunny,spring,day,not manhattan,108
+190,sunny,spring,night,not manhattan,32
+190,sunny,summer,day,not manhattan,108
+190,sunny,summer,night,not manhattan,38
+190,sunny,winter,day,not manhattan,85
+190,sunny,winter,night,not manhattan,19
+191,rainy,fall,day,not manhattan,7
+191,rainy,fall,night,not manhattan,1
+191,rainy,spring,day,not manhattan,2
+191,rainy,summer,day,not manhattan,5
+191,rainy,summer,night,not manhattan,2
+191,rainy,winter,day,not manhattan,3
+191,rainy,winter,night,not manhattan,1
+191,sunny,fall,day,not manhattan,22
+191,sunny,fall,night,not manhattan,9
+191,sunny,spring,day,not manhattan,19
+191,sunny,spring,night,not manhattan,6
+191,sunny,summer,day,not manhattan,21
+191,sunny,summer,night,not manhattan,4
+191,sunny,winter,day,not manhattan,18
+191,sunny,winter,night,not manhattan,4
+192,rainy,fall,day,not manhattan,7
+192,rainy,spring,day,not manhattan,4
+192,rainy,spring,night,not manhattan,1
+192,rainy,summer,day,not manhattan,8
+192,rainy,winter,day,not manhattan,6
+192,rainy,winter,night,not manhattan,1
+192,sunny,fall,day,not manhattan,21
+192,sunny,fall,night,not manhattan,10
+192,sunny,spring,day,not manhattan,22
+192,sunny,spring,night,not manhattan,3
+192,sunny,summer,day,not manhattan,34
+192,sunny,summer,night,not manhattan,5
+192,sunny,winter,day,not manhattan,22
+192,sunny,winter,night,not manhattan,1
+193,rainy,fall,day,not manhattan,150
+193,rainy,fall,night,not manhattan,38
+193,rainy,spring,day,not manhattan,220
+193,rainy,spring,night,not manhattan,38
+193,rainy,summer,day,not manhattan,174
+193,rainy,summer,night,not manhattan,24
+193,rainy,winter,day,not manhattan,185
+193,rainy,winter,night,not manhattan,21
+193,sunny,fall,day,not manhattan,786
+193,sunny,fall,night,not manhattan,179
+193,sunny,spring,day,not manhattan,999
+193,sunny,spring,night,not manhattan,181
+193,sunny,summer,day,not manhattan,1050
+193,sunny,summer,night,not manhattan,235
+193,sunny,winter,day,not manhattan,902
+193,sunny,winter,night,not manhattan,172
+194,rainy,fall,day,manhattan,57
+194,rainy,fall,night,manhattan,10
+194,rainy,spring,day,manhattan,64
+194,rainy,spring,night,manhattan,8
+194,rainy,summer,day,manhattan,31
+194,rainy,summer,night,manhattan,9
+194,rainy,winter,day,manhattan,29
+194,rainy,winter,night,manhattan,3
+194,sunny,fall,day,manhattan,325
+194,sunny,fall,night,manhattan,68
+194,sunny,spring,day,manhattan,279
+194,sunny,spring,night,manhattan,57
+194,sunny,summer,day,manhattan,285
+194,sunny,summer,night,manhattan,61
+194,sunny,winter,day,manhattan,160
+194,sunny,winter,night,manhattan,41
+195,rainy,fall,day,not manhattan,120
+195,rainy,fall,night,not manhattan,6
+195,rainy,spring,day,not manhattan,69
+195,rainy,spring,night,not manhattan,3
+195,rainy,summer,day,not manhattan,140
+195,rainy,winter,day,not manhattan,45
+195,rainy,winter,night,not manhattan,4
+195,sunny,fall,day,not manhattan,468
+195,sunny,fall,night,not manhattan,40
+195,sunny,spring,day,not manhattan,181
+195,sunny,spring,night,not manhattan,20
+195,sunny,summer,day,not manhattan,319
+195,sunny,summer,night,not manhattan,28
+195,sunny,winter,day,not manhattan,112
+195,sunny,winter,night,not manhattan,14
+196,rainy,fall,day,not manhattan,49
+196,rainy,fall,night,not manhattan,9
+196,rainy,spring,day,not manhattan,38
+196,rainy,spring,night,not manhattan,7
+196,rainy,summer,day,not manhattan,36
+196,rainy,summer,night,not manhattan,4
+196,rainy,winter,day,not manhattan,51
+196,rainy,winter,night,not manhattan,4
+196,sunny,fall,day,not manhattan,260
+196,sunny,fall,night,not manhattan,50
+196,sunny,spring,day,not manhattan,211
+196,sunny,spring,night,not manhattan,60
+196,sunny,summer,day,not manhattan,221
+196,sunny,summer,night,not manhattan,67
+196,sunny,winter,day,not manhattan,154
+196,sunny,winter,night,not manhattan,51
+197,rainy,fall,day,not manhattan,51
+197,rainy,fall,night,not manhattan,9
+197,rainy,spring,day,not manhattan,37
+197,rainy,spring,night,not manhattan,2
+197,rainy,summer,day,not manhattan,34
+197,rainy,summer,night,not manhattan,4
+197,rainy,winter,day,not manhattan,29
+197,rainy,winter,night,not manhattan,1
+197,sunny,fall,day,not manhattan,271
+197,sunny,fall,night,not manhattan,30
+197,sunny,spring,day,not manhattan,181
+197,sunny,spring,night,not manhattan,26
+197,sunny,summer,day,not manhattan,211
+197,sunny,summer,night,not manhattan,48
+197,sunny,winter,day,not manhattan,150
+197,sunny,winter,night,not manhattan,17
+198,rainy,fall,day,not manhattan,7
+198,rainy,fall,night,not manhattan,6
+198,rainy,spring,day,not manhattan,7
+198,rainy,spring,night,not manhattan,10
+198,rainy,summer,night,not manhattan,3
+198,rainy,winter,day,not manhattan,7
+198,rainy,winter,night,not manhattan,3
+198,sunny,fall,day,not manhattan,25
+198,sunny,fall,night,not manhattan,61
+198,sunny,spring,day,not manhattan,32
+198,sunny,spring,night,not manhattan,46
+198,sunny,summer,day,not manhattan,28
+198,sunny,summer,night,not manhattan,45
+198,sunny,winter,day,not manhattan,34
+198,sunny,winter,night,not manhattan,36
+199,rainy,summer,day,not manhattan,2
+199,rainy,summer,night,not manhattan,1
+199,sunny,fall,day,not manhattan,2
+199,sunny,fall,night,not manhattan,1
+199,sunny,spring,day,not manhattan,1
+199,sunny,summer,day,not manhattan,5
+200,rainy,fall,day,not manhattan,3
+200,rainy,fall,night,not manhattan,1
+200,rainy,spring,day,not manhattan,9
+200,rainy,spring,night,not manhattan,1
+200,rainy,summer,day,not manhattan,9
+200,rainy,summer,night,not manhattan,1
+200,rainy,winter,day,not manhattan,5
+200,rainy,winter,night,not manhattan,1
+200,sunny,fall,day,not manhattan,27
+200,sunny,fall,night,not manhattan,2
+200,sunny,spring,day,not manhattan,25
+200,sunny,spring,night,not manhattan,6
+200,sunny,summer,day,not manhattan,42
+200,sunny,summer,night,not manhattan,8
+200,sunny,winter,day,not manhattan,35
+200,sunny,winter,night,not manhattan,6
+201,rainy,fall,day,not manhattan,4
+201,rainy,spring,night,not manhattan,2
+201,rainy,summer,day,not manhattan,4
+201,rainy,winter,day,not manhattan,2
+201,sunny,fall,day,not manhattan,9
+201,sunny,fall,night,not manhattan,3
+201,sunny,spring,day,not manhattan,5
+201,sunny,spring,night,not manhattan,3
+201,sunny,summer,day,not manhattan,16
+201,sunny,summer,night,not manhattan,2
+201,sunny,winter,day,not manhattan,7
+202,rainy,fall,day,manhattan,37
+202,rainy,fall,night,manhattan,15
+202,rainy,spring,day,manhattan,39
+202,rainy,spring,night,manhattan,10
+202,rainy,summer,day,manhattan,22
+202,rainy,summer,night,manhattan,5
+202,rainy,winter,day,manhattan,16
+202,rainy,winter,night,manhattan,4
+202,sunny,fall,day,manhattan,145
+202,sunny,fall,night,manhattan,43
+202,sunny,spring,day,manhattan,157
+202,sunny,spring,night,manhattan,51
+202,sunny,summer,day,manhattan,158
+202,sunny,summer,night,manhattan,65
+202,sunny,winter,day,manhattan,101
+202,sunny,winter,night,manhattan,28
+203,rainy,fall,day,not manhattan,7
+203,rainy,spring,day,not manhattan,3
+203,rainy,summer,day,not manhattan,2
+203,rainy,winter,day,not manhattan,3
+203,rainy,winter,night,not manhattan,2
+203,sunny,fall,day,not manhattan,38
+203,sunny,fall,night,not manhattan,9
+203,sunny,spring,day,not manhattan,17
+203,sunny,spring,night,not manhattan,7
+203,sunny,summer,day,not manhattan,22
+203,sunny,summer,night,not manhattan,9
+203,sunny,winter,day,not manhattan,18
+203,sunny,winter,night,not manhattan,5
+204,sunny,summer,day,not manhattan,1
+204,sunny,summer,night,not manhattan,1
+205,rainy,fall,day,not manhattan,3
+205,rainy,fall,night,not manhattan,2
+205,rainy,spring,day,not manhattan,3
+205,rainy,spring,night,not manhattan,1
+205,rainy,summer,day,not manhattan,4
+205,rainy,summer,night,not manhattan,2
+205,rainy,winter,day,not manhattan,5
+205,rainy,winter,night,not manhattan,1
+205,sunny,fall,day,not manhattan,18
+205,sunny,fall,night,not manhattan,8
+205,sunny,spring,day,not manhattan,15
+205,sunny,spring,night,not manhattan,6
+205,sunny,summer,day,not manhattan,25
+205,sunny,summer,night,not manhattan,7
+205,sunny,winter,day,not manhattan,25
+205,sunny,winter,night,not manhattan,9
+206,rainy,spring,day,not manhattan,1
+206,sunny,fall,night,not manhattan,1
+206,sunny,spring,day,not manhattan,3
+206,sunny,summer,day,not manhattan,2
+206,sunny,summer,night,not manhattan,1
+206,sunny,winter,day,not manhattan,3
+206,sunny,winter,night,not manhattan,1
+207,rainy,fall,day,not manhattan,37
+207,rainy,fall,night,not manhattan,9
+207,rainy,spring,day,not manhattan,19
+207,rainy,spring,night,not manhattan,8
+207,rainy,summer,day,not manhattan,18
+207,rainy,summer,night,not manhattan,4
+207,rainy,winter,day,not manhattan,26
+207,rainy,winter,night,not manhattan,5
+207,sunny,fall,day,not manhattan,133
+207,sunny,fall,night,not manhattan,25
+207,sunny,spring,day,not manhattan,113
+207,sunny,spring,night,not manhattan,17
+207,sunny,summer,day,not manhattan,108
+207,sunny,summer,night,not manhattan,23
+207,sunny,winter,day,not manhattan,61
+207,sunny,winter,night,not manhattan,19
+208,rainy,fall,day,not manhattan,3
+208,rainy,fall,night,not manhattan,2
+208,rainy,spring,day,not manhattan,5
+208,rainy,spring,night,not manhattan,1
+208,rainy,summer,day,not manhattan,1
+208,rainy,summer,night,not manhattan,1
+208,rainy,winter,day,not manhattan,9
+208,sunny,fall,day,not manhattan,30
+208,sunny,fall,night,not manhattan,6
+208,sunny,spring,day,not manhattan,40
+208,sunny,spring,night,not manhattan,19
+208,sunny,summer,day,not manhattan,40
+208,sunny,summer,night,not manhattan,14
+208,sunny,winter,day,not manhattan,18
+208,sunny,winter,night,not manhattan,5
+209,rainy,fall,day,manhattan,1968
+209,rainy,fall,night,manhattan,618
+209,rainy,spring,day,manhattan,2135
+209,rainy,spring,night,manhattan,769
+209,rainy,summer,day,manhattan,1626
+209,rainy,summer,night,manhattan,401
+209,rainy,winter,day,manhattan,1449
+209,rainy,winter,night,manhattan,413
+209,sunny,fall,day,manhattan,10909
+209,sunny,fall,night,manhattan,3888
+209,sunny,spring,day,manhattan,10029
+209,sunny,spring,night,manhattan,3640
+209,sunny,summer,day,manhattan,11400
+209,sunny,summer,night,manhattan,5504
+209,sunny,winter,day,manhattan,7175
+209,sunny,winter,night,manhattan,2585
+210,rainy,fall,day,not manhattan,2
+210,rainy,fall,night,not manhattan,3
+210,rainy,spring,day,not manhattan,3
+210,rainy,spring,night,not manhattan,1
+210,rainy,summer,night,not manhattan,1
+210,rainy,winter,day,not manhattan,3
+210,rainy,winter,night,not manhattan,2
+210,sunny,fall,day,not manhattan,13
+210,sunny,fall,night,not manhattan,2
+210,sunny,spring,day,not manhattan,16
+210,sunny,summer,day,not manhattan,17
+210,sunny,summer,night,not manhattan,6
+210,sunny,winter,day,not manhattan,11
+210,sunny,winter,night,not manhattan,5
+211,rainy,fall,day,manhattan,7486
+211,rainy,fall,night,manhattan,2958
+211,rainy,spring,day,manhattan,9428
+211,rainy,spring,night,manhattan,4027
+211,rainy,summer,day,manhattan,6510
+211,rainy,summer,night,manhattan,1329
+211,rainy,winter,day,manhattan,6980
+211,rainy,winter,night,manhattan,2290
+211,sunny,fall,day,manhattan,39382
+211,sunny,fall,night,manhattan,19103
+211,sunny,spring,day,manhattan,40923
+211,sunny,spring,night,manhattan,18145
+211,sunny,summer,day,manhattan,39063
+211,sunny,summer,night,manhattan,19929
+211,sunny,winter,day,manhattan,33444
+211,sunny,winter,night,manhattan,14945
+212,rainy,fall,day,not manhattan,2
+212,rainy,spring,day,not manhattan,7
+212,rainy,summer,day,not manhattan,3
+212,rainy,summer,night,not manhattan,1
+212,rainy,winter,day,not manhattan,3
+212,rainy,winter,night,not manhattan,1
+212,sunny,fall,day,not manhattan,19
+212,sunny,fall,night,not manhattan,13
+212,sunny,spring,day,not manhattan,12
+212,sunny,spring,night,not manhattan,11
+212,sunny,summer,day,not manhattan,38
+212,sunny,summer,night,not manhattan,17
+212,sunny,winter,day,not manhattan,14
+212,sunny,winter,night,not manhattan,8
+213,rainy,fall,day,not manhattan,11
+213,rainy,fall,night,not manhattan,3
+213,rainy,spring,day,not manhattan,12
+213,rainy,spring,night,not manhattan,2
+213,rainy,summer,day,not manhattan,16
+213,rainy,summer,night,not manhattan,3
+213,rainy,winter,day,not manhattan,6
+213,rainy,winter,night,not manhattan,3
+213,sunny,fall,day,not manhattan,36
+213,sunny,fall,night,not manhattan,9
+213,sunny,spring,day,not manhattan,72
+213,sunny,spring,night,not manhattan,17
+213,sunny,summer,day,not manhattan,76
+213,sunny,summer,night,not manhattan,23
+213,sunny,winter,day,not manhattan,45
+213,sunny,winter,night,not manhattan,4
+214,rainy,fall,day,not manhattan,2
+214,rainy,winter,day,not manhattan,1
+214,sunny,fall,day,not manhattan,1
+214,sunny,spring,day,not manhattan,2
+214,sunny,spring,night,not manhattan,1
+214,sunny,summer,day,not manhattan,7
+214,sunny,summer,night,not manhattan,1
+214,sunny,winter,day,not manhattan,1
+215,rainy,fall,day,not manhattan,116
+215,rainy,fall,night,not manhattan,45
+215,rainy,spring,day,not manhattan,105
+215,rainy,spring,night,not manhattan,24
+215,rainy,summer,day,not manhattan,103
+215,rainy,summer,night,not manhattan,22
+215,rainy,winter,day,not manhattan,84
+215,rainy,winter,night,not manhattan,19
+215,sunny,fall,day,not manhattan,551
+215,sunny,fall,night,not manhattan,164
+215,sunny,spring,day,not manhattan,429
+215,sunny,spring,night,not manhattan,112
+215,sunny,summer,day,not manhattan,556
+215,sunny,summer,night,not manhattan,222
+215,sunny,winter,day,not manhattan,366
+215,sunny,winter,night,not manhattan,92
+216,rainy,fall,day,not manhattan,147
+216,rainy,fall,night,not manhattan,15
+216,rainy,spring,day,not manhattan,111
+216,rainy,spring,night,not manhattan,15
+216,rainy,summer,day,not manhattan,120
+216,rainy,summer,night,not manhattan,13
+216,rainy,winter,day,not manhattan,106
+216,rainy,winter,night,not manhattan,12
+216,sunny,fall,day,not manhattan,745
+216,sunny,fall,night,not manhattan,125
+216,sunny,spring,day,not manhattan,573
+216,sunny,spring,night,not manhattan,82
+216,sunny,summer,day,not manhattan,722
+216,sunny,summer,night,not manhattan,155
+216,sunny,winter,day,not manhattan,419
+216,sunny,winter,night,not manhattan,75
+217,rainy,fall,day,not manhattan,23
+217,rainy,fall,night,not manhattan,11
+217,rainy,spring,day,not manhattan,32
+217,rainy,spring,night,not manhattan,18
+217,rainy,summer,day,not manhattan,20
+217,rainy,summer,night,not manhattan,4
+217,rainy,winter,day,not manhattan,21
+217,rainy,winter,night,not manhattan,9
+217,sunny,fall,day,not manhattan,114
+217,sunny,fall,night,not manhattan,63
+217,sunny,spring,day,not manhattan,133
+217,sunny,spring,night,not manhattan,74
+217,sunny,summer,day,not manhattan,99
+217,sunny,summer,night,not manhattan,76
+217,sunny,winter,day,not manhattan,91
+217,sunny,winter,night,not manhattan,59
+218,rainy,fall,day,not manhattan,4
+218,rainy,fall,night,not manhattan,6
+218,rainy,spring,day,not manhattan,6
+218,rainy,spring,night,not manhattan,1
+218,rainy,summer,day,not manhattan,4
+218,rainy,summer,night,not manhattan,1
+218,rainy,winter,day,not manhattan,4
+218,rainy,winter,night,not manhattan,1
+218,sunny,fall,day,not manhattan,32
+218,sunny,fall,night,not manhattan,13
+218,sunny,spring,day,not manhattan,17
+218,sunny,spring,night,not manhattan,11
+218,sunny,summer,day,not manhattan,37
+218,sunny,summer,night,not manhattan,9
+218,sunny,winter,day,not manhattan,27
+218,sunny,winter,night,not manhattan,11
+219,rainy,fall,day,not manhattan,107
+219,rainy,fall,night,not manhattan,30
+219,rainy,spring,day,not manhattan,80
+219,rainy,spring,night,not manhattan,13
+219,rainy,summer,day,not manhattan,95
+219,rainy,summer,night,not manhattan,17
+219,rainy,winter,day,not manhattan,64
+219,rainy,winter,night,not manhattan,17
+219,sunny,fall,day,not manhattan,536
+219,sunny,fall,night,not manhattan,147
+219,sunny,spring,day,not manhattan,442
+219,sunny,spring,night,not manhattan,106
+219,sunny,summer,day,not manhattan,488
+219,sunny,summer,night,not manhattan,142
+219,sunny,winter,day,not manhattan,309
+219,sunny,winter,night,not manhattan,82
+220,rainy,fall,day,not manhattan,24
+220,rainy,fall,night,not manhattan,1
+220,rainy,spring,day,not manhattan,19
+220,rainy,spring,night,not manhattan,4
+220,rainy,summer,day,not manhattan,21
+220,rainy,summer,night,not manhattan,1
+220,rainy,winter,day,not manhattan,15
+220,rainy,winter,night,not manhattan,1
+220,sunny,fall,day,not manhattan,96
+220,sunny,fall,night,not manhattan,13
+220,sunny,spring,day,not manhattan,84
+220,sunny,spring,night,not manhattan,22
+220,sunny,summer,day,not manhattan,93
+220,sunny,summer,night,not manhattan,13
+220,sunny,winter,day,not manhattan,73
+220,sunny,winter,night,not manhattan,14
+221,rainy,fall,night,not manhattan,1
+221,rainy,spring,day,not manhattan,1
+221,sunny,fall,day,not manhattan,1
+221,sunny,fall,night,not manhattan,1
+221,sunny,summer,day,not manhattan,3
+221,sunny,summer,night,not manhattan,2
+221,sunny,winter,day,not manhattan,4
+221,sunny,winter,night,not manhattan,2
+222,rainy,fall,day,not manhattan,6
+222,rainy,fall,night,not manhattan,2
+222,rainy,spring,day,not manhattan,3
+222,rainy,spring,night,not manhattan,3
+222,rainy,summer,day,not manhattan,3
+222,rainy,winter,day,not manhattan,3
+222,rainy,winter,night,not manhattan,1
+222,sunny,fall,day,not manhattan,27
+222,sunny,fall,night,not manhattan,6
+222,sunny,spring,day,not manhattan,11
+222,sunny,spring,night,not manhattan,3
+222,sunny,summer,day,not manhattan,20
+222,sunny,summer,night,not manhattan,4
+222,sunny,winter,day,not manhattan,13
+222,sunny,winter,night,not manhattan,5
+223,rainy,fall,day,not manhattan,235
+223,rainy,fall,night,not manhattan,86
+223,rainy,spring,day,not manhattan,212
+223,rainy,spring,night,not manhattan,80
+223,rainy,summer,day,not manhattan,210
+223,rainy,summer,night,not manhattan,46
+223,rainy,winter,day,not manhattan,203
+223,rainy,winter,night,not manhattan,64
+223,sunny,fall,day,not manhattan,1133
+223,sunny,fall,night,not manhattan,392
+223,sunny,spring,day,not manhattan,1199
+223,sunny,spring,night,not manhattan,415
+223,sunny,summer,day,not manhattan,1164
+223,sunny,summer,night,not manhattan,424
+223,sunny,winter,day,not manhattan,869
+223,sunny,winter,night,not manhattan,335
+224,rainy,fall,day,manhattan,1533
+224,rainy,fall,night,manhattan,365
+224,rainy,spring,day,manhattan,2197
+224,rainy,spring,night,manhattan,508
+224,rainy,summer,day,manhattan,1359
+224,rainy,summer,night,manhattan,173
+224,rainy,winter,day,manhattan,1688
+224,rainy,winter,night,manhattan,342
+224,sunny,fall,day,manhattan,7756
+224,sunny,fall,night,manhattan,2281
+224,sunny,spring,day,manhattan,9525
+224,sunny,spring,night,manhattan,2459
+224,sunny,summer,day,manhattan,8466
+224,sunny,summer,night,manhattan,2478
+224,sunny,winter,day,manhattan,7865
+224,sunny,winter,night,manhattan,2108
+225,rainy,fall,day,not manhattan,13
+225,rainy,fall,night,not manhattan,17
+225,rainy,spring,day,not manhattan,11
+225,rainy,spring,night,not manhattan,16
+225,rainy,summer,day,not manhattan,11
+225,rainy,summer,night,not manhattan,5
+225,rainy,winter,day,not manhattan,11
+225,rainy,winter,night,not manhattan,7
+225,sunny,fall,day,not manhattan,58
+225,sunny,fall,night,not manhattan,74
+225,sunny,spring,day,not manhattan,66
+225,sunny,spring,night,not manhattan,73
+225,sunny,summer,day,not manhattan,64
+225,sunny,summer,night,not manhattan,123
+225,sunny,winter,day,not manhattan,58
+225,sunny,winter,night,not manhattan,73
+226,rainy,fall,day,not manhattan,845
+226,rainy,fall,night,not manhattan,207
+226,rainy,spring,day,not manhattan,1009
+226,rainy,spring,night,not manhattan,185
+226,rainy,summer,day,not manhattan,663
+226,rainy,summer,night,not manhattan,108
+226,rainy,winter,day,not manhattan,840
+226,rainy,winter,night,not manhattan,154
+226,sunny,fall,day,not manhattan,4120
+226,sunny,fall,night,not manhattan,1050
+226,sunny,spring,day,not manhattan,4651
+226,sunny,spring,night,not manhattan,1103
+226,sunny,summer,day,not manhattan,4302
+226,sunny,summer,night,not manhattan,1190
+226,sunny,winter,day,not manhattan,3874
+226,sunny,winter,night,not manhattan,895
+227,rainy,fall,day,not manhattan,2
+227,rainy,fall,night,not manhattan,2
+227,rainy,spring,day,not manhattan,6
+227,rainy,spring,night,not manhattan,1
+227,rainy,summer,day,not manhattan,5
+227,rainy,winter,day,not manhattan,2
+227,sunny,fall,day,not manhattan,14
+227,sunny,fall,night,not manhattan,10
+227,sunny,spring,day,not manhattan,17
+227,sunny,spring,night,not manhattan,7
+227,sunny,summer,day,not manhattan,14
+227,sunny,summer,night,not manhattan,7
+227,sunny,winter,day,not manhattan,15
+227,sunny,winter,night,not manhattan,5
+228,rainy,fall,day,not manhattan,13
+228,rainy,fall,night,not manhattan,12
+228,rainy,spring,day,not manhattan,17
+228,rainy,spring,night,not manhattan,10
+228,rainy,summer,day,not manhattan,17
+228,rainy,summer,night,not manhattan,6
+228,rainy,winter,day,not manhattan,20
+228,rainy,winter,night,not manhattan,6
+228,sunny,fall,day,not manhattan,103
+228,sunny,fall,night,not manhattan,66
+228,sunny,spring,day,not manhattan,102
+228,sunny,spring,night,not manhattan,47
+228,sunny,summer,day,not manhattan,103
+228,sunny,summer,night,not manhattan,80
+228,sunny,winter,day,not manhattan,80
+228,sunny,winter,night,not manhattan,27
+229,rainy,fall,day,manhattan,26776
+229,rainy,fall,night,manhattan,5834
+229,rainy,spring,day,manhattan,31929
+229,rainy,spring,night,manhattan,7760
+229,rainy,summer,day,manhattan,21528
+229,rainy,summer,night,manhattan,2539
+229,rainy,winter,day,manhattan,26206
+229,rainy,winter,night,manhattan,5318
+229,sunny,fall,day,manhattan,129643
+229,sunny,fall,night,manhattan,33781
+229,sunny,spring,day,manhattan,143801
+229,sunny,spring,night,manhattan,34790
+229,sunny,summer,day,manhattan,137531
+229,sunny,summer,night,manhattan,35385
+229,sunny,winter,day,manhattan,122117
+229,sunny,winter,night,manhattan,29660
+230,rainy,fall,day,manhattan,37582
+230,rainy,fall,night,manhattan,12724
+230,rainy,spring,day,manhattan,44418
+230,rainy,spring,night,manhattan,16219
+230,rainy,summer,day,manhattan,32658
+230,rainy,summer,night,manhattan,5944
+230,rainy,winter,day,manhattan,31035
+230,rainy,winter,night,manhattan,9531
+230,sunny,fall,day,manhattan,178122
+230,sunny,fall,night,manhattan,65578
+230,sunny,spring,day,manhattan,195570
+230,sunny,spring,night,manhattan,67181
+230,sunny,summer,day,manhattan,190461
+230,sunny,summer,night,manhattan,68809
+230,sunny,winter,day,manhattan,146719
+230,sunny,winter,night,manhattan,58200
+231,rainy,fall,day,manhattan,15899
+231,rainy,fall,night,manhattan,4839
+231,rainy,spring,day,manhattan,18648
+231,rainy,spring,night,manhattan,6643
+231,rainy,summer,day,manhattan,12952
+231,rainy,summer,night,manhattan,2381
+231,rainy,winter,day,manhattan,12881
+231,rainy,winter,night,manhattan,3673
+231,sunny,fall,day,manhattan,83233
+231,sunny,fall,night,manhattan,32307
+231,sunny,spring,day,manhattan,89294
+231,sunny,spring,night,manhattan,32091
+231,sunny,summer,day,manhattan,81366
+231,sunny,summer,night,manhattan,33980
+231,sunny,winter,day,manhattan,64332
+231,sunny,winter,night,manhattan,23326
+232,rainy,fall,day,manhattan,956
+232,rainy,fall,night,manhattan,557
+232,rainy,spring,day,manhattan,1451
+232,rainy,spring,night,manhattan,849
+232,rainy,summer,day,manhattan,789
+232,rainy,summer,night,manhattan,230
+232,rainy,winter,day,manhattan,988
+232,rainy,winter,night,manhattan,433
+232,sunny,fall,day,manhattan,4974
+232,sunny,fall,night,manhattan,3668
+232,sunny,spring,day,manhattan,5318
+232,sunny,spring,night,manhattan,3885
+232,sunny,summer,day,manhattan,5537
+232,sunny,summer,night,manhattan,4014
+232,sunny,winter,day,manhattan,4152
+232,sunny,winter,night,manhattan,2902
+233,rainy,fall,day,manhattan,17124
+233,rainy,fall,night,manhattan,2977
+233,rainy,spring,day,manhattan,20015
+233,rainy,spring,night,manhattan,3673
+233,rainy,summer,day,manhattan,15021
+233,rainy,summer,night,manhattan,1381
+233,rainy,winter,day,manhattan,15843
+233,rainy,winter,night,manhattan,2609
+233,sunny,fall,day,manhattan,82048
+233,sunny,fall,night,manhattan,17470
+233,sunny,spring,day,manhattan,91170
+233,sunny,spring,night,manhattan,17191
+233,sunny,summer,day,manhattan,94182
+233,sunny,summer,night,manhattan,19200
+233,sunny,winter,day,manhattan,72987
+233,sunny,winter,night,manhattan,13780
+234,rainy,fall,day,manhattan,31705
+234,rainy,fall,night,manhattan,8666
+234,rainy,spring,day,manhattan,38617
+234,rainy,spring,night,manhattan,11229
+234,rainy,summer,day,manhattan,27277
+234,rainy,summer,night,manhattan,3803
+234,rainy,winter,day,manhattan,30661
+234,rainy,winter,night,manhattan,6478
+234,sunny,fall,day,manhattan,160002
+234,sunny,fall,night,manhattan,50472
+234,sunny,spring,day,manhattan,173364
+234,sunny,spring,night,manhattan,47488
+234,sunny,summer,day,manhattan,164818
+234,sunny,summer,night,manhattan,54423
+234,sunny,winter,day,manhattan,142970
+234,sunny,winter,night,manhattan,40694
+235,rainy,fall,day,not manhattan,12
+235,rainy,fall,night,not manhattan,2
+235,rainy,spring,day,not manhattan,19
+235,rainy,spring,night,not manhattan,3
+235,rainy,summer,day,not manhattan,9
+235,rainy,summer,night,not manhattan,1
+235,rainy,winter,day,not manhattan,11
+235,rainy,winter,night,not manhattan,5
+235,sunny,fall,day,not manhattan,47
+235,sunny,fall,night,not manhattan,13
+235,sunny,spring,day,not manhattan,55
+235,sunny,spring,night,not manhattan,18
+235,sunny,summer,day,not manhattan,55
+235,sunny,summer,night,not manhattan,19
+235,sunny,winter,day,not manhattan,54
+235,sunny,winter,night,not manhattan,10
+236,rainy,fall,day,manhattan,64158
+236,rainy,fall,night,manhattan,5342
+236,rainy,spring,day,manhattan,70570
+236,rainy,spring,night,manhattan,6725
+236,rainy,summer,day,manhattan,47353
+236,rainy,summer,night,manhattan,1898
+236,rainy,winter,day,manhattan,63402
+236,rainy,winter,night,manhattan,4357
+236,sunny,fall,day,manhattan,311250
+236,sunny,fall,night,manhattan,30023
+236,sunny,spring,day,manhattan,332378
+236,sunny,spring,night,manhattan,30003
+236,sunny,summer,day,manhattan,271705
+236,sunny,summer,night,manhattan,28168
+236,sunny,winter,day,manhattan,292991
+236,sunny,winter,night,manhattan,24973
+237,rainy,fall,day,manhattan,66496
+237,rainy,fall,night,manhattan,10442
+237,rainy,spring,day,manhattan,74367
+237,rainy,spring,night,manhattan,12351
+237,rainy,summer,day,manhattan,52552
+237,rainy,summer,night,manhattan,3724
+237,rainy,winter,day,manhattan,62253
+237,rainy,winter,night,manhattan,7813
+237,sunny,fall,day,manhattan,330714
+237,sunny,fall,night,manhattan,59035
+237,sunny,spring,day,manhattan,356030
+237,sunny,spring,night,manhattan,54761
+237,sunny,summer,day,manhattan,307711
+237,sunny,summer,night,manhattan,52701
+237,sunny,winter,day,manhattan,298331
+237,sunny,winter,night,manhattan,42757
+238,rainy,fall,day,manhattan,28576
+238,rainy,fall,night,manhattan,3314
+238,rainy,spring,day,manhattan,34021
+238,rainy,spring,night,manhattan,4543
+238,rainy,summer,day,manhattan,22213
+238,rainy,summer,night,manhattan,1465
+238,rainy,winter,day,manhattan,30349
+238,rainy,winter,night,manhattan,2943
+238,sunny,fall,day,manhattan,143235
+238,sunny,fall,night,manhattan,17886
+238,sunny,spring,day,manhattan,158894
+238,sunny,spring,night,manhattan,20329
+238,sunny,summer,day,manhattan,131948
+238,sunny,summer,night,manhattan,20367
+238,sunny,winter,day,manhattan,138630
+238,sunny,winter,night,manhattan,17016
+239,rainy,fall,day,manhattan,39244
+239,rainy,fall,night,manhattan,6675
+239,rainy,spring,day,manhattan,46422
+239,rainy,spring,night,manhattan,8263
+239,rainy,summer,day,manhattan,30544
+239,rainy,summer,night,manhattan,2624
+239,rainy,winter,day,manhattan,40183
+239,rainy,winter,night,manhattan,5397
+239,sunny,fall,day,manhattan,185612
+239,sunny,fall,night,manhattan,36284
+239,sunny,spring,day,manhattan,203111
+239,sunny,spring,night,manhattan,37614
+239,sunny,summer,day,manhattan,179430
+239,sunny,summer,night,manhattan,38923
+239,sunny,winter,day,manhattan,177127
+239,sunny,winter,night,manhattan,29619
+240,rainy,spring,day,not manhattan,1
+240,rainy,spring,night,not manhattan,1
+240,rainy,summer,day,not manhattan,2
+240,rainy,summer,night,not manhattan,1
+240,rainy,winter,night,not manhattan,1
+240,sunny,fall,day,not manhattan,6
+240,sunny,fall,night,not manhattan,3
+240,sunny,spring,day,not manhattan,20
+240,sunny,spring,night,not manhattan,2
+240,sunny,summer,day,not manhattan,3
+240,sunny,summer,night,not manhattan,2
+240,sunny,winter,day,not manhattan,8
+240,sunny,winter,night,not manhattan,1
+241,rainy,fall,day,not manhattan,7
+241,rainy,fall,night,not manhattan,1
+241,rainy,spring,day,not manhattan,4
+241,rainy,spring,night,not manhattan,2
+241,rainy,summer,day,not manhattan,10
+241,rainy,winter,day,not manhattan,8
+241,rainy,winter,night,not manhattan,2
+241,sunny,fall,day,not manhattan,65
+241,sunny,fall,night,not manhattan,7
+241,sunny,spring,day,not manhattan,42
+241,sunny,spring,night,not manhattan,12
+241,sunny,summer,day,not manhattan,35
+241,sunny,summer,night,not manhattan,7
+241,sunny,winter,day,not manhattan,53
+241,sunny,winter,night,not manhattan,7
+242,rainy,fall,day,not manhattan,9
+242,rainy,fall,night,not manhattan,1
+242,rainy,spring,day,not manhattan,7
+242,rainy,spring,night,not manhattan,2
+242,rainy,summer,day,not manhattan,7
+242,rainy,summer,night,not manhattan,1
+242,rainy,winter,day,not manhattan,6
+242,sunny,fall,day,not manhattan,34
+242,sunny,fall,night,not manhattan,6
+242,sunny,spring,day,not manhattan,40
+242,sunny,spring,night,not manhattan,7
+242,sunny,summer,day,not manhattan,26
+242,sunny,summer,night,not manhattan,8
+242,sunny,winter,day,not manhattan,29
+242,sunny,winter,night,not manhattan,4
+243,rainy,fall,day,manhattan,103
+243,rainy,fall,night,manhattan,21
+243,rainy,spring,day,manhattan,143
+243,rainy,spring,night,manhattan,35
+243,rainy,summer,day,manhattan,112
+243,rainy,summer,night,manhattan,20
+243,rainy,winter,day,manhattan,90
+243,rainy,winter,night,manhattan,26
+243,sunny,fall,day,manhattan,541
+243,sunny,fall,night,manhattan,190
+243,sunny,spring,day,manhattan,665
+243,sunny,spring,night,manhattan,214
+243,sunny,summer,day,manhattan,564
+243,sunny,summer,night,manhattan,212
+243,sunny,winter,day,manhattan,444
+243,sunny,winter,night,manhattan,136
+244,rainy,fall,day,manhattan,853
+244,rainy,fall,night,manhattan,124
+244,rainy,spring,day,manhattan,1083
+244,rainy,spring,night,manhattan,185
+244,rainy,summer,day,manhattan,740
+244,rainy,summer,night,manhattan,72
+244,rainy,winter,day,manhattan,899
+244,rainy,winter,night,manhattan,116
+244,sunny,fall,day,manhattan,4194
+244,sunny,fall,night,manhattan,710
+244,sunny,spring,day,manhattan,5782
+244,sunny,spring,night,manhattan,1006
+244,sunny,summer,day,manhattan,4608
+244,sunny,summer,night,manhattan,1096
+244,sunny,winter,day,manhattan,4114
+244,sunny,winter,night,manhattan,708
+245,rainy,fall,day,not manhattan,1
+245,rainy,summer,night,not manhattan,1
+245,rainy,winter,day,not manhattan,1
+245,sunny,spring,day,not manhattan,2
+245,sunny,summer,day,not manhattan,1
+245,sunny,winter,day,not manhattan,3
+245,sunny,winter,night,not manhattan,1
+246,rainy,fall,day,manhattan,18900
+246,rainy,fall,night,manhattan,4199
+246,rainy,spring,day,manhattan,21542
+246,rainy,spring,night,manhattan,5805
+246,rainy,summer,day,manhattan,15616
+246,rainy,summer,night,manhattan,2064
+246,rainy,winter,day,manhattan,15313
+246,rainy,winter,night,manhattan,3028
+246,sunny,fall,day,manhattan,97515
+246,sunny,fall,night,manhattan,26364
+246,sunny,spring,day,manhattan,100499
+246,sunny,spring,night,manhattan,25536
+246,sunny,summer,day,manhattan,96282
+246,sunny,summer,night,manhattan,29126
+246,sunny,winter,day,manhattan,73543
+246,sunny,winter,night,manhattan,20999
+247,rainy,fall,day,not manhattan,54
+247,rainy,fall,night,not manhattan,23
+247,rainy,spring,day,not manhattan,81
+247,rainy,spring,night,not manhattan,13
+247,rainy,summer,day,not manhattan,67
+247,rainy,summer,night,not manhattan,13
+247,rainy,winter,day,not manhattan,66
+247,rainy,winter,night,not manhattan,9
+247,sunny,fall,day,not manhattan,297
+247,sunny,fall,night,not manhattan,101
+247,sunny,spring,day,not manhattan,405
+247,sunny,spring,night,not manhattan,104
+247,sunny,summer,day,not manhattan,382
+247,sunny,summer,night,not manhattan,177
+247,sunny,winter,day,not manhattan,261
+247,sunny,winter,night,not manhattan,53
+248,rainy,fall,day,not manhattan,4
+248,rainy,spring,day,not manhattan,4
+248,rainy,summer,day,not manhattan,7
+248,rainy,summer,night,not manhattan,1
+248,rainy,winter,day,not manhattan,5
+248,rainy,winter,night,not manhattan,2
+248,sunny,fall,day,not manhattan,23
+248,sunny,fall,night,not manhattan,6
+248,sunny,spring,day,not manhattan,14
+248,sunny,spring,night,not manhattan,11
+248,sunny,summer,day,not manhattan,33
+248,sunny,summer,night,not manhattan,19
+248,sunny,winter,day,not manhattan,19
+248,sunny,winter,night,not manhattan,8
+249,rainy,fall,day,manhattan,18150
+249,rainy,fall,night,manhattan,11909
+249,rainy,spring,day,manhattan,23827
+249,rainy,spring,night,manhattan,15916
+249,rainy,summer,day,manhattan,14232
+249,rainy,summer,night,manhattan,5649
+249,rainy,winter,day,manhattan,18405
+249,rainy,winter,night,manhattan,9674
+249,sunny,fall,day,manhattan,94562
+249,sunny,fall,night,manhattan,70733
+249,sunny,spring,day,manhattan,104456
+249,sunny,spring,night,manhattan,68332
+249,sunny,summer,day,manhattan,93913
+249,sunny,summer,night,manhattan,75488
+249,sunny,winter,day,manhattan,86842
+249,sunny,winter,night,manhattan,66767
+250,rainy,fall,day,not manhattan,7
+250,rainy,fall,night,not manhattan,2
+250,rainy,spring,day,not manhattan,4
+250,rainy,summer,day,not manhattan,4
+250,rainy,summer,night,not manhattan,4
+250,rainy,winter,day,not manhattan,1
+250,sunny,fall,day,not manhattan,22
+250,sunny,fall,night,not manhattan,12
+250,sunny,spring,day,not manhattan,19
+250,sunny,spring,night,not manhattan,5
+250,sunny,summer,day,not manhattan,24
+250,sunny,summer,night,not manhattan,5
+250,sunny,winter,day,not manhattan,19
+250,sunny,winter,night,not manhattan,7
+251,rainy,fall,night,not manhattan,1
+251,rainy,spring,day,not manhattan,1
+251,sunny,fall,day,not manhattan,3
+251,sunny,fall,night,not manhattan,1
+251,sunny,spring,day,not manhattan,1
+251,sunny,spring,night,not manhattan,1
+251,sunny,summer,day,not manhattan,2
+251,sunny,summer,night,not manhattan,1
+251,sunny,winter,day,not manhattan,1
+251,sunny,winter,night,not manhattan,1
+252,rainy,fall,day,not manhattan,4
+252,rainy,spring,day,not manhattan,5
+252,rainy,summer,day,not manhattan,2
+252,rainy,summer,night,not manhattan,2
+252,rainy,winter,day,not manhattan,5
+252,rainy,winter,night,not manhattan,2
+252,sunny,fall,day,not manhattan,28
+252,sunny,fall,night,not manhattan,11
+252,sunny,spring,day,not manhattan,17
+252,sunny,spring,night,not manhattan,8
+252,sunny,summer,day,not manhattan,13
+252,sunny,summer,night,not manhattan,16
+252,sunny,winter,day,not manhattan,23
+252,sunny,winter,night,not manhattan,6
+253,rainy,fall,day,not manhattan,3
+253,rainy,fall,night,not manhattan,1
+253,rainy,spring,day,not manhattan,6
+253,rainy,spring,night,not manhattan,1
+253,rainy,summer,day,not manhattan,1
+253,rainy,summer,night,not manhattan,3
+253,rainy,winter,day,not manhattan,3
+253,rainy,winter,night,not manhattan,1
+253,sunny,fall,day,not manhattan,16
+253,sunny,fall,night,not manhattan,6
+253,sunny,spring,day,not manhattan,16
+253,sunny,spring,night,not manhattan,5
+253,sunny,summer,day,not manhattan,13
+253,sunny,summer,night,not manhattan,9
+253,sunny,winter,day,not manhattan,8
+253,sunny,winter,night,not manhattan,1
+254,rainy,fall,day,not manhattan,5
+254,rainy,fall,night,not manhattan,1
+254,rainy,spring,day,not manhattan,3
+254,rainy,spring,night,not manhattan,4
+254,rainy,summer,day,not manhattan,3
+254,rainy,summer,night,not manhattan,1
+254,rainy,winter,day,not manhattan,7
+254,sunny,fall,day,not manhattan,21
+254,sunny,fall,night,not manhattan,10
+254,sunny,spring,day,not manhattan,19
+254,sunny,spring,night,not manhattan,7
+254,sunny,summer,day,not manhattan,18
+254,sunny,summer,night,not manhattan,14
+254,sunny,winter,day,not manhattan,13
+254,sunny,winter,night,not manhattan,5
+255,rainy,fall,day,not manhattan,153
+255,rainy,fall,night,not manhattan,257
+255,rainy,spring,day,not manhattan,218
+255,rainy,spring,night,not manhattan,383
+255,rainy,summer,day,not manhattan,101
+255,rainy,summer,night,not manhattan,95
+255,rainy,winter,day,not manhattan,77
+255,rainy,winter,night,not manhattan,145
+255,sunny,fall,day,not manhattan,790
+255,sunny,fall,night,not manhattan,1662
+255,sunny,spring,day,not manhattan,943
+255,sunny,spring,night,not manhattan,1742
+255,sunny,summer,day,not manhattan,757
+255,sunny,summer,night,not manhattan,1973
+255,sunny,winter,day,not manhattan,552
+255,sunny,winter,night,not manhattan,1054
+256,rainy,fall,day,not manhattan,127
+256,rainy,fall,night,not manhattan,232
+256,rainy,spring,day,not manhattan,219
+256,rainy,spring,night,not manhattan,315
+256,rainy,summer,day,not manhattan,130
+256,rainy,summer,night,not manhattan,103
+256,rainy,winter,day,not manhattan,109
+256,rainy,winter,night,not manhattan,131
+256,sunny,fall,day,not manhattan,719
+256,sunny,fall,night,not manhattan,1357
+256,sunny,spring,day,not manhattan,905
+256,sunny,spring,night,not manhattan,1566
+256,sunny,summer,day,not manhattan,778
+256,sunny,summer,night,not manhattan,1665
+256,sunny,winter,day,not manhattan,547
+256,sunny,winter,night,not manhattan,853
+257,rainy,fall,day,not manhattan,5
+257,rainy,fall,night,not manhattan,7
+257,rainy,spring,day,not manhattan,8
+257,rainy,spring,night,not manhattan,5
+257,rainy,summer,day,not manhattan,9
+257,rainy,summer,night,not manhattan,1
+257,rainy,winter,day,not manhattan,11
+257,rainy,winter,night,not manhattan,4
+257,sunny,fall,day,not manhattan,41
+257,sunny,fall,night,not manhattan,21
+257,sunny,spring,day,not manhattan,50
+257,sunny,spring,night,not manhattan,25
+257,sunny,summer,day,not manhattan,38
+257,sunny,summer,night,not manhattan,24
+257,sunny,winter,day,not manhattan,19
+257,sunny,winter,night,not manhattan,17
+258,rainy,fall,day,not manhattan,2
+258,rainy,fall,night,not manhattan,2
+258,rainy,spring,day,not manhattan,3
+258,rainy,summer,day,not manhattan,4
+258,rainy,winter,day,not manhattan,4
+258,rainy,winter,night,not manhattan,2
+258,sunny,fall,day,not manhattan,22
+258,sunny,fall,night,not manhattan,7
+258,sunny,spring,day,not manhattan,21
+258,sunny,spring,night,not manhattan,9
+258,sunny,summer,day,not manhattan,25
+258,sunny,summer,night,not manhattan,8
+258,sunny,winter,day,not manhattan,23
+258,sunny,winter,night,not manhattan,15
+259,rainy,fall,day,not manhattan,2
+259,rainy,fall,night,not manhattan,1
+259,rainy,spring,day,not manhattan,2
+259,rainy,spring,night,not manhattan,3
+259,rainy,summer,day,not manhattan,1
+259,rainy,summer,night,not manhattan,1
+259,rainy,winter,day,not manhattan,4
+259,rainy,winter,night,not manhattan,2
+259,sunny,fall,day,not manhattan,15
+259,sunny,fall,night,not manhattan,8
+259,sunny,spring,day,not manhattan,11
+259,sunny,spring,night,not manhattan,3
+259,sunny,summer,day,not manhattan,8
+259,sunny,summer,night,not manhattan,4
+259,sunny,winter,day,not manhattan,8
+259,sunny,winter,night,not manhattan,5
+260,rainy,fall,day,not manhattan,203
+260,rainy,fall,night,not manhattan,72
+260,rainy,spring,day,not manhattan,223
+260,rainy,spring,night,not manhattan,65
+260,rainy,summer,day,not manhattan,160
+260,rainy,summer,night,not manhattan,24
+260,rainy,winter,day,not manhattan,215
+260,rainy,winter,night,not manhattan,54
+260,sunny,fall,day,not manhattan,1001
+260,sunny,fall,night,not manhattan,314
+260,sunny,spring,day,not manhattan,1036
+260,sunny,spring,night,not manhattan,267
+260,sunny,summer,day,not manhattan,951
+260,sunny,summer,night,not manhattan,365
+260,sunny,winter,day,not manhattan,877
+260,sunny,winter,night,not manhattan,268
+261,rainy,fall,day,manhattan,6349
+261,rainy,fall,night,manhattan,1067
+261,rainy,spring,day,manhattan,7537
+261,rainy,spring,night,manhattan,1314
+261,rainy,summer,day,manhattan,6220
+261,rainy,summer,night,manhattan,532
+261,rainy,winter,day,manhattan,5303
+261,rainy,winter,night,manhattan,765
+261,sunny,fall,day,manhattan,35436
+261,sunny,fall,night,manhattan,6277
+261,sunny,spring,day,manhattan,34263
+261,sunny,spring,night,manhattan,6195
+261,sunny,summer,day,manhattan,37338
+261,sunny,summer,night,manhattan,7748
+261,sunny,winter,day,manhattan,25890
+261,sunny,winter,night,manhattan,3958
+262,rainy,fall,day,manhattan,18535
+262,rainy,fall,night,manhattan,1468
+262,rainy,spring,day,manhattan,21684
+262,rainy,spring,night,manhattan,1729
+262,rainy,summer,day,manhattan,14435
+262,rainy,summer,night,manhattan,637
+262,rainy,winter,day,manhattan,20033
+262,rainy,winter,night,manhattan,1397
+262,sunny,fall,day,manhattan,94602
+262,sunny,fall,night,manhattan,8281
+262,sunny,spring,day,manhattan,102141
+262,sunny,spring,night,manhattan,8215
+262,sunny,summer,day,manhattan,91095
+262,sunny,summer,night,manhattan,8731
+262,sunny,winter,day,manhattan,90600
+262,sunny,winter,night,manhattan,7325
+263,rainy,fall,day,manhattan,25865
+263,rainy,fall,night,manhattan,6135
+263,rainy,spring,day,manhattan,31252
+263,rainy,spring,night,manhattan,7865
+263,rainy,summer,day,manhattan,20257
+263,rainy,summer,night,manhattan,2702
+263,rainy,winter,day,manhattan,29136
+263,rainy,winter,night,manhattan,5601
+263,sunny,fall,day,manhattan,130593
+263,sunny,fall,night,manhattan,34665
+263,sunny,spring,day,manhattan,137602
+263,sunny,spring,night,manhattan,36034
+263,sunny,summer,day,manhattan,126058
+263,sunny,summer,night,manhattan,36261
+263,sunny,winter,day,manhattan,126719
+263,sunny,winter,night,manhattan,32519
+264,rainy,fall,day,not manhattan,16281
+264,rainy,fall,night,not manhattan,4876
+264,rainy,spring,day,not manhattan,14311
+264,rainy,spring,night,not manhattan,4453
+264,rainy,summer,day,not manhattan,11876
+264,rainy,summer,night,not manhattan,2099
+264,rainy,winter,day,not manhattan,13135
+264,rainy,winter,night,not manhattan,3057
+264,sunny,fall,day,not manhattan,80955
+264,sunny,fall,night,not manhattan,25553
+264,sunny,spring,day,not manhattan,67129
+264,sunny,spring,night,not manhattan,19086
+264,sunny,summer,day,not manhattan,73013
+264,sunny,summer,night,not manhattan,22212
+264,sunny,winter,day,not manhattan,57823
+264,sunny,winter,night,not manhattan,17471
+265,rainy,fall,day,not manhattan,132
+265,rainy,fall,night,not manhattan,50
+265,rainy,spring,day,not manhattan,141
+265,rainy,spring,night,not manhattan,53
+265,rainy,summer,day,not manhattan,116
+265,rainy,summer,night,not manhattan,21
+265,rainy,winter,day,not manhattan,131
+265,rainy,winter,night,not manhattan,28
+265,sunny,fall,day,not manhattan,687
+265,sunny,fall,night,not manhattan,253
+265,sunny,spring,day,not manhattan,660
+265,sunny,spring,night,not manhattan,276
+265,sunny,summer,day,not manhattan,701
+265,sunny,summer,night,not manhattan,323
+265,sunny,winter,day,not manhattan,447
+265,sunny,winter,night,not manhattan,221

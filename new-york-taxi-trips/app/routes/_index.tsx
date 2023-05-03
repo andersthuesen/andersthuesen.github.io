@@ -138,7 +138,7 @@ export const loader: LoaderFunction = ({
   request,
 }: LoaderArgs): LoaderData => {
   const rawData = fs.readFileSync(
-    path.join(__dirname, "..", "app", "data", "avg-duration_by-day.csv"),
+    path.join(__dirname, "..", "..", "social-data-analysis-final-project", "output", "avg-duration_by-day.csv"),
     "utf-8"
   );
 
@@ -307,6 +307,7 @@ export default function Index() {
             and more.
           </p>
           <h2>Explore the patterns</h2>
+          <p>Hej med dig! Det virker!</p>
 
           <BarChart width={730} height={250} data={week.data}>
             <CartesianGrid strokeDasharray="3 3" />
