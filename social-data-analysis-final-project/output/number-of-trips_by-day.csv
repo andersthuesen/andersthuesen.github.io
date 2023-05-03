@@ -1,0 +1,225 @@
+pickup_at,weather,season,time,pickup_area,duration
+Monday,rainy,fall,day,manhattan,154374
+Monday,rainy,fall,day,not manhattan,25724
+Monday,rainy,fall,night,manhattan,65335
+Monday,rainy,fall,night,not manhattan,17825
+Monday,rainy,spring,day,manhattan,121826
+Monday,rainy,spring,day,not manhattan,18818
+Monday,rainy,spring,night,manhattan,24596
+Monday,rainy,spring,night,not manhattan,5952
+Monday,rainy,summer,day,manhattan,190926
+Monday,rainy,summer,day,not manhattan,31900
+Monday,rainy,summer,night,manhattan,14035
+Monday,rainy,summer,night,not manhattan,4665
+Monday,rainy,winter,day,manhattan,116756
+Monday,rainy,winter,day,not manhattan,16322
+Monday,rainy,winter,night,manhattan,11551
+Monday,rainy,winter,night,not manhattan,3115
+Monday,sunny,fall,day,manhattan,721633
+Monday,sunny,fall,day,not manhattan,124340
+Monday,sunny,fall,night,manhattan,98687
+Monday,sunny,fall,night,not manhattan,29253
+Monday,sunny,spring,day,manhattan,797273
+Monday,sunny,spring,day,not manhattan,124895
+Monday,sunny,spring,night,manhattan,136899
+Monday,sunny,spring,night,not manhattan,39018
+Monday,sunny,summer,day,manhattan,641767
+Monday,sunny,summer,day,not manhattan,107776
+Monday,sunny,summer,night,manhattan,148251
+Monday,sunny,summer,night,not manhattan,39189
+Monday,sunny,winter,day,manhattan,690787
+Monday,sunny,winter,day,not manhattan,103396
+Monday,sunny,winter,night,manhattan,118816
+Monday,sunny,winter,night,not manhattan,33384
+Tuesday,rainy,fall,day,manhattan,266063
+Tuesday,rainy,fall,day,not manhattan,38396
+Tuesday,rainy,fall,night,manhattan,43521
+Tuesday,rainy,fall,night,not manhattan,10887
+Tuesday,rainy,spring,day,manhattan,87746
+Tuesday,rainy,spring,day,not manhattan,12323
+Tuesday,rainy,spring,night,manhattan,29217
+Tuesday,rainy,spring,night,not manhattan,6497
+Tuesday,rainy,summer,day,manhattan,110372
+Tuesday,rainy,summer,day,not manhattan,17207
+Tuesday,rainy,summer,night,manhattan,34016
+Tuesday,rainy,summer,night,not manhattan,8413
+Tuesday,rainy,winter,day,manhattan,92966
+Tuesday,rainy,winter,day,not manhattan,13411
+Tuesday,rainy,winter,night,manhattan,24099
+Tuesday,rainy,winter,night,not manhattan,5211
+Tuesday,sunny,fall,day,manhattan,724849
+Tuesday,sunny,fall,day,not manhattan,110420
+Tuesday,sunny,fall,night,manhattan,158087
+Tuesday,sunny,fall,night,not manhattan,33637
+Tuesday,sunny,spring,day,manhattan,1056971
+Tuesday,sunny,spring,day,not manhattan,144197
+Tuesday,sunny,spring,night,manhattan,188081
+Tuesday,sunny,spring,night,not manhattan,40465
+Tuesday,sunny,summer,day,manhattan,876003
+Tuesday,sunny,summer,day,not manhattan,124924
+Tuesday,sunny,summer,night,manhattan,163231
+Tuesday,sunny,summer,night,not manhattan,35169
+Tuesday,sunny,winter,day,manhattan,731690
+Tuesday,sunny,winter,day,not manhattan,91123
+Tuesday,sunny,winter,night,manhattan,122318
+Tuesday,sunny,winter,night,not manhattan,25064
+Wednesday,rainy,fall,day,manhattan,226650
+Wednesday,rainy,fall,day,not manhattan,32219
+Wednesday,rainy,fall,night,manhattan,17356
+Wednesday,rainy,fall,night,not manhattan,3705
+Wednesday,rainy,spring,day,manhattan,158652
+Wednesday,rainy,spring,day,not manhattan,19434
+Wednesday,rainy,spring,night,manhattan,25349
+Wednesday,rainy,spring,night,not manhattan,4616
+Wednesday,rainy,summer,day,manhattan,58178
+Wednesday,rainy,summer,day,not manhattan,7526
+Wednesday,rainy,summer,night,manhattan,19269
+Wednesday,rainy,summer,night,not manhattan,4133
+Wednesday,rainy,winter,day,manhattan,32762
+Wednesday,rainy,winter,day,not manhattan,3983
+Wednesday,rainy,winter,night,manhattan,4744
+Wednesday,rainy,winter,night,not manhattan,969
+Wednesday,sunny,fall,day,manhattan,785643
+Wednesday,sunny,fall,day,not manhattan,113620
+Wednesday,sunny,fall,night,manhattan,215625
+Wednesday,sunny,fall,night,not manhattan,39552
+Wednesday,sunny,spring,day,manhattan,935775
+Wednesday,sunny,spring,day,not manhattan,123702
+Wednesday,sunny,spring,night,manhattan,209090
+Wednesday,sunny,spring,night,not manhattan,36661
+Wednesday,sunny,summer,day,manhattan,1007819
+Wednesday,sunny,summer,day,not manhattan,140989
+Wednesday,sunny,summer,night,manhattan,222172
+Wednesday,sunny,summer,night,not manhattan,39517
+Wednesday,sunny,winter,day,manhattan,808501
+Wednesday,sunny,winter,day,not manhattan,97634
+Wednesday,sunny,winter,night,manhattan,167301
+Wednesday,sunny,winter,night,not manhattan,27692
+Thursday,rainy,fall,day,manhattan,95419
+Thursday,rainy,fall,day,not manhattan,13801
+Thursday,rainy,fall,night,manhattan,14775
+Thursday,rainy,fall,night,not manhattan,2397
+Thursday,rainy,spring,day,manhattan,229319
+Thursday,rainy,spring,day,not manhattan,28503
+Thursday,rainy,spring,night,manhattan,75051
+Thursday,rainy,spring,night,not manhattan,12090
+Thursday,rainy,summer,day,manhattan,191844
+Thursday,rainy,summer,day,not manhattan,25426
+Thursday,rainy,summer,night,manhattan,12835
+Thursday,rainy,summer,night,not manhattan,2726
+Thursday,rainy,winter,day,manhattan,221981
+Thursday,rainy,winter,day,not manhattan,27034
+Thursday,rainy,winter,night,manhattan,57900
+Thursday,rainy,winter,night,not manhattan,8650
+Thursday,sunny,fall,day,manhattan,888912
+Thursday,sunny,fall,day,not manhattan,131855
+Thursday,sunny,fall,night,manhattan,246265
+Thursday,sunny,fall,night,not manhattan,40770
+Thursday,sunny,spring,day,manhattan,871886
+Thursday,sunny,spring,day,not manhattan,115419
+Thursday,sunny,spring,night,manhattan,191957
+Thursday,sunny,spring,night,not manhattan,29734
+Thursday,sunny,summer,day,manhattan,814794
+Thursday,sunny,summer,day,not manhattan,114899
+Thursday,sunny,summer,night,manhattan,239785
+Thursday,sunny,summer,night,not manhattan,40488
+Thursday,sunny,winter,day,manhattan,718947
+Thursday,sunny,winter,day,not manhattan,91058
+Thursday,sunny,winter,night,manhattan,161263
+Thursday,sunny,winter,night,not manhattan,24244
+Friday,rainy,fall,day,manhattan,71261
+Friday,rainy,fall,day,not manhattan,10632
+Friday,rainy,fall,night,manhattan,40144
+Friday,rainy,fall,night,not manhattan,6291
+Friday,rainy,spring,day,manhattan,173365
+Friday,rainy,spring,day,not manhattan,24694
+Friday,rainy,spring,night,manhattan,52449
+Friday,rainy,spring,night,not manhattan,9457
+Friday,rainy,summer,day,manhattan,137936
+Friday,rainy,summer,day,not manhattan,20382
+Friday,rainy,summer,night,manhattan,6789
+Friday,rainy,summer,night,not manhattan,1273
+Friday,rainy,winter,day,manhattan,285758
+Friday,rainy,winter,day,not manhattan,34293
+Friday,rainy,winter,night,manhattan,60358
+Friday,rainy,winter,night,not manhattan,7748
+Friday,sunny,fall,day,manhattan,867300
+Friday,sunny,fall,day,not manhattan,133241
+Friday,sunny,fall,night,manhattan,263314
+Friday,sunny,fall,night,not manhattan,38284
+Friday,sunny,spring,day,manhattan,870684
+Friday,sunny,spring,day,not manhattan,116766
+Friday,sunny,spring,night,manhattan,261033
+Friday,sunny,spring,night,not manhattan,34347
+Friday,sunny,summer,day,manhattan,768492
+Friday,sunny,summer,day,not manhattan,115166
+Friday,sunny,summer,night,manhattan,279135
+Friday,sunny,summer,night,not manhattan,42684
+Friday,sunny,winter,day,manhattan,619864
+Friday,sunny,winter,day,not manhattan,82318
+Friday,sunny,winter,night,manhattan,195682
+Friday,sunny,winter,night,not manhattan,24933
+Saturday,rainy,fall,day,manhattan,56317
+Saturday,rainy,fall,day,not manhattan,8354
+Saturday,rainy,fall,night,manhattan,41839
+Saturday,rainy,fall,night,not manhattan,4270
+Saturday,rainy,spring,day,manhattan,331407
+Saturday,rainy,spring,day,not manhattan,40969
+Saturday,rainy,spring,night,manhattan,83550
+Saturday,rainy,spring,night,not manhattan,9845
+Saturday,rainy,summer,day,manhattan,78399
+Saturday,rainy,summer,day,not manhattan,11029
+Saturday,rainy,summer,night,manhattan,7558
+Saturday,rainy,summer,night,not manhattan,931
+Saturday,rainy,winter,day,manhattan,137662
+Saturday,rainy,winter,day,not manhattan,19195
+Saturday,rainy,winter,night,manhattan,30734
+Saturday,rainy,winter,night,not manhattan,4876
+Saturday,sunny,fall,day,manhattan,784261
+Saturday,sunny,fall,day,not manhattan,112045
+Saturday,sunny,fall,night,manhattan,321054
+Saturday,sunny,fall,night,not manhattan,36518
+Saturday,sunny,spring,day,manhattan,602153
+Saturday,sunny,spring,day,not manhattan,77897
+Saturday,sunny,spring,night,manhattan,300895
+Saturday,sunny,spring,night,not manhattan,33038
+Saturday,sunny,summer,day,manhattan,719380
+Saturday,sunny,summer,day,not manhattan,101980
+Saturday,sunny,summer,night,manhattan,335131
+Saturday,sunny,summer,night,not manhattan,42034
+Saturday,sunny,winter,day,manhattan,676693
+Saturday,sunny,winter,day,not manhattan,78724
+Saturday,sunny,winter,night,manhattan,310664
+Saturday,sunny,winter,night,not manhattan,29869
+Sunday,rainy,fall,day,manhattan,191315
+Sunday,rainy,fall,day,not manhattan,38043
+Sunday,rainy,fall,night,manhattan,42910
+Sunday,rainy,fall,night,not manhattan,10476
+Sunday,rainy,spring,day,manhattan,161129
+Sunday,rainy,spring,day,not manhattan,25698
+Sunday,rainy,spring,night,manhattan,51451
+Sunday,rainy,spring,night,not manhattan,6666
+Sunday,rainy,summer,day,manhattan,113963
+Sunday,rainy,summer,day,not manhattan,22345
+Sunday,rainy,summer,night,manhattan,24187
+Sunday,rainy,summer,night,not manhattan,4601
+Sunday,rainy,winter,day,manhattan,139020
+Sunday,rainy,winter,day,not manhattan,22524
+Sunday,rainy,winter,night,manhattan,21576
+Sunday,rainy,winter,night,not manhattan,6558
+Sunday,sunny,fall,day,manhattan,478273
+Sunday,sunny,fall,day,not manhattan,88099
+Sunday,sunny,fall,night,manhattan,219840
+Sunday,sunny,fall,night,not manhattan,34700
+Sunday,sunny,spring,day,manhattan,612202
+Sunday,sunny,spring,day,not manhattan,105503
+Sunday,sunny,spring,night,manhattan,229612
+Sunday,sunny,spring,night,not manhattan,40947
+Sunday,sunny,summer,day,manhattan,540004
+Sunday,sunny,summer,day,not manhattan,102229
+Sunday,sunny,summer,night,manhattan,241730
+Sunday,sunny,summer,night,not manhattan,40148
+Sunday,sunny,winter,day,manhattan,502534
+Sunday,sunny,winter,day,not manhattan,82048
+Sunday,sunny,winter,night,manhattan,210946
+Sunday,sunny,winter,night,not manhattan,31013
