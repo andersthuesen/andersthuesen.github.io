@@ -29,7 +29,8 @@ import { Form, Params, useLoaderData, useSearchParams } from "@remix-run/react";
 import Lottie from "lottie-react";
 
 import DeckGL from "@deck.gl/react/typed";
-import { GeoJsonLayer, BitmapLayer } from "@deck.gl/layers/typed";
+import { GeoJsonLayer, ArcLayer } from "@deck.gl/layers/typed";
+import { Position } from "@deck.gl/core/typed";
 
 import fs from "fs";
 import path from "path";
@@ -356,7 +357,7 @@ export default function Index() {
                 mapLib={maplibregl}
                 mapStyle="https://basemaps.cartocdn.com/gl/positron-gl-style/style.json"
               />
-
+              {/* @ts-ignore */}
               <GeoJsonLayer
                 id="geojson-layer"
                 data={taxiZonesGeoJSON as any}
@@ -364,7 +365,33 @@ export default function Index() {
                 filled
                 opacity={0.5}
                 getLineColor={[60, 60, 60]}
-                getFillColor={[200, 0, 0]}
+                getFillColor={(data: any) => {
+                  const shapeArea = parseFloat(data.properties.shape_area);
+
+                  return [255, 0, 0, (shapeArea / 1e-3) * 255];
+                }}
+              />
+              {/* @ts-ignore */}
+              <ArcLayer
+                id="arc-layer"
+                data={[
+                  {
+                    inbound: 72633,
+                    outbound: 74735,
+                    from: {
+                      name: "19th St. Oakland (19TH)",
+                      coordinates: [-73.935242, 40.73061],
+                    },
+                    to: {
+                      name: "12th St. Oakland City Center (12TH)",
+                      coordinates: [-73.945242, 40.71061],
+                    },
+                  },
+                ]}
+                getSourcePosition={(d) => d.from.coordinates as Position}
+                getTargetPosition={(d) => d.to.coordinates as Position}
+                getSourceColor={[0, 128, 255]}
+                getWidth={2}
               />
             </DeckGL>
           </div>
