@@ -29,12 +29,15 @@ import { Form, Params, useLoaderData, useSearchParams } from "@remix-run/react";
 import Lottie from "lottie-react";
 
 import DeckGL from "@deck.gl/react/typed";
+import { GeoJsonLayer, BitmapLayer } from "@deck.gl/layers/typed";
 
 import fs from "fs";
 import path from "path";
 
 import rainAnimation from "~/animations/rain.json";
-import { useRef } from "react";
+import { useMemo, useRef } from "react";
+
+import taxiZonesGeoJSON from "../../data/nyc-taxi-zones.json";
 
 export const meta: V2_MetaFunction = () => {
   return [{ title: "New Remix App" }];
@@ -75,7 +78,6 @@ type LoaderData = {
     label: string;
     unit?: string;
   };
-  taxiZonesGeoJSON: any;
 };
 export const loader: LoaderFunction = ({
   context,
@@ -83,11 +85,6 @@ export const loader: LoaderFunction = ({
   request,
 }: LoaderArgs): LoaderData => {
   const { searchParams } = new URL(request.url);
-
-  const taxiZonesGeoJSON = fs.readFileSync(
-    path.join(__dirname, "..", "data", "nyc-taxi-zones.geojson"),
-    "utf-8"
-  );
 
   const rawData = fs.readFileSync(
     path.join(__dirname, "..", "data", "by-day.csv"),
@@ -214,12 +211,15 @@ export const loader: LoaderFunction = ({
       // @ts-ignore
       unit: weekUnits[weekMetric],
     },
-    taxiZonesGeoJSON: JSON.parse(taxiZonesGeoJSON),
   };
 };
 
+// const layers = [
+//   new ,
+// ];
+
 export default function Index() {
-  const { week, taxiZonesGeoJSON } = useLoaderData<LoaderData>();
+  const { week } = useLoaderData<LoaderData>();
   const form = useRef<HTMLFormElement>(null);
 
   const [searchParams] = useSearchParams();
@@ -346,21 +346,26 @@ export default function Index() {
           >
             <DeckGL
               initialViewState={{
-                longitude: -122.4,
-                latitude: 37.8,
-                zoom: 14,
+                longitude: -73.935242,
+                latitude: 40.73061,
+                zoom: 9,
               }}
               controller={true}
             >
               <Map
                 mapLib={maplibregl}
                 mapStyle="https://basemaps.cartocdn.com/gl/positron-gl-style/style.json"
-              >
-                <Marker longitude={-122.4} latitude={37.8} color="red" />
-                <Source id="taxi-zones" type="geojson" data={taxiZonesGeoJSON}>
-                  <Layer id="taxi-zones" type="layer" fill="blue" />
-                </Source>
-              </Map>
+              />
+
+              <GeoJsonLayer
+                id="geojson-layer"
+                data={taxiZonesGeoJSON as any}
+                stroked
+                filled
+                opacity={0.5}
+                getLineColor={[60, 60, 60]}
+                getFillColor={[200, 0, 0]}
+              />
             </DeckGL>
           </div>
 
