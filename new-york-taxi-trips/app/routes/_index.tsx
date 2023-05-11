@@ -16,16 +16,19 @@ import {
   Bar,
   BarChart,
   CartesianGrid,
+  Layer,
   Legend,
   Tooltip,
   XAxis,
   YAxis,
 } from "recharts";
-import Map, { Marker } from "react-map-gl";
+import Map, { Marker, Source } from "react-map-gl";
 import maplibregl from "maplibre-gl";
 import { Toggle } from "~/components/toggle";
 import { Form, Params, useLoaderData, useSearchParams } from "@remix-run/react";
 import Lottie from "lottie-react";
+
+import DeckGL from "@deck.gl/react/typed";
 
 import fs from "fs";
 import path from "path";
@@ -72,18 +75,24 @@ type LoaderData = {
     label: string;
     unit?: string;
   };
+  taxiZonesGeoJSON: any;
 };
 export const loader: LoaderFunction = ({
   context,
   params,
   request,
 }: LoaderArgs): LoaderData => {
+  const { searchParams } = new URL(request.url);
+
+  const taxiZonesGeoJSON = fs.readFileSync(
+    path.join(__dirname, "..", "data", "nyc-taxi-zones.geojson"),
+    "utf-8"
+  );
+
   const rawData = fs.readFileSync(
     path.join(__dirname, "..", "data", "by-day.csv"),
     "utf-8"
   );
-
-  const { searchParams } = new URL(request.url);
 
   const weekData = rawData
     .split("\n")
@@ -205,11 +214,12 @@ export const loader: LoaderFunction = ({
       // @ts-ignore
       unit: weekUnits[weekMetric],
     },
+    taxiZonesGeoJSON: JSON.parse(taxiZonesGeoJSON),
   };
 };
 
 export default function Index() {
-  const { week } = useLoaderData<LoaderData>();
+  const { week, taxiZonesGeoJSON } = useLoaderData<LoaderData>();
   const form = useRef<HTMLFormElement>(null);
 
   const [searchParams] = useSearchParams();
@@ -328,18 +338,31 @@ export default function Index() {
           </p>
           <h2>Explore the patterns</h2>
           <p>Hej med dig! Det virker!</p>
-          <Map
-            mapLib={maplibregl}
-            initialViewState={{
-              longitude: -122.4,
-              latitude: 37.8,
-              zoom: 14,
+          <div
+            style={{
+              position: "relative",
+              paddingBottom: `${(9 / 16) * 100}%` /* 16:9 */,
             }}
-            style={{ width: 960, height: 400 }}
-            mapStyle="https://basemaps.cartocdn.com/gl/positron-gl-style/style.json"
           >
-            <Marker longitude={-122.4} latitude={37.8} color="red" />
-          </Map>
+            <DeckGL
+              initialViewState={{
+                longitude: -122.4,
+                latitude: 37.8,
+                zoom: 14,
+              }}
+              controller={true}
+            >
+              <Map
+                mapLib={maplibregl}
+                mapStyle="https://basemaps.cartocdn.com/gl/positron-gl-style/style.json"
+              >
+                <Marker longitude={-122.4} latitude={37.8} color="red" />
+                <Source id="taxi-zones" type="geojson" data={taxiZonesGeoJSON}>
+                  <Layer id="taxi-zones" type="layer" fill="blue" />
+                </Source>
+              </Map>
+            </DeckGL>
+          </div>
 
           <BarChart width={730} height={250} data={week.data}>
             <CartesianGrid strokeDasharray="3 3" />
