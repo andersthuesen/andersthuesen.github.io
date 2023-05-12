@@ -13,6 +13,9 @@ dependencies:
   '@deck.gl/react':
     specifier: ^8.9.14
     version: 8.9.14(@deck.gl/core@8.9.14)(@types/react@18.0.35)(react-dom@18.2.0)(react@18.2.0)
+  '@loaders.gl/core':
+    specifier: ^3.3.5
+    version: 3.3.5
   '@luma.gl/core':
     specifier: ^8.5.20
     version: 8.5.20

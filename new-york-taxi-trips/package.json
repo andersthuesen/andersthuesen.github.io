@@ -11,6 +11,7 @@
     "@deck.gl/core": "^8.9.14",
     "@deck.gl/layers": "^8.9.14",
     "@deck.gl/react": "^8.9.14",
+    "@loaders.gl/core": "^3.3.5",
     "@luma.gl/core": "^8.5.20",
     "@math.gl/core": "^3.6.3",
     "@math.gl/web-mercator": "^3.6.3",
