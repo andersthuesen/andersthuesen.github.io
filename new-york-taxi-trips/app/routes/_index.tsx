@@ -1,6 +1,5 @@
 import type {
   LinksFunction,
-  LoaderArgs,
   LoaderFunction,
   V2_MetaFunction,
 } from "@remix-run/node";
@@ -11,12 +10,9 @@ import globalStyles from "~/styles/global.css";
 import mapboxLibreStyles from "maplibre-gl/dist/maplibre-gl.css";
 import normalizeStyles from "~/styles/normalize.css";
 import {
-  Area,
-  AreaChart,
   Bar,
   BarChart,
   CartesianGrid,
-  Layer,
   Legend,
   Tooltip,
   XAxis,
@@ -25,23 +21,32 @@ import {
 import Map from "react-map-gl";
 import maplibregl from "maplibre-gl";
 import { Toggle } from "~/components/toggle";
-import { Form, useLoaderData, useSearchParams } from "@remix-run/react";
+import { useLoaderData } from "@remix-run/react";
 import Lottie from "lottie-react";
 
 import DeckGL from "@deck.gl/react/typed";
-import { GeoJsonLayer, ArcLayer } from "@deck.gl/layers/typed";
-import type { Position } from "@deck.gl/core/typed";
+import {
+  GeoJsonLayer,
+  ArcLayer,
+  ScatterplotLayer,
+} from "@deck.gl/layers/typed";
+import type { PickingInfo, Position } from "@deck.gl/core/typed";
 
-import fs from "fs";
-import path from "path";
+import { dataFilter, loadMonthData, loadWeekData, loadZonesData } from "~/data";
+import type { WeekData, ZonesData, MonthData } from "~/data";
 
 import rainAnimation from "~/animations/rain.json";
-import { useRef } from "react";
+import { useMemo, useState } from "react";
 
 import taxiZonesGeoJSON from "../../data/nyc-taxi-zones.json";
 
+const taxiZonesGeoJSONMap: { [zone: string]: any } = {};
+for (const feature of taxiZonesGeoJSON.features) {
+  taxiZonesGeoJSONMap[feature.properties.objectid] = feature;
+}
+
 export const meta: V2_MetaFunction = () => {
-  return [{ title: "New Remix App" }];
+  return [{ title: "New York Taxi Trips" }];
 };
 
 export const links: LinksFunction = () => {
@@ -61,272 +66,338 @@ export const links: LinksFunction = () => {
   ];
 };
 
-type WeekData = {
-  avgDuration: number;
-  avgDistance: number;
-  avgFareAmount: number;
-  avgTipAmount: number;
-  avgTotalAmount: number;
-  numberOfTrips: number;
-};
-
 type LoaderData = {
-  week: {
-    data: {
-      day: string;
-      value: number;
-    }[];
-    label: string;
-    unit?: string;
+  weekData: WeekData[];
+  monthData: MonthData[];
+  zonesData: ZonesData[];
+};
+export const loader: LoaderFunction = async (): Promise<LoaderData> => {
+  const [weekData, monthData, zonesData] = await Promise.all([
+    loadWeekData(),
+    loadMonthData(),
+    loadZonesData(),
+  ]);
+
+  return {
+    weekData,
+    monthData,
+    zonesData,
   };
 };
-export const loader: LoaderFunction = ({
-  context,
-  params,
-  request,
-}: LoaderArgs): LoaderData => {
-  const { searchParams } = new URL(request.url);
 
-  const rawData = fs.readFileSync(
-    path.join(__dirname, "..", "data", "by-day.csv"),
-    "utf-8"
+export default function Index() {
+  const { weekData, zonesData } = useLoaderData<LoaderData>();
+
+  const [selectedObject, setSelectedObject] = useState<PickingInfo | undefined>(
+    undefined
   );
 
-  const weekData = rawData
-    .split("\n")
-    .slice(1) // Don't include the header
-    .map((row) => {
-      const [
-        day,
-        weather,
-        season,
-        time,
-        area,
-        avgDistance,
-        avgFareAmount,
-        avgTipAmount,
-        avgTotalAmount,
-        avgDuration,
-        numberOfTrips,
-      ] = row.split(",");
-      return {
-        day,
-        weather,
-        season,
-        time,
-        area,
-        avgDuration: parseFloat(avgDuration),
-        avgDistance: parseFloat(avgDistance),
-        avgFareAmount: parseFloat(avgFareAmount),
-        avgTipAmount: parseFloat(avgTipAmount),
-        avgTotalAmount: parseFloat(avgTotalAmount),
-        numberOfTrips: parseInt(numberOfTrips),
-      };
-    })
-    .filter((row) => {
-      const weatherFilter = searchParams.get("weather") ?? "any";
-      if (weatherFilter !== "any" && row.weather !== weatherFilter)
-        return false;
+  const [dayTimeFilter, setDayTimeFilter] = useState<"any" | "day" | "night">(
+    "any"
+  );
 
-      const timeFilter = searchParams.get("time") ?? "all";
-      if (timeFilter !== "any" && row.time !== timeFilter) return false;
+  const [seasonFilter, setSeasonFilter] = useState<
+    "any" | "spring" | "summer" | "fall" | "winter"
+  >("any");
 
-      const areaFilter = searchParams.get("area") ?? "any";
-      if (areaFilter !== "all" && row.area !== areaFilter) return false;
+  const [weatherFilter, setWeatherFilter] = useState<"any" | "sunny" | "rainy">(
+    "any"
+  );
 
-      const seasonFilter = searchParams.get("season") ?? "any";
-      if (seasonFilter !== "any" && row.season !== seasonFilter) return false;
+  const [areaFilter, setAreaFilter] = useState<"any" | "manhattan">("any");
 
-      return true;
-    })
-    .reduce(
-      (acc, { day, numberOfTrips, ...data }) => {
-        if (acc[day]) {
-          for (const key in acc[day]) {
-            if (key == "numberOfTrips") continue;
-            // @ts-ignore
-            const currentValue = acc[day][key];
+  const [feature, setFeature] = useState<"distance" | "duration" | "count">(
+    "count"
+  );
 
-            // @ts-ignore
-            const newValue = data[key];
+  const isNight = dayTimeFilter === "night";
+  const isRainy = weatherFilter === "rainy";
 
-            // @ts-ignore
-            acc[day][key] =
-              (currentValue * acc[day].numberOfTrips +
-                newValue * numberOfTrips) /
-              (acc[day].numberOfTrips + numberOfTrips);
+  const filteredWeekData = useMemo(() => {
+    const filtered = weekData
+      .filter((row) => {
+        if (weatherFilter !== "any" && row.weather !== weatherFilter)
+          return false;
+        if (seasonFilter !== "any" && row.season !== seasonFilter) return false;
+        if (dayTimeFilter !== "any" && row.time !== dayTimeFilter) return false;
+        if (areaFilter !== "any" && row.area !== areaFilter) return false;
+        return true;
+      })
+      .reduce(
+        (acc, { day, numberOfTrips, ...data }) => {
+          if (acc[day]) {
+            for (const key in acc[day]) {
+              if (key == "numberOfTrips") continue;
+              // @ts-ignore
+              const currentValue = acc[day][key];
+
+              // @ts-ignore
+              const newValue = data[key];
+
+              // @ts-ignore
+              acc[day][key] =
+                (currentValue * acc[day].numberOfTrips +
+                  newValue * numberOfTrips) /
+                (acc[day].numberOfTrips + numberOfTrips);
+            }
+            acc[day].numberOfTrips += numberOfTrips;
+          } else {
+            acc[day] = { numberOfTrips, ...data };
           }
-          acc[day].numberOfTrips += numberOfTrips;
-        } else {
-          acc[day] = { numberOfTrips, ...data };
+          return acc;
+        },
+        {} as {
+          [day: string]: {
+            numberOfTrips: number;
+            avgDistance: number;
+            avgFareAmount: number;
+            avgDuration: number;
+            avgTipAmount: number;
+            avgTotalAmount: number;
+          };
         }
-        return acc;
-      },
-      {} as {
-        [day: string]: {
-          numberOfTrips: number;
-          avgDistance: number;
-          avgFareAmount: number;
-          avgDuration: number;
-          avgTipAmount: number;
-          avgTotalAmount: number;
-        };
+      );
+
+    return Object.entries(filtered).map(([day, data]) => ({
+      day,
+      ...data,
+    }));
+  }, [weekData, areaFilter, dayTimeFilter, seasonFilter, weatherFilter]);
+
+  const { filteredZonesList, filteredZonesMap } = useMemo(() => {
+    const filteredZonesMap = zonesData
+      .filter((row) => {
+        // Skip any unknown start and destination zones.
+        if (
+          row.startZone == "265" ||
+          row.startZone == "264" ||
+          row.endZone == "265" ||
+          row.endZone == "264"
+        ) {
+          return false;
+        }
+        return true;
+      })
+      .filter((row) => {
+        if (weatherFilter !== "any" && row.weather !== weatherFilter)
+          return false;
+        if (seasonFilter !== "any" && row.season !== seasonFilter) return false;
+        if (dayTimeFilter !== "any" && row.time !== dayTimeFilter) return false;
+        return true;
+      })
+      .reduce(
+        (acc, { startZone, endZone, numberOfTrips, ...data }) => {
+          if (startZone in acc) {
+            if (endZone in acc[startZone].to) {
+              for (const key in acc[startZone].to[endZone]) {
+                if (key == "numberOfTrips") continue;
+                // @ts-ignore
+                const currentValue = acc[startZone].to[endZone][key];
+
+                // @ts-ignore
+                const newValue = data[key];
+
+                // @ts-ignore
+                acc[startZone].to[endZone][key] =
+                  (currentValue * acc[startZone].to[endZone].numberOfTrips +
+                    newValue * numberOfTrips) /
+                  (acc[startZone].to[endZone].numberOfTrips + numberOfTrips);
+              }
+              acc[startZone].numberOfTrips += numberOfTrips;
+              acc[startZone].to[endZone].numberOfTrips += numberOfTrips;
+            } else {
+              acc[startZone].numberOfTrips += numberOfTrips;
+              acc[startZone].to[endZone] = { numberOfTrips, ...data };
+            }
+          } else {
+            acc[startZone] = {
+              numberOfTrips,
+              ...data,
+              to: { [endZone]: { numberOfTrips, ...data } },
+            };
+          }
+          return acc;
+        },
+        {} as {
+          [startZone: string]: {
+            numberOfTrips: number;
+            avgDistance: number;
+            avgFareAmount: number;
+            avgDuration: number;
+            avgTipAmount: number;
+            avgTotalAmount: number;
+
+            to: {
+              [endZone: string]: {
+                numberOfTrips: number;
+                avgDistance: number;
+                avgFareAmount: number;
+                avgDuration: number;
+                avgTipAmount: number;
+                avgTotalAmount: number;
+              };
+            };
+          };
+        }
+      );
+
+    const filteredZonesList = Object.entries(filteredZonesMap).flatMap(
+      ([startZone, { to, ...fromData }]) => {
+        return Object.entries(to).map(([endZone, data]) => {
+          // These lookups should probably be a map for O(1) lookup.
+          const startZoneFeature: any = taxiZonesGeoJSONMap[startZone];
+          const endZoneFeature: any = taxiZonesGeoJSONMap[endZone];
+
+          return {
+            data,
+            fromData,
+            from: {
+              zoneID: startZone,
+              zoneName: startZoneFeature?.properties.zone,
+              coordinates: startZoneFeature?.properties.center,
+            },
+
+            to: {
+              zoneID: endZone,
+              zoneName: endZoneFeature?.properties.zone,
+              coordinates: endZoneFeature?.properties.center,
+            },
+          };
+        });
       }
     );
 
-  const weekMetric = searchParams.get("week-metric") ?? "avgDistance";
+    return { filteredZonesList, filteredZonesMap };
+  }, [zonesData, dayTimeFilter, seasonFilter, weatherFilter]);
 
-  const weekLabels: {
-    // @ts-ignore
-    [name: keyof WeekData]: string;
-  } = {
-    avgDistance: "Average Distance",
-    avgDuration: "Average Duration",
-    avgFareAmount: "Average Fare Amount",
-    avgTipAmount: "Average Tip Amount",
-    avgTotalAmount: "Average Total Amount",
-    numberOfTrips: "Number of Trips",
-  };
+  const { min, max } = useMemo(() => {
+    const values = filteredZonesList.map((row) => {
+      switch (feature) {
+        case "count":
+          return row.fromData.numberOfTrips;
+        case "distance":
+          return row.fromData.avgDistance;
+        case "duration":
+          return row.fromData.avgDuration;
+      }
+    });
 
-  const weekUnits: {
-    // @ts-ignore
-    [name: keyof WeekData]: string;
-  } = {
-    avgDistance: "mi",
-    avgDuration: "min",
-    avgFareAmount: "$",
-    avgTipAmount: "$",
-    avgTotalAmount: "$",
-    numberOfTrips: "",
-  };
+    const min = Math.min(...values);
+    const max = Math.max(...values);
 
-  return {
-    week: {
-      data: Object.entries(weekData).map(([day, data]) => ({
-        day,
-        // @ts-ignore
-        value: data[weekMetric],
-      })),
-      // @ts-ignore
-      label: weekLabels[weekMetric],
-      // @ts-ignore
-      unit: weekUnits[weekMetric],
-    },
-  };
-};
-
-// const layers = [
-//   new ,
-// ];
-
-export default function Index() {
-  const { week } = useLoaderData<LoaderData>();
-  const form = useRef<HTMLFormElement>(null);
-
-  const [searchParams] = useSearchParams();
-  const isNight = searchParams.get("time") == "night";
-  const isRainy = searchParams.get("weather") == "rainy";
+    return { min, max };
+  }, [filteredZonesList, feature]);
 
   return (
-    <div className={isNight ? "night" : ""}>
+    <div className={`content ${isNight ? "night" : ""}`}>
       <Navigation>
-        <Form
-          method="GET"
-          ref={form}
-          onChange={() => {
-            if (form.current) {
-              form.current.submit();
-            }
-          }}
-        >
-          <input
-            type="hidden"
-            name="week-metric"
-            value={searchParams.get("week-metric") ?? "avgDistance"}
+        <input type="hidden" name="week-metric" />
+        <Content>
+          <Toggle
+            name="weather"
+            label="Weather"
+            value={weatherFilter}
+            onValueChange={setWeatherFilter}
+            options={[
+              {
+                key: "any",
+                label: "Any 🌤️",
+              },
+              {
+                key: "rainy",
+                label: "Rainy ☔️",
+              },
+              {
+                key: "sunny",
+                label: "Sunny ☀️",
+              },
+            ]}
           />
-          <Content>
-            <Toggle
-              name="weather"
-              label="Weather"
-              selected={searchParams.get("weather")}
-              options={[
-                {
-                  key: "any",
-                  label: "Any 🌤️",
-                },
-                {
-                  key: "rainy",
-                  label: "Rainy ☔️",
-                },
-                {
-                  key: "sunny",
-                  label: "Sunny ☀️",
-                },
-              ]}
-            />
-            <Toggle
-              name="time"
-              label="Time of day"
-              selected={searchParams.get("time")}
-              options={[
-                {
-                  key: "any",
-                  label: "Any ☀️/🌙",
-                },
-                {
-                  key: "day",
-                  label: "Day ☀️",
-                },
-                {
-                  key: "night",
-                  label: "Night 🌙",
-                },
-              ]}
-            />
-            <Toggle
-              name="season"
-              label="Season"
-              selected={searchParams.get("season")}
-              options={[
-                {
-                  key: "any",
-                  label: "Any 🌳",
-                },
-                {
-                  key: "spring",
-                  label: "Spring 🌱",
-                },
-                {
-                  key: "summer",
-                  label: "Summer 😎",
-                },
-                {
-                  key: "fall",
-                  label: "Fall 🍂",
-                },
-                {
-                  key: "winter",
-                  label: "Winter ❄️",
-                },
-              ]}
-            />
-            <Toggle
-              name="area"
-              label="New York Area"
-              selected={searchParams.get("area")}
-              options={[
-                {
-                  key: "all",
-                  label: "All 🗽",
-                },
-                {
-                  key: "manhattan",
-                  label: "Manhattan 🏙️",
-                },
-              ]}
-            />
-          </Content>
-        </Form>
+          <Toggle
+            name="time"
+            label="Time of day"
+            onValueChange={setDayTimeFilter}
+            options={[
+              {
+                key: "any",
+                label: "Any ☀️/🌙",
+              },
+              {
+                key: "day",
+                label: "Day ☀️",
+              },
+              {
+                key: "night",
+                label: "Night 🌙",
+              },
+            ]}
+          />
+          <Toggle
+            name="season"
+            label="Season"
+            value={seasonFilter}
+            onValueChange={setSeasonFilter}
+            options={[
+              {
+                key: "any",
+                label: "Any 🌳",
+              },
+              {
+                key: "spring",
+                label: "Spring 🌱",
+              },
+              {
+                key: "summer",
+                label: "Summer 😎",
+              },
+              {
+                key: "fall",
+                label: "Fall 🍂",
+              },
+              {
+                key: "winter",
+                label: "Winter ❄️",
+              },
+            ]}
+          />
+          <Toggle
+            name="area"
+            label="Area"
+            value={areaFilter}
+            onValueChange={setAreaFilter}
+            options={[
+              {
+                key: "any",
+                label: "Any 🗽",
+              },
+              {
+                key: "manhattan",
+                label: "Manhattan 🏙️",
+              },
+            ]}
+          />
+
+          <Toggle
+            name="feature"
+            label="Feature"
+            value={feature}
+            onValueChange={setFeature}
+            options={[
+              {
+                key: "distance",
+                label: "↔️ Average distance",
+              },
+              {
+                key: "duration",
+                label: "⏳ Average duration",
+              },
+              {
+                key: "count",
+                label: "🚕 Number of trips",
+              },
+            ]}
+          />
+        </Content>
       </Navigation>
       <main>
         <Content>
@@ -349,106 +420,176 @@ export default function Index() {
               initialViewState={{
                 longitude: -73.935242,
                 latitude: 40.73061,
+                pitch: 45,
                 zoom: 9,
               }}
               controller={true}
+              onClick={(info) => {
+                if (!info?.object?.properties) {
+                  return setSelectedObject(undefined);
+                }
+                // Only set selected object if it's a zone
+                setSelectedObject(info);
+              }}
+              getTooltip={(info) => {
+                if (!info?.object) return;
+
+                if (info.object.properties) {
+                  const zone =
+                    filteredZonesMap[info.object.properties.objectid];
+                  return `${zone.numberOfTrips.toLocaleString()} trips from ${
+                    info.object.properties.zone
+                  }`;
+                }
+
+                if (info.object.data && info.object.to) {
+                  return `${info.object.data.numberOfTrips.toLocaleString()} trips from ${
+                    info.object.from.zoneName
+                  } to ${info.object.to.zoneName}`;
+                }
+              }}
             >
               <Map
                 mapLib={maplibregl}
-                mapStyle="https://basemaps.cartocdn.com/gl/positron-gl-style/style.json"
+                mapStyle={
+                  isNight
+                    ? "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json"
+                    : "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json"
+                }
               />
               {/* @ts-ignore */}
               <GeoJsonLayer
                 id="geojson-layer"
                 data={taxiZonesGeoJSON as any}
+                pickable
                 stroked
                 filled
-                opacity={0.5}
-                getLineColor={[60, 60, 60]}
-                getFillColor={(data: any) => {
-                  const shapeArea = parseFloat(data.properties.shape_area);
+                autoHighlight
+                highlightedObjectIndex={selectedObject?.index}
+                highlightColor={[128, 128, 255, 128]}
+                getFillColor={(feat) => {
+                  if (!feat.properties) return [0, 0, 0, 0];
+                  const zone = filteredZonesMap[feat.properties.objectid];
 
-                  return [255, 0, 0, (shapeArea / 1e-3) * 255];
+                  if (!zone) return [0, 0, 0, 0];
+
+                  const value =
+                    feature == "count"
+                      ? zone.numberOfTrips
+                      : feature == "distance"
+                      ? zone.avgDistance
+                      : zone.avgDuration;
+
+                  const normalized = (value - min) / (max - min);
+
+                  return [0, 128, 255, normalized * 220 + 25];
                 }}
+                getLineColor={[0, 128, 255]}
+                getLineWidth={10}
               />
               {/* @ts-ignore */}
               <ArcLayer
                 id="arc-layer"
-                data={[
-                  {
-                    inbound: 72633,
-                    outbound: 74735,
-                    from: {
-                      name: "19th St. Oakland (19TH)",
-                      coordinates: [-73.935242, 40.73061],
-                    },
-                    to: {
-                      name: "12th St. Oakland City Center (12TH)",
-                      coordinates: [-73.945242, 40.71061],
-                    },
-                  },
-                ]}
+                data={
+                  selectedObject
+                    ? filteredZonesList.filter(
+                        (d) =>
+                          d.from.zoneID ==
+                          selectedObject?.object.properties.objectid
+                      )
+                    : []
+                }
+                pickable
                 getSourcePosition={(d) => d.from.coordinates as Position}
                 getTargetPosition={(d) => d.to.coordinates as Position}
-                getSourceColor={[0, 128, 255]}
-                getWidth={2}
+                getSourceColor={[128, 128, 255]}
+                getTargetColor={[0, 200, 200]}
+                getWidth={1}
+              />
+              {/* @ts-ignore */}
+              <ScatterplotLayer
+                data={
+                  selectedObject
+                    ? filteredZonesList.filter(
+                        (d) =>
+                          d.from.zoneID ==
+                            selectedObject?.object.properties.objectid &&
+                          d.to.zoneID !==
+                            selectedObject?.object.properties.objectid
+                      )
+                    : []
+                }
+                pickable
+                filled
+                opacity={0.5}
+                getPosition={(d) => d.to.coordinates as Position}
+                getRadius={(zone) => {
+                  console.log(zone);
+                  const value =
+                    feature == "count"
+                      ? zone.data.numberOfTrips
+                      : feature == "distance"
+                      ? zone.data.avgDistance
+                      : zone.data.avgDuration;
+
+                  const normalized = (value - min) / (max - min);
+                  const radius = Math.sqrt(normalized * 1e7) + 50;
+                  return radius;
+                }}
+                getFillColor={[0, 200, 200]}
               />
             </DeckGL>
           </div>
 
-          <BarChart width={730} height={250} data={week.data}>
+          <BarChart width={730} height={250} data={filteredWeekData}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="day" />
-            <YAxis />
+            <YAxis
+              domain={
+                feature === "distance"
+                  ? [0, 5]
+                  : feature == "duration"
+                  ? [0, 1200]
+                  : [0, 6e6]
+              }
+            />
             <Tooltip />
             <Legend />
             <Bar
-              dataKey="value"
-              name={week.label}
-              unit={week.unit}
+              dataKey={
+                feature === "distance"
+                  ? "avgDistance"
+                  : feature == "duration"
+                  ? "avgDuration"
+                  : "numberOfTrips"
+              }
+              name={
+                feature === "distance"
+                  ? "Average distance"
+                  : feature == "duration"
+                  ? "Average duration"
+                  : "Number of trips"
+              }
+              unit={
+                feature === "distance"
+                  ? " miles"
+                  : feature == "duration"
+                  ? " seconds"
+                  : ""
+              }
               fill="#8884d8"
             />
           </BarChart>
-
-          {/* <AreaChart
-            width={720}
-            height={250}
-            data={data2}
-            margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
-          >
-            <defs>
-              <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="5%" stopColor="#8884d8" stopOpacity={0.8} />
-                <stop offset="95%" stopColor="#8884d8" stopOpacity={0} />
-              </linearGradient>
-              <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="5%" stopColor="#82ca9d" stopOpacity={0.8} />
-                <stop offset="95%" stopColor="#82ca9d" stopOpacity={0} />
-              </linearGradient>
-            </defs>
-            <XAxis dataKey="name" />
-            <YAxis />
-            <CartesianGrid strokeDasharray="3 3" />
-            <Tooltip />
-            <Area
-              type="monotone"
-              dataKey="uv"
-              stroke="#8884d8"
-              fillOpacity={1}
-              fill="url(#colorUv)"
-            />
-            <Area
-              type="monotone"
-              dataKey="pv"
-              stroke="#82ca9d"
-              fillOpacity={1}
-              fill="url(#colorPv)"
-            />
-          </AreaChart> */}
         </Content>
       </main>
       {isRainy && (
-        <Lottie className="rain-animation" animationData={rainAnimation} />
+        <Lottie
+          style={{
+            zIndex: 1000,
+          }}
+          className="rain-animation"
+          animationData={rainAnimation}
+        />
       )}
     </div>
   );

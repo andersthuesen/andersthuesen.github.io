@@ -2,6 +2,10 @@ body {
   font-family: "Source Sans Pro", sans-serif;
 }
 
+.content {
+  transition: all 500ms ease-in-out;
+}
+
 h1,
 h2,
 h3,
