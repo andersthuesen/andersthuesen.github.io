@@ -46,6 +46,9 @@ dependencies:
   deck.gl:
     specifier: ^8.9.14
     version: 8.9.14(@loaders.gl/core@3.3.5)(@loaders.gl/gltf@3.3.5)(@loaders.gl/images@3.3.5)(@luma.gl/constants@8.5.20)(@luma.gl/core@8.5.20)(@luma.gl/engine@8.5.20)(@luma.gl/gltools@8.5.20)(@luma.gl/shadertools@8.5.20)(@luma.gl/webgl@8.5.20)(@math.gl/core@3.6.3)(@math.gl/web-mercator@3.6.3)(@types/react@18.0.35)(gl-matrix@3.4.3)(react-dom@18.2.0)(react@18.2.0)
+  earcut:
+    specifier: ^2.2.4
+    version: 2.2.4
   isbot:
     specifier: ^3.6.8
     version: 3.6.8
