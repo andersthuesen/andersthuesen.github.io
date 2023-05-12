@@ -22,6 +22,9 @@ dependencies:
   '@math.gl/core':
     specifier: ^3.6.3
     version: 3.6.3
+  '@math.gl/polygon':
+    specifier: ^3.6.3
+    version: 3.6.3
   '@math.gl/web-mercator':
     specifier: ^3.6.3
     version: 3.6.3
