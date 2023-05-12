@@ -12,6 +12,7 @@
     "@deck.gl/layers": "^8.9.14",
     "@deck.gl/react": "^8.9.14",
     "@luma.gl/core": "^8.5.20",
+    "@math.gl/web-mercator": "^3.6.3",
     "@remix-run/node": "^1.15.0",
     "@remix-run/react": "^1.15.0",
     "@remix-run/vercel": "^1.15.0",
