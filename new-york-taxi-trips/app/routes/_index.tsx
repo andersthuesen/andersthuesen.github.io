@@ -34,9 +34,9 @@ import type { PickingInfo, Position } from "@deck.gl/core/typed";
 
 import { loadMonthData, loadWeekData, loadZonesData } from "~/data";
 
-import weekData from "../../data/by-day.json";
-import monthData from "../../data/by-month.json";
-import zonesData from "../../data/by-zones.json";
+// import weekData from "../../data/by-day.json";
+// import monthData from "../../data/by-month.json";
+// import zonesData from "../../data/by-zones.json";
 
 import type { WeekData, ZonesData, MonthData } from "~/data";
 
@@ -76,11 +76,11 @@ type LoaderData = {
   monthData: MonthData[];
   zonesData: ZonesData[];
 };
-export const loader: LoaderFunction = (): LoaderData => {
+export const loader: LoaderFunction = async (): Promise<LoaderData> => {
   return {
-    weekData,
-    monthData,
-    zonesData,
+    weekData: (await import("../../data/by-day.json")).default,
+    monthData: (await import("../../data/by-month.json")).default,
+    zonesData: [],
   };
 };
 
