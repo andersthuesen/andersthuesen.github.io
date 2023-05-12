@@ -74,18 +74,31 @@ export const links: LinksFunction = () => {
 type LoaderData = {
   weekData: WeekData[];
   monthData: MonthData[];
-  zonesData: ZonesData[];
+  zonesData: {
+    [zone: string]: {
+      numberOfTrips: number;
+      to: {
+        [zone: string]: {
+          numberOfTrips: number;
+        };
+      };
+    };
+  };
 };
 export const loader: LoaderFunction = async (): Promise<LoaderData> => {
   return {
     weekData: (await import("../../data/by-day.json")).default,
     monthData: (await import("../../data/by-month.json")).default,
-    zonesData: [],
+    zonesData: (await import("../../data/by-zones.json")).default,
   };
 };
 
 export default function Index() {
-  const { weekData, monthData, zonesData } = useLoaderData<LoaderData>();
+  const {
+    weekData,
+    monthData,
+    zonesData: filteredZonesMap,
+  } = useLoaderData<LoaderData>();
 
   const [selectedObject, setSelectedObject] = useState<PickingInfo | undefined>(
     undefined
@@ -218,90 +231,8 @@ export default function Index() {
     }));
   }, [monthData, areaFilter, dayTimeFilter, seasonFilter, weatherFilter]);
 
-  const { filteredZonesList, filteredZonesMap } = useMemo(() => {
-    const filteredZonesMap = zonesData
-      .filter((row) => {
-        // Skip any unknown start and destination zones.
-        if (
-          row.startZone == "265" ||
-          row.startZone == "264" ||
-          row.endZone == "265" ||
-          row.endZone == "264"
-        ) {
-          return false;
-        }
-        return true;
-      })
-      .filter((row) => {
-        if (weatherFilter !== "any" && row.weather !== weatherFilter)
-          return false;
-        if (seasonFilter !== "any" && row.season !== seasonFilter) return false;
-        if (dayTimeFilter !== "any" && row.time !== dayTimeFilter) return false;
-        return true;
-      })
-      .reduce(
-        (acc, { startZone, endZone, numberOfTrips, ...data }) => {
-          if (startZone in acc) {
-            if (endZone in acc[startZone].to) {
-              for (const key in acc[startZone].to[endZone]) {
-                if (key == "numberOfTrips") continue;
-                // @ts-ignore
-                const currentValue = acc[startZone].to[endZone][key];
-
-                // @ts-ignore
-                const newValue = data[key];
-
-                if (
-                  acc[startZone].to[endZone].numberOfTrips + numberOfTrips ==
-                  0
-                )
-                  continue;
-
-                // @ts-ignore
-                acc[startZone].to[endZone][key] =
-                  (currentValue * acc[startZone].to[endZone].numberOfTrips +
-                    newValue * numberOfTrips) /
-                  (acc[startZone].to[endZone].numberOfTrips + numberOfTrips);
-              }
-              acc[startZone].numberOfTrips += numberOfTrips;
-              acc[startZone].to[endZone].numberOfTrips += numberOfTrips;
-            } else {
-              acc[startZone].numberOfTrips += numberOfTrips;
-              acc[startZone].to[endZone] = { numberOfTrips, ...data };
-            }
-          } else {
-            acc[startZone] = {
-              numberOfTrips,
-              ...data,
-              to: { [endZone]: { numberOfTrips, ...data } },
-            };
-          }
-          return acc;
-        },
-        {} as {
-          [startZone: string]: {
-            numberOfTrips: number;
-            avgDistance: number;
-            avgFareAmount: number;
-            avgDuration: number;
-            avgTipAmount: number;
-            avgTotalAmount: number;
-
-            to: {
-              [endZone: string]: {
-                numberOfTrips: number;
-                avgDistance: number;
-                avgFareAmount: number;
-                avgDuration: number;
-                avgTipAmount: number;
-                avgTotalAmount: number;
-              };
-            };
-          };
-        }
-      );
-
-    const filteredZonesList = Object.entries(filteredZonesMap).flatMap(
+  const filteredZonesList = useMemo(() => {
+    return Object.entries(filteredZonesMap).flatMap(
       ([startZone, { to, ...fromData }]) => {
         return Object.entries(to).map(([endZone, data]) => {
           // These lookups should probably be a map for O(1) lookup.
@@ -326,9 +257,7 @@ export default function Index() {
         });
       }
     );
-
-    return { filteredZonesList, filteredZonesMap };
-  }, [zonesData, dayTimeFilter, seasonFilter, weatherFilter]);
+  }, [filteredZonesMap]);
 
   const { min, max } = useMemo(() => {
     const values = filteredZonesList.map((row) => row.fromData.numberOfTrips);
