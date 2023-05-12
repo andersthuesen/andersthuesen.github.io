@@ -33,7 +33,7 @@ h4 {
 
 section {
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 1200px;
   padding: 0 1.45rem;
 }
 
@@ -60,7 +60,17 @@ main {
   padding-top: 48px;
 }
 
-p {
+p,
+ol,
+li,
+dl,
+dd,
+dt,
+blockquote,
+pre,
+figure,
+table,
+hr {
   font-size: 1.3em;
   line-height: 1.75em;
 }
