@@ -455,13 +455,61 @@ export default function Index() {
         <Content>
           <h1>New York Taxi Trips 🚖</h1>
           <p>
-            A deep dive into the taxi habits of the New Yorker. Explore the data
-            and find out interesting facts about the city that never sleeps. Use
-            the toggles above to filter the data by weather, season, location
-            and more.
+            <i>New York, New York!</i> - Frank Sinatra
+            <br />
+            <br />
+            In the city that never sleeps yellow taxis are a standard part of
+            the cityscape and an important part of the infrastructure. The taxis
+            bring the diligent businessman to work early Monday morning and
+            bring the last bar guest safely home after a long night of fun while
+            the sun is rising in the horizon. So whether you are an Englishman
+            or an alien in New York this webpage can help you learn about the
+            habits of the New Yorkers' use of taxis.
+            <br />
+            <br />
+            The data is obtained from{" "}
+            <a href="https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page">
+              TLC New York
+            </a>{" "}
+            in the year 2022 and contains data from almost 40 mil taxi trips.
+            Yes- that is a lot, but don't worry we will make it easy for you.
+            Furthermore, we also consider{" "}
+            <a href="https://data.cityofnewyork.us/Transportation/NYC-Taxi-Zones/d3c5-ddgc">
+              weather data
+            </a>{" "}
+            and{" "}
+            <a href="https://open-meteo.com/en/docs/historical-weather-api#latitude=40.71&longitude=-74.01&start_date=2023-04-14&end_date=2023-04-28&hourly=temperature_2m">
+              geodata
+            </a>
+            .
+            <br />
+            <br />
+            This webpage is made interactively such that you can explore and
+            analyze across a wide range of features, specifications, and types
+            of plots. The sky is the limit.
+            <br />
+            <br />
+            Happy exploring!
+            <br />
+            <i>- Linea, Anne & Anders</i>
           </p>
-          <h2>Explore the patterns</h2>
-          <p>Hej med dig! Det virker!</p>
+          <h2>Navigation guide</h2>
+          <p>
+            At the top of this page, you will find the toggle bar. Here you can
+            choose the following settings
+            <ul>
+              <li>Weather</li>
+              <li>Day- or nighttime</li>
+              <li>Season</li>
+              <li>Manhattan or all of New York</li>
+            </ul>
+            Also, you choose a focus feature to investigate. By changing these
+            you can explore the data as deep as you desire.
+            <br />
+            <br />
+            Now let's look at some visuals. The first plot is a map plot shows
+            the chosen feature with the applied settings.
+          </p>
           <div
             style={{
               position: "relative",
