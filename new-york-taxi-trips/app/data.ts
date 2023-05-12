@@ -2,6 +2,10 @@ import fs from "fs/promises";
 import fsSync from "fs";
 import path from "path";
 
+import byDayPath from "../data/by-day.csv";
+import byMonthPath from "../data/by-month.csv";
+import byZonesPath from "../data/by-zones.csv";
+
 export type Data = {
   weather: string;
   season: string;
@@ -47,9 +51,18 @@ function loadCSVSync(filename: string): string[] {
 }
 
 // Preload the data
-const byDay = loadCSVSync("by-day.csv");
-const byMonth = loadCSVSync("by-month.csv");
-const byZones = loadCSVSync("by-zones.csv");
+const byDay = fsSync
+  .readFileSync(path.join(__dirname, "..", "public", byDayPath), "utf-8")
+  .split("\n")
+  .slice(1);
+const byMonth = fsSync
+  .readFileSync(path.join(__dirname, "..", "public", byMonthPath), "utf-8")
+  .split("\n")
+  .slice(1);
+const byZones = fsSync
+  .readFileSync(path.join(__dirname, "..", "public", byZonesPath), "utf-8")
+  .split("\n")
+  .slice(1);
 
 function parseData(row: string[]): Data {
   const [
