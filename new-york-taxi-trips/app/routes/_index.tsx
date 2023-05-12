@@ -32,7 +32,7 @@ import {
 } from "@deck.gl/layers/typed";
 import type { PickingInfo, Position } from "@deck.gl/core/typed";
 
-import { dataFilter, loadMonthData, loadWeekData, loadZonesData } from "~/data";
+import { loadMonthData, loadWeekData, loadZonesData } from "~/data";
 import type { WeekData, ZonesData, MonthData } from "~/data";
 
 import rainAnimation from "~/animations/rain.json";
@@ -86,7 +86,7 @@ export const loader: LoaderFunction = async (): Promise<LoaderData> => {
 };
 
 export default function Index() {
-  const { weekData, zonesData } = useLoaderData<LoaderData>();
+  const { weekData, monthData, zonesData } = useLoaderData<LoaderData>();
 
   const [selectedObject, setSelectedObject] = useState<PickingInfo | undefined>(
     undefined
@@ -134,6 +134,8 @@ export default function Index() {
               // @ts-ignore
               const newValue = data[key];
 
+              if (acc[day].numberOfTrips + numberOfTrips == 0) continue;
+
               // @ts-ignore
               acc[day][key] =
                 (currentValue * acc[day].numberOfTrips +
@@ -163,6 +165,59 @@ export default function Index() {
       ...data,
     }));
   }, [weekData, areaFilter, dayTimeFilter, seasonFilter, weatherFilter]);
+
+  const filteredMonthData = useMemo(() => {
+    const filtered = monthData
+      .filter((row) => {
+        if (weatherFilter !== "any" && row.weather !== weatherFilter)
+          return false;
+        if (seasonFilter !== "any" && row.season !== seasonFilter) return false;
+        if (dayTimeFilter !== "any" && row.time !== dayTimeFilter) return false;
+        if (areaFilter !== "any" && row.area !== areaFilter) return false;
+        return true;
+      })
+      .reduce(
+        (acc, { month, numberOfTrips, ...data }) => {
+          if (acc[month]) {
+            for (const key in acc[month]) {
+              if (key == "numberOfTrips") continue;
+              // @ts-ignore
+              const currentValue = acc[month][key];
+
+              // @ts-ignore
+              const newValue = data[key];
+
+              if (acc[month].numberOfTrips + numberOfTrips == 0) continue;
+
+              // @ts-ignore
+              acc[month][key] =
+                (currentValue * acc[month].numberOfTrips +
+                  newValue * numberOfTrips) /
+                (acc[month].numberOfTrips + numberOfTrips);
+            }
+            acc[month].numberOfTrips += numberOfTrips;
+          } else {
+            acc[month] = { numberOfTrips, ...data };
+          }
+          return acc;
+        },
+        {} as {
+          [month: string]: {
+            numberOfTrips: number;
+            avgDistance: number;
+            avgFareAmount: number;
+            avgDuration: number;
+            avgTipAmount: number;
+            avgTotalAmount: number;
+          };
+        }
+      );
+
+    return Object.entries(filtered).map(([month, data]) => ({
+      month,
+      ...data,
+    }));
+  }, [monthData, areaFilter, dayTimeFilter, seasonFilter, weatherFilter]);
 
   const { filteredZonesList, filteredZonesMap } = useMemo(() => {
     const filteredZonesMap = zonesData
@@ -196,6 +251,12 @@ export default function Index() {
 
                 // @ts-ignore
                 const newValue = data[key];
+
+                if (
+                  acc[startZone].to[endZone].numberOfTrips + numberOfTrips ==
+                  0
+                )
+                  continue;
 
                 // @ts-ignore
                 acc[startZone].to[endZone][key] =
@@ -271,22 +332,13 @@ export default function Index() {
   }, [zonesData, dayTimeFilter, seasonFilter, weatherFilter]);
 
   const { min, max } = useMemo(() => {
-    const values = filteredZonesList.map((row) => {
-      switch (feature) {
-        case "count":
-          return row.fromData.numberOfTrips;
-        case "distance":
-          return row.fromData.avgDistance;
-        case "duration":
-          return row.fromData.avgDuration;
-      }
-    });
+    const values = filteredZonesList.map((row) => row.fromData.numberOfTrips);
 
     const min = Math.min(...values);
     const max = Math.max(...values);
 
     return { min, max };
-  }, [filteredZonesList, feature]);
+  }, [filteredZonesList]);
 
   return (
     <div className={`content ${isNight ? "night" : ""}`}>
@@ -432,7 +484,7 @@ export default function Index() {
                 setSelectedObject(info);
               }}
               getTooltip={(info) => {
-                if (!info?.object) return;
+                if (!info?.object) return null;
 
                 if (info.object.properties) {
                   const zone =
@@ -447,6 +499,8 @@ export default function Index() {
                     info.object.from.zoneName
                   } to ${info.object.to.zoneName}`;
                 }
+
+                return null;
               }}
             >
               <Map
@@ -470,17 +524,9 @@ export default function Index() {
                 getFillColor={(feat) => {
                   if (!feat.properties) return [0, 0, 0, 0];
                   const zone = filteredZonesMap[feat.properties.objectid];
-
                   if (!zone) return [0, 0, 0, 0];
 
-                  const value =
-                    feature == "count"
-                      ? zone.numberOfTrips
-                      : feature == "distance"
-                      ? zone.avgDistance
-                      : zone.avgDuration;
-
-                  const normalized = (value - min) / (max - min);
+                  const normalized = (zone.numberOfTrips - min) / (max - min);
 
                   return [0, 128, 255, normalized * 220 + 25];
                 }}
@@ -524,15 +570,8 @@ export default function Index() {
                 opacity={0.5}
                 getPosition={(d) => d.to.coordinates as Position}
                 getRadius={(zone) => {
-                  console.log(zone);
-                  const value =
-                    feature == "count"
-                      ? zone.data.numberOfTrips
-                      : feature == "distance"
-                      ? zone.data.avgDistance
-                      : zone.data.avgDuration;
-
-                  const normalized = (value - min) / (max - min);
+                  const normalized =
+                    (zone.data.numberOfTrips - min) / (max - min);
                   const radius = Math.sqrt(normalized * 1e7) + 50;
                   return radius;
                 }}
@@ -541,10 +580,16 @@ export default function Index() {
             </DeckGL>
           </div>
 
-          <BarChart width={730} height={250} data={filteredWeekData}>
+          <BarChart
+            width={730}
+            height={250}
+            data={filteredWeekData}
+            style={{ color: "black" }}
+          >
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="day" />
             <YAxis
+              tickFormatter={(v) => v.toLocaleString()}
               domain={
                 feature === "distance"
                   ? [0, 5]
@@ -553,7 +598,7 @@ export default function Index() {
                   : [0, 6e6]
               }
             />
-            <Tooltip />
+            <Tooltip formatter={(v) => v.toLocaleString()} />
             <Legend />
             <Bar
               dataKey={
@@ -574,7 +619,61 @@ export default function Index() {
                 feature === "distance"
                   ? " miles"
                   : feature == "duration"
-                  ? " seconds"
+                  ? " minutes"
+                  : ""
+              }
+              fill="#8884d8"
+            />
+          </BarChart>
+
+          <BarChart
+            width={730}
+            height={250}
+            data={filteredMonthData}
+            style={{ color: "black" }}
+          >
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis
+              dataKey="month"
+              textAnchor="start"
+              angle={90}
+              width={20}
+              height={80}
+              hide={false}
+              minTickGap={-Infinity}
+            />
+            <YAxis
+              tickFormatter={(v) => v.toLocaleString()}
+              domain={
+                feature === "distance"
+                  ? [0, 5]
+                  : feature == "duration"
+                  ? [0, 1200]
+                  : [0, 6e6]
+              }
+            />
+            <Tooltip formatter={(v) => v.toLocaleString()} />
+            <Legend />
+            <Bar
+              dataKey={
+                feature === "distance"
+                  ? "avgDistance"
+                  : feature == "duration"
+                  ? "avgDuration"
+                  : "numberOfTrips"
+              }
+              name={
+                feature === "distance"
+                  ? "Average distance"
+                  : feature == "duration"
+                  ? "Average duration"
+                  : "Number of trips"
+              }
+              unit={
+                feature === "distance"
+                  ? " miles"
+                  : feature == "duration"
+                  ? " minutes"
                   : ""
               }
               fill="#8884d8"

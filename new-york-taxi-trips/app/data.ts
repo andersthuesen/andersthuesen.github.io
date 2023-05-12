@@ -1,4 +1,5 @@
 import fs from "fs/promises";
+import fsSync from "fs";
 import path from "path";
 
 export type Data = {
@@ -36,6 +37,20 @@ async function loadCSV(filename: string): Promise<string[]> {
   return csvData.split("\n").slice(1); // Don't include the header
 }
 
+function loadCSVSync(filename: string): string[] {
+  const csvData = fsSync.readFileSync(
+    path.join(__dirname, "..", "data", filename),
+    "utf-8"
+  );
+
+  return csvData.split("\n").slice(1); // Don't include the header
+}
+
+// Preload the data
+const byDay = loadCSVSync("by-day.csv");
+const byMonth = loadCSVSync("by-month.csv");
+const byZones = loadCSVSync("by-zones.csv");
+
 function parseData(row: string[]): Data {
   const [
     weather,
@@ -55,17 +70,18 @@ function parseData(row: string[]): Data {
     season,
     time,
     area,
-    avgDuration: parseFloat(avgDuration),
-    avgDistance: parseFloat(avgDistance),
-    avgFareAmount: parseFloat(avgFareAmount),
-    avgTipAmount: parseFloat(avgTipAmount),
-    avgTotalAmount: parseFloat(avgTotalAmount),
-    numberOfTrips: parseInt(numberOfTrips),
+    avgDuration: parseFloat(avgDuration) || 0,
+    avgDistance: parseFloat(avgDistance) || 0,
+    avgFareAmount: parseFloat(avgFareAmount) || 0,
+    avgTipAmount: parseFloat(avgTipAmount) || 0,
+    avgTotalAmount: parseFloat(avgTotalAmount) || 0,
+    numberOfTrips: parseInt(numberOfTrips) || 0,
   };
 }
 
 export async function loadWeekData(): Promise<WeekData[]> {
-  const csvLines = await loadCSV("by-day.csv");
+  //const csvLines = await loadCSV("by-day.csv");
+  const csvLines = byDay;
 
   const weekData = csvLines.map((row: string) => {
     const [day, ...data] = row.split(",");
@@ -76,7 +92,9 @@ export async function loadWeekData(): Promise<WeekData[]> {
 }
 
 export async function loadMonthData(): Promise<MonthData[]> {
-  const csvLines = await loadCSV("by-month.csv");
+  //const csvLines = await loadCSV("by-month.csv");
+  const csvLines = byMonth;
+
   const monthData = csvLines.map((row: string) => {
     const [month, ...data] = row.split(",");
     return {
@@ -89,7 +107,8 @@ export async function loadMonthData(): Promise<MonthData[]> {
 }
 
 export async function loadZonesData(): Promise<ZonesData[]> {
-  const csvLines = await loadCSV("by-zones.csv");
+  //const csvLines = await loadCSV("by-zones.csv");
+  const csvLines = byZones;
 
   const zoneData = csvLines.map((row: string) => {
     const [startZone, endZone, ...data] = row.split(",");
