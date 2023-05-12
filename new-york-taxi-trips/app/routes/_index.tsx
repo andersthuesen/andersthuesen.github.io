@@ -493,22 +493,11 @@ export default function Index() {
             <br />
             <i>- Linea, Anne & Anders</i>
           </p>
-          <h2>Navigation guide</h2>
+          <h2>An (over)view from the top 🏙️</h2>
           <p>
-            At the top of this page, you will find the toggle bar. Here you can
-            choose the following settings
-            <ul>
-              <li>Weather</li>
-              <li>Day- or nighttime</li>
-              <li>Season</li>
-              <li>Manhattan or all of New York</li>
-            </ul>
-            Also, you choose a focus feature to investigate. By changing these
-            you can explore the data as deep as you desire.
-            <br />
-            <br />
-            Now let's look at some visuals. The first plot is a map plot shows
-            the chosen feature with the applied settings.
+            Now let's look at some visuals. The first plot is a map plot of New
+            York. Try to hover your mouse over the different taxi zones of the
+            city to reveal more information!
           </p>
           <div
             style={{
@@ -521,7 +510,7 @@ export default function Index() {
                 longitude: -73.935242,
                 latitude: 40.73061,
                 pitch: 45,
-                zoom: 9,
+                zoom: 10,
               }}
               controller={true}
               onClick={(info) => {
@@ -627,16 +616,39 @@ export default function Index() {
               />
             </DeckGL>
           </div>
+          <p>
+            Did you notice that besides inner Manhattan some areas in the
+            suburbs are also popular for taxi trips? Imagine you just arrived at
+            the JFK airport and want to go to your hotel in Manhattan - oh yeah
+            right! You would probably take a taxi 😉
+          </p>
+          <p>
+            But now... are you ready for something really cool? Try to click one
+            of the zones and check out facts about trips between different
+            zones. Wow, Manhattan seems to be a pretty popular destination! Can
+            you find any other interesting destinations?
+          </p>
+
+          <p>
+            Even though it does not look as cool, bar plots are very informative
+            for investigating the temporal patterns in the data. In the bar plot
+            below we can uncover many different patterns regarding the habits of
+            the New Yorkers. Try to discover patterns in the data by using the
+            filters in the menubar in the top of the page. When do the New
+            Yorkers take the longest taxi trips? Are is it really the New
+            Yorkers who take the taxis or might it be tourists?
+          </p>
 
           <BarChart
             width={730}
             height={250}
             data={filteredWeekData}
-            style={{ color: "black" }}
+            style={{ color: "black", margin: "0 auto" }}
           >
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="day" />
             <YAxis
+              width={80}
               tickFormatter={(v) => v.toLocaleString()}
               domain={
                 feature === "distance"
@@ -678,7 +690,7 @@ export default function Index() {
             width={730}
             height={250}
             data={filteredMonthData}
-            style={{ color: "black" }}
+            style={{ color: "black", margin: "0 auto" }}
           >
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis
@@ -691,6 +703,7 @@ export default function Index() {
               minTickGap={-Infinity}
             />
             <YAxis
+              width={80}
               tickFormatter={(v) => v.toLocaleString()}
               domain={
                 feature === "distance"
@@ -724,7 +737,7 @@ export default function Index() {
                   ? " minutes"
                   : ""
               }
-              fill="#8884d8"
+              fill="#443afa"
             />
           </BarChart>
         </Content>
