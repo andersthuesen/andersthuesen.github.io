@@ -1,24 +1,30 @@
-export type ToggleOption = {
-  key: string;
+export type ToggleOption<T extends string> = {
+  key: T;
   label: string;
 };
 
-export type ToggleProps = {
+export type ToggleProps<T extends string> = {
   label?: string;
-  selected: string | null;
+  value?: string;
+  onValueChange?: (value: T) => void;
   name: string;
-  options: ToggleOption[];
+  options: ToggleOption<T>[];
 };
-export const Toggle: React.FC<ToggleProps> = ({
+export function Toggle<T extends string>({
   label,
-  selected,
-  name,
+  value,
+  onValueChange,
   options,
-}) => {
+}: ToggleProps<T>) {
   return (
     <div className="toggle">
       {label && <label>{label}:</label>}
-      <select name={name} defaultValue={selected ?? undefined}>
+      <select
+        value={value}
+        onChange={(e) => {
+          onValueChange?.(e.target.value as T);
+        }}
+      >
         {options.map((option) => (
           <option key={option.key} value={option.key}>
             {option.label}
@@ -27,4 +33,4 @@ export const Toggle: React.FC<ToggleProps> = ({
       </select>
     </div>
   );
-};
+}
