@@ -7,6 +7,7 @@
     "typecheck": "tsc"
   },
   "dependencies": {
+    "@babel/runtime": "^7.21.5",
     "@deck.gl/core": "^8.9.14",
     "@deck.gl/layers": "^8.9.14",
     "@deck.gl/react": "^8.9.14",
