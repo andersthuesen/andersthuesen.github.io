@@ -1,6 +1,9 @@
 lockfileVersion: '6.0'
 
 dependencies:
+  '@deck.gl/core':
+    specifier: ^8.9.14
+    version: 8.9.14
   '@deck.gl/layers':
     specifier: ^8.9.14
     version: 8.9.14(@deck.gl/core@8.9.14)(@loaders.gl/core@3.3.5)(@luma.gl/core@8.5.20)

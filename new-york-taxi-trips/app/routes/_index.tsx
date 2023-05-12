@@ -22,21 +22,21 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import Map, { Marker, Source } from "react-map-gl";
+import Map from "react-map-gl";
 import maplibregl from "maplibre-gl";
 import { Toggle } from "~/components/toggle";
-import { Form, Params, useLoaderData, useSearchParams } from "@remix-run/react";
+import { Form, useLoaderData, useSearchParams } from "@remix-run/react";
 import Lottie from "lottie-react";
 
 import DeckGL from "@deck.gl/react/typed";
 import { GeoJsonLayer, ArcLayer } from "@deck.gl/layers/typed";
-import { Position } from "@deck.gl/core/typed";
+import type { Position } from "@deck.gl/core/typed";
 
 import fs from "fs";
 import path from "path";
 
 import rainAnimation from "~/animations/rain.json";
-import { useMemo, useRef } from "react";
+import { useRef } from "react";
 
 import taxiZonesGeoJSON from "../../data/nyc-taxi-zones.json";
 

@@ -1,0 +1,198 @@
+lockfileVersion: '6.0'
+
+dependencies:
+  '@deck.gl/core':
+    specifier: ^8.9.14
+    version: 8.9.14
+
+packages:
+
+  /@babel/runtime@7.21.5:
+    resolution: {integrity: sha512-8jI69toZqqcsnqGGqwGS4Qb1VwLOEp4hz+CXPywcvjs60u3B4Pom/U/7rm4W8tMOYEB+E9wgD0mW1l3r8qlI9Q==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      regenerator-runtime: 0.13.11
+    dev: false
+
+  /@deck.gl/core@8.9.14:
+    resolution: {integrity: sha512-ziWnQUd92HHD+Pb6/azen5Nb6SdR7u9WCLbI/PS0LOIYtuTis7fcVjp5sKi7yEte8Za8LHU0V5dB4ekE9Ni22w==}
+    dependencies:
+      '@loaders.gl/core': 3.3.5
+      '@loaders.gl/images': 3.3.5
+      '@luma.gl/constants': 8.5.20
+      '@luma.gl/core': 8.5.20
+      '@luma.gl/webgl': 8.5.20
+      '@math.gl/core': 3.6.3
+      '@math.gl/sun': 3.6.3
+      '@math.gl/web-mercator': 3.6.3
+      '@probe.gl/env': 3.6.0
+      '@probe.gl/log': 3.6.0
+      '@probe.gl/stats': 3.6.0
+      gl-matrix: 3.4.3
+      math.gl: 3.6.3
+      mjolnir.js: 2.7.1
+    dev: false
+
+  /@loaders.gl/core@3.3.5:
+    resolution: {integrity: sha512-TlgMVBVhUZPNWN8iJHEQN26fy4p4E2dpqV19PRp7f8fYYN1MvLDJ4ZD5l35/OTLFvWrgHzPttoAOEbzmCyyhPg==}
+    dependencies:
+      '@babel/runtime': 7.21.5
+      '@loaders.gl/loader-utils': 3.3.5
+      '@loaders.gl/worker-utils': 3.3.5
+      '@probe.gl/log': 3.6.0
+    dev: false
+
+  /@loaders.gl/images@3.3.5:
+    resolution: {integrity: sha512-+w1nyYxaXPb9xZ5jU1q9pE713M4qdzrbHF/rKH3EX80+OzjYLYpOVB3v/asSiinI4RGJf6f5OVbJuD2vHYErYw==}
+    dependencies:
+      '@loaders.gl/loader-utils': 3.3.5
+    dev: false
+
+  /@loaders.gl/loader-utils@3.3.5:
+    resolution: {integrity: sha512-fsXwmPc9jgZABaHgm2oxmUyYE3DDZD84KHf2JqphsdgEdyxvrAYZecdEWwOt7we8DObWxx4YKZBCOqT4aWqpIQ==}
+    dependencies:
+      '@babel/runtime': 7.21.5
+      '@loaders.gl/worker-utils': 3.3.5
+      '@probe.gl/stats': 3.6.0
+    dev: false
+
+  /@loaders.gl/worker-utils@3.3.5:
+    resolution: {integrity: sha512-qDWLw7X53Y18pN3ANnTJgNahB6cDz9JGC0rX/q+oNhwZP1hSCa1WQ4hyPHPJiR6ka4D3gdeeSHAoXKnxxEfwIA==}
+    dependencies:
+      '@babel/runtime': 7.21.5
+    dev: false
+
+  /@luma.gl/constants@8.5.20:
+    resolution: {integrity: sha512-5yG+ybkUZ4j6kLPWMZjN4Hun2yLB0MyEpNCRKAUN9/yS9UIWA7unyVxjSf2vnE7k/7dywtxlbXegASNFgNVGxw==}
+    dev: false
+
+  /@luma.gl/core@8.5.20:
+    resolution: {integrity: sha512-xJr96G6vhYcznYHC84fbeOG3fgNM4lFwj9bd0VPcg/Kfe8otUeN1Hl0AKHCCtNn48PiMSg3LKbaiRfNUMhaffQ==}
+    dependencies:
+      '@babel/runtime': 7.21.5
+      '@luma.gl/constants': 8.5.20
+      '@luma.gl/engine': 8.5.20
+      '@luma.gl/gltools': 8.5.20
+      '@luma.gl/shadertools': 8.5.20
+      '@luma.gl/webgl': 8.5.20
+    dev: false
+
+  /@luma.gl/engine@8.5.20:
+    resolution: {integrity: sha512-+0ryJ/4gL1pWaEgZimY21jUPt1LYiO6Cqte8TNUprCfAHoAStsuzD7jwgEqnM6jJOUEdIxQ3w0z3Dzw/0KIE+w==}
+    dependencies:
+      '@babel/runtime': 7.21.5
+      '@luma.gl/constants': 8.5.20
+      '@luma.gl/gltools': 8.5.20
+      '@luma.gl/shadertools': 8.5.20
+      '@luma.gl/webgl': 8.5.20
+      '@math.gl/core': 3.6.3
+      '@probe.gl/env': 3.6.0
+      '@probe.gl/stats': 3.6.0
+      '@types/offscreencanvas': 2019.7.0
+    dev: false
+
+  /@luma.gl/gltools@8.5.20:
+    resolution: {integrity: sha512-5pP6ph9FSX5gHiVWQM1DmYRUnriklzKUG9yaqlQsKEqCFsOcKB0EfK3MfBVXIfsOdP/1bJZ9Dlz/zV19soWVhg==}
+    dependencies:
+      '@babel/runtime': 7.21.5
+      '@luma.gl/constants': 8.5.20
+      '@probe.gl/env': 3.6.0
+      '@probe.gl/log': 3.6.0
+      '@types/offscreencanvas': 2019.7.0
+    dev: false
+
+  /@luma.gl/shadertools@8.5.20:
+    resolution: {integrity: sha512-q1lrCZy1ncIFb4mMjsYgISLzNP6eMnhLUY+Oltj/qjAMcPEssCeHN2+XGfP/CVtU+O7sC+5JY2bQGaTs6HQ/Qw==}
+    dependencies:
+      '@babel/runtime': 7.21.5
+      '@math.gl/core': 3.6.3
+    dev: false
+
+  /@luma.gl/webgl@8.5.20:
+    resolution: {integrity: sha512-p/kt9KztywH4l+09XHoZ4cPFOoE7xlZXIBMT8rxRVgfe1w0lvi7QYh4tOG7gk+iixQ34EyDQacoHCsabdpmqQg==}
+    dependencies:
+      '@babel/runtime': 7.21.5
+      '@luma.gl/constants': 8.5.20
+      '@luma.gl/gltools': 8.5.20
+      '@probe.gl/env': 3.6.0
+      '@probe.gl/stats': 3.6.0
+    dev: false
+
+  /@math.gl/core@3.6.3:
+    resolution: {integrity: sha512-jBABmDkj5uuuE0dTDmwwss7Cup5ZwQ6Qb7h1pgvtkEutTrhkcv8SuItQNXmF45494yIHeoGue08NlyeY6wxq2A==}
+    dependencies:
+      '@babel/runtime': 7.21.5
+      '@math.gl/types': 3.6.3
+      gl-matrix: 3.4.3
+    dev: false
+
+  /@math.gl/sun@3.6.3:
+    resolution: {integrity: sha512-mrx6CGYYeTNSQttvcw0KVUy+35YDmnjMqpO/o0t06Vcghrt0HNruB/ScRgUSbJrgkbOg1Vcqm23HBd++clzQzw==}
+    dependencies:
+      '@babel/runtime': 7.21.5
+    dev: false
+
+  /@math.gl/types@3.6.3:
+    resolution: {integrity: sha512-3uWLVXHY3jQxsXCr/UCNPSc2BG0hNUljhmOBt9l+lNFDp7zHgm0cK2Tw4kj2XfkJy4TgwZTBGwRDQgWEbLbdTA==}
+    dev: false
+
+  /@math.gl/web-mercator@3.6.3:
+    resolution: {integrity: sha512-UVrkSOs02YLehKaehrxhAejYMurehIHPfFQvPFZmdJHglHOU4V2cCUApTVEwOksvCp161ypEqVp+9H6mGhTTcw==}
+    dependencies:
+      '@babel/runtime': 7.21.5
+      gl-matrix: 3.4.3
+    dev: false
+
+  /@probe.gl/env@3.6.0:
+    resolution: {integrity: sha512-4tTZYUg/8BICC3Yyb9rOeoKeijKbZHRXBEKObrfPmX4sQmYB15ZOUpoVBhAyJkOYVAM8EkPci6Uw5dLCwx2BEQ==}
+    dependencies:
+      '@babel/runtime': 7.21.5
+    dev: false
+
+  /@probe.gl/log@3.6.0:
+    resolution: {integrity: sha512-hjpyenpEvOdowgZ1qMeCJxfRD4JkKdlXz0RC14m42Un62NtOT+GpWyKA4LssT0+xyLULCByRAtG2fzZorpIAcA==}
+    dependencies:
+      '@babel/runtime': 7.21.5
+      '@probe.gl/env': 3.6.0
+    dev: false
+
+  /@probe.gl/stats@3.6.0:
+    resolution: {integrity: sha512-JdALQXB44OP4kUBN/UrQgzbJe4qokbVF4Y8lkIA8iVCFnjVowWIgkD/z/0QO65yELT54tTrtepw1jScjKB+rhQ==}
+    dependencies:
+      '@babel/runtime': 7.21.5
+    dev: false
+
+  /@types/hammerjs@2.0.41:
+    resolution: {integrity: sha512-ewXv/ceBaJprikMcxCmWU1FKyMAQ2X7a9Gtmzw8fcg2kIePI1crERDM818W+XYrxqdBBOdlf2rm137bU+BltCA==}
+    dev: false
+
+  /@types/offscreencanvas@2019.7.0:
+    resolution: {integrity: sha512-PGcyveRIpL1XIqK8eBsmRBt76eFgtzuPiSTyKHZxnGemp2yzGzWpjYKAfK3wIMiU7eH+851yEpiuP8JZerTmWg==}
+    dev: false
+
+  /gl-matrix@3.4.3:
+    resolution: {integrity: sha512-wcCp8vu8FT22BnvKVPjXa/ICBWRq/zjFfdofZy1WSpQZpphblv12/bOQLBC1rMM7SGOFS9ltVmKOHil5+Ml7gA==}
+    dev: false
+
+  /hammerjs@2.0.8:
+    resolution: {integrity: sha512-tSQXBXS/MWQOn/RKckawJ61vvsDpCom87JgxiYdGwHdOa0ht0vzUWDlfioofFCRU0L+6NGDt6XzbgoJvZkMeRQ==}
+    engines: {node: '>=0.8.0'}
+    dev: false
+
+  /math.gl@3.6.3:
+    resolution: {integrity: sha512-Yq9CyECvSDox9+5ETi2+x1bGTY5WvGUGL3rJfC4KPoCZAM51MGfrCm6rIn4yOJUVfMPs2a5RwMD+yGS/n1g3gg==}
+    dependencies:
+      '@math.gl/core': 3.6.3
+    dev: false
+
+  /mjolnir.js@2.7.1:
+    resolution: {integrity: sha512-72BeUWgTv2cj5aZQKpwL8caNUFhXZ9bDm1hxpNj70XJQ62IBnTZmtv/WPxJvtaVNhzNo+D2U8O6ryNI0zImYcw==}
+    engines: {node: '>= 4', npm: '>= 3'}
+    dependencies:
+      '@types/hammerjs': 2.0.41
+      hammerjs: 2.0.8
+    dev: false
+
+  /regenerator-runtime@0.13.11:
+    resolution: {integrity: sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==}
+    dev: false
