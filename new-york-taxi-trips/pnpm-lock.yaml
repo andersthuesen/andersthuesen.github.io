@@ -1,6 +1,9 @@
 lockfileVersion: '6.0'
 
 dependencies:
+  '@babel/runtime':
+    specifier: ^7.21.5
+    version: 7.21.5
   '@deck.gl/core':
     specifier: ^8.9.14
     version: 8.9.14
@@ -22,6 +25,9 @@ dependencies:
   '@vercel/node':
     specifier: ^2.10.3
     version: 2.10.3
+  '@vercel/remix':
+    specifier: 1.16.0-patch.1
+    version: 1.16.0-patch.1(react-dom@18.2.0)(react@18.2.0)
   deck.gl:
     specifier: ^8.9.14
     version: 8.9.14(@loaders.gl/core@3.3.5)(@loaders.gl/gltf@3.3.5)(@loaders.gl/images@3.3.5)(@luma.gl/constants@8.5.20)(@luma.gl/core@8.5.20)(@luma.gl/engine@8.5.20)(@luma.gl/gltools@8.5.20)(@luma.gl/shadertools@8.5.20)(@luma.gl/webgl@8.5.20)(@math.gl/core@3.6.3)(@math.gl/web-mercator@3.6.3)(@types/react@18.0.35)(gl-matrix@3.4.3)(react-dom@18.2.0)(react@18.2.0)
@@ -2654,6 +2660,21 @@ packages:
       source-map-support: 0.5.21
       stream-slice: 0.1.2
 
+  /@remix-run/node@1.16.0:
+    resolution: {integrity: sha512-2JtU3sVWDkyLcZ2prLovSbp4/K/mjbei1r9Qv6D9+fKgJFu3YjCPKfPiSj+T4My5rCG7azuKs5KOtmnwKBavrA==}
+    engines: {node: '>=14'}
+    dependencies:
+      '@remix-run/server-runtime': 1.16.0
+      '@remix-run/web-fetch': 4.3.4
+      '@remix-run/web-file': 3.0.2
+      '@remix-run/web-stream': 1.0.3
+      '@web3-storage/multipart-parser': 1.0.0
+      abort-controller: 3.0.0
+      cookie-signature: 1.2.1
+      source-map-support: 0.5.21
+      stream-slice: 0.1.2
+    dev: false
+
   /@remix-run/react@1.15.0(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-S0RuIeHvQTqryCZ3KVl8EsIWCqL6/ky1/kmDpN2n5Pdjew2BLC6DX7OdrY1ZQjbzOMHAROsZlyaSSVXCItunag==}
     engines: {node: '>=14'}
@@ -2671,6 +2692,11 @@ packages:
   /@remix-run/router@1.5.0:
     resolution: {integrity: sha512-bkUDCp8o1MvFO+qxkODcbhSqRa6P2GXgrGZVpt0dCXNW2HCSCqYI0ZoAqEOSAjRWmmlKcYgFvN4B4S+zo/f8kg==}
     engines: {node: '>=14'}
+
+  /@remix-run/router@1.6.0:
+    resolution: {integrity: sha512-N13NRw3T2+6Xi9J//3CGLsK2OqC8NMme3d/YX+nh05K9YHWGcv8DycHJrqGScSP4T75o8IN6nqIMhVFU8ohg8w==}
+    engines: {node: '>=14'}
+    dev: false
 
   /@remix-run/serve@1.15.0:
     resolution: {integrity: sha512-j06vKhxtLSR3JpkcoBMPb1EeM6QrbbuTdDh4m0eY/D4QgUzba4ws6r3OzEGc5FMe5xSULO0YVd2QWlyqBlMIWQ==}
@@ -2696,6 +2722,17 @@ packages:
       cookie: 0.4.2
       set-cookie-parser: 2.6.0
       source-map: 0.7.4
+
+  /@remix-run/server-runtime@1.16.0:
+    resolution: {integrity: sha512-a8rfS2SJ2nWhyGikXo+uknOSl1gW1/maDYuiG4Ki2wbVmF0v5mhJhlyB+1l+BjvXw+ZTS9HIiSQkg6L6JWqEcQ==}
+    engines: {node: '>=14'}
+    dependencies:
+      '@remix-run/router': 1.6.0
+      '@web3-storage/multipart-parser': 1.0.0
+      cookie: 0.4.2
+      set-cookie-parser: 2.6.0
+      source-map: 0.7.4
+    dev: false
 
   /@remix-run/vercel@1.15.0(@vercel/node@2.10.3):
     resolution: {integrity: sha512-jrJADuNALU76ZV9ioZGSULlpc13D8qMAx7JjiIVQZagSQQdv1rGHxNLX08WyTDfORIcL9bzHDkXkZFJIxj8eVw==}
@@ -3265,6 +3302,20 @@ packages:
       - '@swc/core'
       - '@swc/wasm'
       - encoding
+    dev: false
+
+  /@vercel/remix@1.16.0-patch.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-SA6MVrD3WsKQ6D0lTHdYlonackbe7ByPP4qAQa3VK3IJWlO5e2skNuxbioKT+/uU3mwC4jIGnkl3LwL/ljjsMg==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      react: '*'
+      react-dom: '*'
+    dependencies:
+      '@remix-run/node': 1.16.0
+      '@remix-run/server-runtime': 1.16.0
+      isbot: 3.6.8
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
     dev: false
 
   /@vercel/static-config@2.0.15:
