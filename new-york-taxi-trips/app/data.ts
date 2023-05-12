@@ -2,9 +2,9 @@ import fs from "fs/promises";
 import fsSync from "fs";
 import path from "path";
 
-import byDayData from "../data/by-day";
-import byMonthData from "../data/by-month";
-import byZonesData from "../data/by-zones";
+import byDayData from "../data/by-day.json";
+import byMonthData from "../data/by-month.json";
+import byZonesData from "../data/by-zones.json";
 
 export type Data = {
   weather: string;
@@ -49,18 +49,6 @@ function loadCSVSync(filename: string): string[] {
 
   return csvData.split("\n").slice(1); // Don't include the header
 }
-
-// Preload the data
-const byDay = byDayData
-  .split("\n")
-  .slice(1);
-
-const byMonth = byMonthData
-  .split("\n")
-  .slice(1);
-const byZones = byZonesData
-  .split("\n")
-  .slice(1);
 
 function parseData(row: string[]): Data {
   const [
